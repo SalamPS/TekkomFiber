@@ -1,6 +1,6 @@
 # 3DTekkom
 
-[node](https://img.shields.io/node/v/vite)
+[![Node](https://img.shields.io/node/v/vite)][node]
 
 ---
 
