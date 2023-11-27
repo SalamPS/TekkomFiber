@@ -1,10 +1,8 @@
 # 3DTekkom
 
-[![Build Status][build-status-badge]][workflow-status]
+This project made to fulfill one of my Final Project Assignment. Feel free to utilize it 🙌
 
 ---
-
-This project made to fulfill one of my Final Project Assignment. Feel free to utilize it 🙌
 
 ## Installation
 
@@ -24,7 +22,7 @@ I didn't include any `scene.bin`, `scene.gltf` and `textures` of the 3D assets i
 
 There are two options to solve this:
 - Download required files from the link provided in the `license.txt` inside of public folder
-- Download different assets and change their paths on `Viewer.jsx`.
+- Download different assets and change their paths on `Viewer.jsx`
 
 ## License
 
