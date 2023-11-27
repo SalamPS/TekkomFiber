@@ -1,6 +1,6 @@
 # 3DTekkom
 
-[![Node v](https://img.shields.io/node/v/vite)]v
+[node](https://img.shields.io/node/v/vite)
 
 ---
 
@@ -34,5 +34,6 @@ MIT
 
 Thanks to all my friends for helping me finish this project. Cheers! 🥂
 
+[node]: https://nodejs.org/en/blog/release/v20.10.0
 [bun]: https://bun.sh/
 [vite]: https://vitejs.dev/guide/
