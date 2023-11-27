@@ -1,8 +1,10 @@
 # 3DTekkom
 
-This project made to fulfill one of my Final Project Assignment. Feel free to utilize it 🙌
+[![Node v](https://img.shields.io/node/v/vite)]v
 
 ---
+
+This project made to fulfill one of my Final Project Assignment. Feel free to utilize it 🙌
 
 ## Installation
 
