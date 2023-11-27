@@ -1,0 +1,128 @@
+#App .head {
+  font-family: marsBold, sans-serif;
+}
+#App .tagline {
+  font-family: sticknobill, sans-serif;
+}
+@keyframes parallax-1200 {
+  to {
+    transform: translateY(1200px);
+  }
+}
+@keyframes parallax-1300 {
+  to {
+    transform: translateY(1300px);
+  }
+}
+@keyframes parallax-2000 {
+  to {
+    transform: translateY(2000px);
+  }
+}
+@keyframes parallax-700 {
+  to {
+    transform: translateY(700px);
+  }
+}
+#App .f1200 {
+  animation: parallax-1200 linear;
+  animation-timeline: scroll();
+}
+#App .f1300 {
+  animation: parallax-1300 linear;
+  animation-timeline: scroll();
+}
+#App .f2000 {
+  animation: parallax-2000 linear;
+  animation-timeline: scroll();
+}
+#App .f700 {
+  animation: parallax-700 linear;
+  animation-timeline: scroll();
+}
+#App .closeup {
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+#App .parallax {
+  position: absolute;
+  width: 100%;
+  translate: 0 100px;
+}
+#App .floating {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+#App nav {
+  text-align: left;
+  position: absolute !important;
+  display: flex !important;
+  width: 100%;
+  padding: 0px 100px !important;
+  padding-top: 40px !important;
+}
+#App nav a {
+  color: rgba(255, 255, 255, 0.8705882353) !important;
+}
+#App nav .navbarNav {
+  background-color: red;
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#App nav #navbarNav {
+  display: flex !important;
+  align-items: normal;
+  align-content: normal;
+}
+#App nav .nav-item {
+  display: block;
+}
+#App #jumbotron {
+  z-index: 5;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  height: 110vh;
+}
+#App #jumbotron .head {
+  margin-bottom: 30px;
+}
+#App .main {
+  margin-bottom: 10vh;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+#App .go-next {
+  width: 100%;
+  text-align: center;
+  translate: 0 150px;
+  transition: 0.3s;
+}
+#App .go-next .ico {
+  text-shadow: 1px 1px 2px black;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8705882353);
+  animation: updown infinite 2s ease-out;
+}
+@keyframes updown {
+  0%, 20%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+#App #about {
+  position: relative;
+  height: 120vh;
+  background-color: #16697A;
+  z-index: 10;
+}/*# sourceMappingURL=App.css.map */

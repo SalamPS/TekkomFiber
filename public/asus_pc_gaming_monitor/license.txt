@@ -1,0 +1,11 @@
+Model Information:
+* title:	Asus PC Gaming Monitor
+* source:	https://sketchfab.com/3d-models/asus-pc-gaming-monitor-941ce968c30a42d0a640a5c9d7f56128
+* author:	Artik (https://sketchfab.com/artikdev)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Asus PC Gaming Monitor" (https://sketchfab.com/3d-models/asus-pc-gaming-monitor-941ce968c30a42d0a640a5c9d7f56128) by Artik (https://sketchfab.com/artikdev) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

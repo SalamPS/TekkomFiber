@@ -1,0 +1,11 @@
+Model Information:
+* title:	SSD Samsung 980 PRO 1TB
+* source:	https://sketchfab.com/3d-models/ssd-samsung-980-pro-1tb-208b846d5a5948368b4ad0676bf4ab97
+* author:	cityon360 (https://sketchfab.com/cityon360)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "SSD Samsung 980 PRO 1TB" (https://sketchfab.com/3d-models/ssd-samsung-980-pro-1tb-208b846d5a5948368b4ad0676bf4ab97) by cityon360 (https://sketchfab.com/cityon360) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

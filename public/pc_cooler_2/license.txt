@@ -1,0 +1,11 @@
+Model Information:
+* title:	PC cooler (2)
+* source:	https://sketchfab.com/3d-models/pc-cooler-2-5cc52b3d32064c9ca6d476e1a90b634f
+* author:	Leon_dp (https://sketchfab.com/leondp)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "PC cooler (2)" (https://sketchfab.com/3d-models/pc-cooler-2-5cc52b3d32064c9ca6d476e1a90b634f) by Leon_dp (https://sketchfab.com/leondp) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

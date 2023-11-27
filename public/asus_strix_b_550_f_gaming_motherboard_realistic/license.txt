@@ -1,0 +1,11 @@
+Model Information:
+* title:	Asus Strix b-550-f Gaming Motherboard Realistic
+* source:	https://sketchfab.com/3d-models/asus-strix-b-550-f-gaming-motherboard-realistic-3eba5f45bed74fbeb2647de38047000f
+* author:	MUSHROOM_BUILDS (https://sketchfab.com/MUSHROOM_BUILDS)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Asus Strix b-550-f Gaming Motherboard Realistic" (https://sketchfab.com/3d-models/asus-strix-b-550-f-gaming-motherboard-realistic-3eba5f45bed74fbeb2647de38047000f) by MUSHROOM_BUILDS (https://sketchfab.com/MUSHROOM_BUILDS) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

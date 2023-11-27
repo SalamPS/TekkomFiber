@@ -1,0 +1,17 @@
+#Viewer .title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+#Viewer .box3d {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+#Viewer .explainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: red;
+}/*# sourceMappingURL=Viewer.css.map */
