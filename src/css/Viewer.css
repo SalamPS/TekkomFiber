@@ -1,17 +1,81 @@
+#Viewer {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(56, 97, 140);
+  background: radial-gradient(circle, rgb(56, 97, 140) 0%, rgb(8, 38, 70) 100%);
+}
 #Viewer .title {
   position: absolute;
   text-align: center;
   width: 100%;
+  margin-top: 20px;
 }
-#Viewer .box3d {
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+#Viewer #control {
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#Viewer #control #toggleSpeed {
+  background-color: #38618c;
+  cursor: pointer;
+  border: none;
+  margin: 10px;
+  height: auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+#Viewer #control #navigate {
+  text-align: left;
+  padding: 20px;
+}
+#Viewer #control #navigate button {
+  margin-top: 15px;
+  border: none;
+  display: block;
+  cursor: pointer;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  padding: 8px 10px;
+  background-color: #4685c9;
+}
+#Viewer #control #navigate button:hover {
+  background-color: #3975b4;
 }
 #Viewer .explainer {
-  position: absolute;
-  top: 0;
   right: 0;
-  height: 100%;
-  background-color: red;
+  bottom: 0;
+  height: 10%;
+  overflow: hidden;
+  position: absolute;
+  border-top-left-radius: 50px;
+  display: flex;
+  text-align: left;
+}
+#Viewer .explainer #hide {
+  width: 50px;
+  background-color: rgba(56, 97, 140, 0.6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.0666666667);
+}
+#Viewer .explainer #content {
+  padding: 20px;
+}
+@media screen and (max-width: 1000px) {
+  #Viewer .explainer {
+    min-height: 10%;
+    width: 100vw;
+    background-color: red;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #Viewer .explainer {
+    min-height: 20%;
+    width: 50vw;
+    background-color: rgba(56, 97, 140, 0.9411764706);
+  }
 }/*# sourceMappingURL=Viewer.css.map */
