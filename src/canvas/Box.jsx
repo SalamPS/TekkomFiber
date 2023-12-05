@@ -6,15 +6,16 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader';
 import { OrbitControls } from "@react-three/drei";
 import * as THREE from 'three';
 
-const Computers = ({ scale, speed, src, light, pos }) => {
+const Computers = ({ scale, speed, src, light, pos, rot }) => {
   const group = useRef();
 
   useFrame((state, delta) => {
     if (group.current.mixer) {
       group.current.mixer.update(delta);
     }
-    group.current.rotation.y += (speed? speed : 0.0015);
-    group.current.position.y = (pos? pos : 0);
+    group.current.rotation.y += (speed[0]);
+    group.current.rotation.x += (speed[1]);
+    group.current.rotation.z += (speed[2]);
   });
 
   const loader = new GLTFLoader();
@@ -48,7 +49,7 @@ const Computers = ({ scale, speed, src, light, pos }) => {
 
   return (
     <>
-      <group ref={group} scale={scale}/>
+      <group ref={group} scale={scale} position={[pos[0],pos[1],pos[2]]} rotation={[rot[0],rot[1],rot[2]]}/>
       <hemisphereLight intensity={(light? light : 5)} groundColor='black' />
       <spotLight
         position={[20, 50, 10]}
@@ -63,7 +64,7 @@ const Computers = ({ scale, speed, src, light, pos }) => {
   );
 };
 
-export default function Box ({cam, scale, speed, src, light, pos}) {
+export default function Box ({scale, speed, src, light, pos, rot}) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -91,11 +92,11 @@ export default function Box ({cam, scale, speed, src, light, pos}) {
     <Canvas
       shadows
       dpr={[1, 2]}
-      camera={{ position: [cam[0], cam[1], cam[2]], fov: 50 }}
+      camera={{ position: [20,20,20], fov: 50 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <OrbitControls/>
-      <Computers isMobile={isMobile} scale={scale} speed={speed} src={src} light={light} pos={pos}/>
+      <Computers isMobile={isMobile} scale={scale} speed={speed} src={src} light={light} pos={pos} rot={rot}/>
 
     </Canvas>
   );
