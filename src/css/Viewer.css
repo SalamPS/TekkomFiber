@@ -30,11 +30,18 @@
   padding: 5px 10px;
   border-radius: 10px;
 }
+#Viewer #control #toggleSpeed .text {
+  font-size: 1rem;
+}
+#Viewer #control #toggleSpeed .bi {
+  display: inline-block;
+  padding-top: 4px;
+}
 #Viewer #control #navigate {
   text-align: left;
   padding: 20px;
 }
-#Viewer #control #navigate button {
+#Viewer #control button {
   margin-top: 15px;
   border: none;
   display: block;
@@ -44,7 +51,7 @@
   padding: 8px 10px;
   background-color: #4685c9;
 }
-#Viewer #control #navigate button:hover {
+#Viewer #control button:hover {
   background-color: #3975b4;
 }
 #Viewer .explainer {
