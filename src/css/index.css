@@ -17,14 +17,6 @@
   margin: 0;
   text-align: center;
 }
-#exp {
-  position: relative;
-  z-index: 10;
-  height: 200vh;
-  width: 100%;
-  background-color: #d0d0c8;
-  padding: 0;
-}
 @font-face {
   font-family: marsBold;
   src: url(../font/marsBold.woff);
@@ -37,8 +29,21 @@
 .hide {
   display: none !important;
 }
+.view {
+  transition: .2s;
+}
+.-hide {
+  opacity: 0;
+}
+.-lil {
+  opacity: 0.1;
+}
+.-lil:hover {
+  opacity: .7;
+}
 
 body {
+  overflow-x: hidden;
   margin: 0;
   display: flex;
   place-items: center;

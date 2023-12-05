@@ -11,7 +11,7 @@
   width: 100%;
   margin-top: 20px;
 }
-#Viewer #control {
+#Viewer .control {
   top: 0;
   left: 0;
   z-index: 5;
@@ -21,68 +21,84 @@
   flex-direction: column;
   justify-content: space-between;
 }
-#Viewer #control #toggleSpeed {
+#Viewer .control#pages {
+  left: auto;
+  right: 0;
+}
+#Viewer .control #pages button, #Viewer .control#pages button {
   background-color: #38618c;
-  cursor: pointer;
-  border: none;
-  margin: 10px;
-  height: auto;
-  padding: 5px 10px;
   border-radius: 10px;
+  padding-top: 10px;
 }
-#Viewer #control #toggleSpeed .text {
-  font-size: 1rem;
-}
-#Viewer #control #toggleSpeed .bi {
-  display: inline-block;
-  padding-top: 4px;
-}
-#Viewer #control #navigate {
-  text-align: left;
-  padding: 20px;
-}
-#Viewer #control button {
+#Viewer .control #navigate button {
   margin-top: 15px;
-  border: none;
-  display: block;
-  cursor: pointer;
-  font-size: 1.3rem;
   border-radius: 50%;
   padding: 8px 10px;
   background-color: #4685c9;
 }
-#Viewer #control button:hover {
+#Viewer .control #navigate button:hover {
   background-color: #3975b4;
 }
+#Viewer .control button {
+  margin: 10px;
+  border: none;
+  display: block;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 8px 10px;
+}
 #Viewer .explainer {
+  z-index: 6;
   right: 0;
   bottom: 0;
   height: 10%;
+  transition: 0.3s;
   overflow: hidden;
   position: absolute;
   border-top-left-radius: 50px;
+  background-color: rgba(56, 97, 140, 0.9411764706);
   display: flex;
   text-align: left;
 }
 #Viewer .explainer #hide {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
   width: 50px;
+  transition: 0.2s;
+  cursor: pointer;
   background-color: rgba(56, 97, 140, 0.6);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.0666666667);
 }
+#Viewer .explainer #hide:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1333333333);
+}
+#Viewer .explainer #hide span {
+  padding-top: 20px;
+}
 #Viewer .explainer #content {
   padding: 20px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+#Viewer .explainer #content.hidden {
+  width: 0;
+  padding: 0;
 }
 @media screen and (max-width: 1000px) {
   #Viewer .explainer {
     min-height: 10%;
+  }
+  #Viewer #content {
     width: 100vw;
-    background-color: red;
   }
 }
 @media screen and (min-width: 1000px) {
   #Viewer .explainer {
     min-height: 20%;
+  }
+  #Viewer #content {
     width: 50vw;
-    background-color: rgba(56, 97, 140, 0.9411764706);
   }
 }/*# sourceMappingURL=Viewer.css.map */

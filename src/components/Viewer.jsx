@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // import './css/App.css'
 import { useParams } from "react-router-dom";
 import Box from "../canvas/Box";
@@ -115,7 +116,7 @@ const list = [
   )
 ];
 
-const View = () => {
+const View = ({view, toggleView}) => {
   const {part} = useParams();
   const show = list.find(item => item.type == part);
   const prop = show.prop;
@@ -126,20 +127,31 @@ const View = () => {
   };
 
   return <>
-    <div id="control">
-      <div>
-        <button id="toggleSpeed" onClick={toggleSpeed} className={(prop.speed.some(speedValue => speedValue !== 0) ? "show" : "hide")}>
+    <div className="control">
+      <div id="pages">
+        <button className={`view ${view ? "" : "-hide"}`} title="Jump Before">
+          <span className="bi bi-arrow-bar-left"></span>
+        </button>
+        <button className={`view ${view ? "" : "-hide"} ${(prop.speed.some(speedValue => speedValue !== 0) ? "show" : "hide")}`} onClick={toggleSpeed} >
           <span className={`bi bi-toggle-${toggle ? "on" : "off"}`}></span>
         </button>
       </div>
       <div id="navigate">
-        <button title="control">
+        <button className={`view ${view ? "" : "-hide"}`} title="Controls">
           <span className="bi bi-dpad"></span>
         </button>
-        <button title="link" onClick={() => window.open(show.origin, '_blank')}>
-          <span className="bi-arrow-up-right-circle"></span>
+        <button className={`view ${view ? "" : "-hide"}`} title="Visit 3D Asset Original Source" onClick={() => window.open(show.origin, '_blank')}>
+          <span className="bi bi-arrow-up-right-circle"></span>
+        </button>
+        <button className={`view ${view ? "" : "-lil"}`} title="Hide Elements" onClick={toggleView} >
+          <span className="bi bi-aspect-ratio"></span>
         </button>
       </div>
+    </div>
+    <div className="control" id="pages">
+      <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
+        <span className="bi bi-arrow-bar-right"></span>
+      </button>
     </div>
     <Box
       scale={prop.scale ? prop.scale : 1}
@@ -152,15 +164,22 @@ const View = () => {
   </>
 }
 
-const Bar = () => {
+const Bar = ({view}) => {
   const {part} = useParams();
   const show = list.find(item => item.type == part);
 
+  const [hide, setHide] = useState(false);
+  const toggleHide = () => {
+    setHide(!hide);
+  }
+
   return (
     <>
-      <div className="explainer">
-        <div className="del" id="hide"></div>
-        <div className="del" id="content">
+      <div className={`explainer view ${view ? "" : "-hide"}`}>
+        <div className="del" id="hide" onClick={() => toggleHide()}>
+          <span className={`bi bi-chevron-compact-${hide ? "left" : "right"}`}></span>
+        </div>
+        <div className={`del ${hide ? "hidden" : ""}`} id="content">
           <h1>{show.name}</h1>
           <p>{show.desc}</p>
         </div>
@@ -170,15 +189,19 @@ const Bar = () => {
 }
 
 function Viewer() {
+  const [view, setView] = useState(true);
+  const toggleView = () => {
+    setView(!view);
+  }
 
   return (
     <div id="Viewer">
       <div className="title">
-        <img src="./src/assets/tekkom.png" alt="Tkm"/>
+        <img src="/assets/tekkom.png" alt="Tkm"/>
       </div>
 
-      <View/>
-      <Bar/>
+      <View view={view} toggleView={toggleView}/>
+      <Bar view={view}/>
     </div>
   )
 }
