@@ -20,7 +20,7 @@ Run in dev mode:
 bun run dev
 ```
 
-I didn't include any `scene.bin`, `scene.gltf` and `textures` of the 3D assets in this repo, so it might return error if you try to run it.
+I didn't include any `scene.bin`, `scene.gltf` and `textures` of the 3D assets in this repo, so it might return error if you try to run it right away.
 
 There are two options to solve this:
 - Download required files from the link provided in the `license.txt` inside of public folder
