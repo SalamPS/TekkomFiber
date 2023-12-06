@@ -1,4 +1,4 @@
-# 3DTekkom
+# Tekkom x ThreeFiber
 
 This project made to fulfill one of my Final Project Assignment. Feel free to utilize it 🙌
 
