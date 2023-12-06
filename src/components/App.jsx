@@ -13,7 +13,7 @@ const parts = [
 function App() {
   return (
     <div id='App'>
-      <img src="./src/assets/closeup.jpg" alt="closeup" className='closeup prl700'/>
+      <img src="/assets/closeup.jpg" alt="closeup" className='closeup prl700'/>
 
       <nav className="navbar">
         <div className="collapse navbar-collapse" id="navbarNav">
@@ -57,7 +57,7 @@ function App() {
           <h1 className="h1">About Three Fiber</h1>
         </div>
         <div className="section bg">
-          <img src="./src/assets/room.jpg" alt="room"/>
+          <img src="/assets/room.jpg" alt="room"/>
         </div>
       </div>
       <div id="exp">
@@ -66,7 +66,7 @@ function App() {
           {
             parts.map(part => (
               <div key={part.src} className="item">
-                <img src={`./src/assets/${part.src}.png`} alt={part.name} />
+                <img src={`/assets/${part.src}.png`} alt={part.name} />
                 <div className="preview">
                   <div className="title">{part.name}</div>
                   <div className="prev">{part.prev}</div>
