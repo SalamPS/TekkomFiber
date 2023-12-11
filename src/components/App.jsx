@@ -71,17 +71,22 @@ function App() {
         <h1 className="h1">Computer Engineering</h1>
       </div>
       <div id="three">
-        <div className="part content">
+        <div className="part info">
           <h1 className="h1">Three Fiber</h1>
           <div className="content">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis optio nostrum in error. Repellat, pariatur?
+            Seamlessly integrating React.js and Three.js, creating a visually engaging experience with real-time manipulation of 3D objects
             </p>
           </div>
           <div className="content">
             <button className="learn">
-              Read Docs
+              <Link to={'https://docs.pmnd.rs/react-three-fiber/getting-started/introduction'} target="_blank">Read Docs</Link>
             </button>
+          </div>
+          <div className="content">
+            <p>
+            Dive into a dynamic visual experience, interact with intricate details, and gain insights into the inner workings of Computer components.
+            </p>
           </div>
         </div>
         <div className="part demo">

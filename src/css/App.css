@@ -192,21 +192,46 @@
 }
 #App #three .h1 {
   text-align: left;
-  padding: 0 45px 20px 45px;
+}
+@media screen and (min-width: 500px) {
+  #App #three .h1 {
+    padding: 0 45px 20px 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  #App #three .h1 {
+    padding-bottom: 20px;
+  }
 }
 #App #three .inner {
   margin-bottom: 10px;
 }
-#App #three .content {
+#App #three .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
+}
+@media screen and (max-width: 500px) {
+  #App #three .info {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 500px) {
+  #App #three .info {
+    padding: 0 90px;
+  }
+}
+#App #three .content {
+  padding: 0 10px;
   text-wrap: balance;
-  padding: 0 50px;
 }
 #App #three .content p, #App #three .content button {
   font-family: "Nova Square", sans-serif;
+}
+#App #three .content a {
+  text-decoration: none !important;
+  color: #E8F1F2 !important;
 }
 #App #three .demo {
   min-height: 80vmin;
