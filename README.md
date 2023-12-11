@@ -4,7 +4,7 @@ This project made to fulfill one of my Final Project Assignment. Feel free to ut
 
 ---
 
-[![Node](https://img.shields.io/node/v/vite)][node]
+[![Node](https://img.shields.io/node/v/vite)][node] [!Bun](bun-v1.0.16-f472b6)[bun]
 
 ## Installation
 
