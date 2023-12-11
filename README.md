@@ -20,13 +20,13 @@ Run in dev mode:
 bun run dev
 ```
 
-I didn't include any `scene.bin`, `scene.gltf` and `textures` of the 3D assets in this repo, so it might return error if you try to run it right away.
+I didn't include any `scene.bin`, `scene.gltf` and `textures` of the 3D assets in this branch, so it might return error if you try to run it right away.
 
 There are two options to solve this:
 - Download required files from the link provided in the `license.txt` inside of public folder
 - Download different assets and change their paths on `Viewer.jsx`
 
-You also able to see and download the build edition of this Repo on [TekkomFiber: Deploy][deploy]
+You also able to see and clone the build edition of this Repo on [TekkomFiber: Deploy][deploy]
 
 ## License
 
