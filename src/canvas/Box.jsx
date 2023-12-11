@@ -19,8 +19,8 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
   });
 
   const loader = new GLTFLoader();
-  // const modelPath = `./TekkomFiber/${src}/scene.gltf`;
-  const modelPath = `/${src}/scene.gltf`;
+  const modelPath = `/TekkomFiber/${src}/scene.gltf`;
+  // const modelPath = `/${src}/scene.gltf`;
   
   loader.load(
     modelPath,

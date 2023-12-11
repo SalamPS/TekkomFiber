@@ -17,14 +17,6 @@
   margin: 0;
   text-align: center;
 }
-@font-face {
-  font-family: marsBold;
-  src: url(../font/marsBold.woff);
-}
-@font-face {
-  font-family: sticknobill;
-  src: url(../font/sticknobills.woff);
-}
 
 .hide {
   display: none !important;
