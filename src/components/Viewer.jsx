@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// import './css/App.css'
 import { useParams } from "react-router-dom";
 import Box from "../canvas/Box";
 import { useState } from "react";
@@ -197,7 +196,7 @@ function Viewer() {
   return (
     <div id="Viewer">
       <div className="title">
-        <img src="/assets/tekkom.png" alt="Tkm"/>
+        <img src="./assets/tekkom.png" alt="Tkm"/>
       </div>
 
       <View view={view} toggleView={toggleView}/>
