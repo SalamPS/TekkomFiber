@@ -19,7 +19,7 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
   });
 
   const loader = new GLTFLoader();
-  const modelPath = `./${src}/scene.gltf`;
+  const modelPath = `./assets/${src}/scene.gltf`;
   
   loader.load(
     modelPath,
