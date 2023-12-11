@@ -19,8 +19,8 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
   });
 
   const loader = new GLTFLoader();
-  const modelPath = `/TekkomFiber/${src}/scene.gltf`;
-  // const modelPath = `/${src}/scene.gltf`;
+  // const modelPath = `/TekkomFiber/${src}/scene.gltf`;
+  const modelPath = `/${src}/scene.gltf`;
   
   loader.load(
     modelPath,
@@ -69,21 +69,12 @@ export default function Box ({scale, speed, src, light, pos, rot}) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 1000px)");
-
-    // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
-
-    // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
-
-    // Add the callback function as a listener for changes to the media query
     mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    // Remove the listener when the component is unmounted
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
@@ -97,7 +88,7 @@ export default function Box ({scale, speed, src, light, pos, rot}) {
       gl={{ preserveDrawingBuffer: true }}
     >
       <OrbitControls/>
-      <Computers isMobile={isMobile} scale={scale} speed={speed} src={src} light={light} pos={pos} rot={rot}/>
+      <Computers scale={isMobile ? scale*0.7 : scale} speed={speed} src={src} light={light} pos={pos} rot={rot}/>
 
     </Canvas>
   );

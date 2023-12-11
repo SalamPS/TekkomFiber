@@ -107,7 +107,9 @@ function App() {
           {
             parts.map(part => (
               <Link key={part.src} to={`/viewer/${part.url}`} className="item">
-                <img src={`./assets/${part.src}.png`} alt={part.name} />
+                <div className="thumbnail">
+                  <img src={`./assets/${part.src}.png`} alt={part.name} />
+                </div>
                 <div className="preview">
                   <div className="title">{part.name}</div>
                   <div className="prev">{part.prev}</div>

@@ -309,16 +309,16 @@
     flex-wrap: wrap;
   }
 }
-#App #exp .item .img {
+#App #exp .item .thumbnail {
   text-align: center;
 }
 @media screen and (min-width: 500px) {
-  #App #exp .item .img {
+  #App #exp .item .thumbnail {
     width: 200px;
   }
 }
 @media screen and (max-width: 500px) {
-  #App #exp .item .img {
+  #App #exp .item .thumbnail {
     width: 100%;
     padding-top: 20px;
   }
@@ -361,6 +361,11 @@
 #App #exp .more button:hover {
   background-color: #db5626;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5647058824);
+}
+@media screen and (max-width: 500px) {
+  #App #exp .more button {
+    margin-bottom: 50px;
+  }
 }
 #App .h1 {
   font-size: 2rem;
