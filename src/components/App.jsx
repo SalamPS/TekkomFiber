@@ -31,7 +31,7 @@ function App() {
   }
   return (
     <div id='App'>
-      <img src="/assets/closeup.jpg" alt="closeup" className='closeup prl700'/>
+      <img src="./assets/closeup.jpg" alt="closeup" className='closeup prl700'/>
 
       <nav className="navbar">
         <div className="collapse navbar-collapse" id="navbarNav">
@@ -107,8 +107,8 @@ function App() {
         <div className="block">
           {
             parts.map(part => (
-              <Link key={part.src} to={`/viewer/${part.url}`} className="item">
-                <img src={`/assets/${part.src}.png`} alt={part.name} />
+              <Link key={part.src} to={`./viewer/${part.url}`} className="item">
+                <img src={`./assets/${part.src}.png`} alt={part.name} />
                 <div className="preview">
                   <div className="title">{part.name}</div>
                   <div className="prev">{part.prev}</div>
