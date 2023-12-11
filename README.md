@@ -26,6 +26,8 @@ There are two options to solve this:
 - Download required files from the link provided in the `license.txt` inside of public folder
 - Download different assets and change their paths on `Viewer.jsx`
 
+You also able to see and download the build edition of this Repo on [TekkomFiber: Deploy][deploy]
+
 ## License
 
 MIT
@@ -37,3 +39,4 @@ Thanks to all my friends for helping me finish this project. Cheers! 🥂
 [node]: https://nodejs.org/en/blog/release/v20.10.0
 [bun]: https://bun.sh/
 [vite]: https://vitejs.dev/guide/
+[deploy]: https://github.com/SenzawaG/TekkomFiber.deploy
