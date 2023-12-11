@@ -39,4 +39,4 @@ Thanks to all my friends for helping me finish this project. Cheers! 🥂
 [node]: https://nodejs.org/en/blog/release/v20.10.0
 [bun]: https://bun.sh/
 [vite]: https://vitejs.dev/guide/
-[deploy]: https://github.com/SenzawaG/TekkomFiber.deploy
+[deploy]: https://github.com/SenzawaG/TekkomFiber.dev/tree/deploy
