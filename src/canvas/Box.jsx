@@ -88,7 +88,7 @@ export default function Box ({scale, speed, src, light, pos, rot}) {
       gl={{ preserveDrawingBuffer: true }}
     >
       <OrbitControls/>
-      <Computers scale={isMobile ? scale*0.7 : scale} speed={speed} src={src} light={light} pos={pos} rot={rot}/>
+      <Computers scale={scale} speed={speed} src={src} light={light} pos={pos} rot={rot}/>
 
     </Canvas>
   );
