@@ -1,6 +1,6 @@
 /* default */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Nova Square', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -62,7 +62,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Nova Square', sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }

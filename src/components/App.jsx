@@ -5,6 +5,7 @@
 import Box from "../canvas/Box"
 import object from './object'
 import { Link } from 'react-router-dom'
+import { useEffect } from "react"
 
 const demo3D = new object('demo','block','3dblock',
   {
@@ -18,13 +19,16 @@ const demo3D = new object('demo','block','3dblock',
 )
 
 const parts = [
-  {name : "Virtual Graphics Array", src:"vga0", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-  {name : "Virtual Graphics Array", src:"vga1", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-  {name : "Virtual Graphics Array", src:"vga2", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-  {name : "Virtual Graphics Array", src:"vga3", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+  {name : "Virtual Graphics Array", url: "vga", src:"vga0", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  {name : "Virtual Graphics Array", url: "vga", src:"vga1", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  {name : "Virtual Graphics Array", url: "vga", src:"vga2", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  {name : "Virtual Graphics Array", url: "vga", src:"vga3", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
 ]
 
 function App() {
+  const scroll = id => { 
+    document.querySelector(`#${id}`).scrollIntoView()
+  }
   return (
     <div id='App'>
       <img src="/assets/closeup.jpg" alt="closeup" className='closeup prl700'/>
@@ -33,13 +37,13 @@ function App() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="navbar-nav">
             <div className="nav-item active" id="home">
-              <span className="nav-link" href="#">Tekkom</span>
+              <span className="nav-link" onClick={() => {scroll('about')}}>Tekkom</span>
             </div>
             <div className="nav-item">
-              <span className="nav-link" href="#">ThreeFiber</span>
+              <span className="nav-link" onClick={() => {scroll('three')}}>ThreeFiber</span>
             </div>
             <div className="nav-item">
-              <span className="nav-link" href="#">Explore</span>
+              <span className="nav-link" onClick={() => {scroll('exp')}}>Explore</span>
             </div>
           </div>
         </div>
@@ -55,11 +59,11 @@ function App() {
           </div>
 
           <div className="go-next prl1300">
-            <a  href='#about'>
+            <span onClick={() => {scroll('about')}}>
               <div className='ico'>
                 <i className="bi bi-caret-down"></i>
               </div>
-            </a>
+            </span>
           </div>
         </div>
       </div>
@@ -69,6 +73,16 @@ function App() {
       <div id="three">
         <div className="part content">
           <h1 className="h1">Three Fiber</h1>
+          <div className="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis optio nostrum in error. Repellat, pariatur?
+            </p>
+          </div>
+          <div className="content">
+            <button className="learn">
+              Read Docs
+            </button>
+          </div>
         </div>
         <div className="part demo">
           <div className="box">
@@ -88,7 +102,7 @@ function App() {
         <div className="block">
           {
             parts.map(part => (
-              <Link key={part.src} className="item">
+              <Link key={part.src} to={`/viewer/${part.url}`} className="item">
                 <img src={`/assets/${part.src}.png`} alt={part.name} />
                 <div className="preview">
                   <div className="title">{part.name}</div>
