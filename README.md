@@ -8,7 +8,7 @@ This project made to fulfill one of my Final Project Assignment. Feel free to ut
 
 ## Installation
 
-See the [Bun Docs][bun] for the current version of Bun. I used [Vite][vite] to initialize react-app.
+See the [Docs][bun] for the guide to Bun. I used [Vite][vite] to initialize react-app.
 
 Install dependencies:
 ```
