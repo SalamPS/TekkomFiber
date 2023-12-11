@@ -5,7 +5,6 @@
 import Box from "../canvas/Box"
 import object from './object'
 import { Link } from 'react-router-dom'
-import { useEffect } from "react"
 
 const demo3D = new object('demo','block','3dblock',
   {
