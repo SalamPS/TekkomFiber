@@ -1,7 +1,21 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
 
-import { useState } from "react"
+// import { useState } from "react"
+import Box from "../canvas/Box"
+import object from './object'
+import { Link } from 'react-router-dom'
+
+const demo3D = new object('demo','block','3dblock',
+  {
+    scale: 3,
+    speed: [0, 0, 0],
+    light: undefined,
+    pos: [0, -6, 0],
+    rot: [0, 0, 0],
+    src: 'rgb_lego_cubes'
+  }
+)
 
 const parts = [
   {name : "Virtual Graphics Array", src:"vga0", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
@@ -19,7 +33,7 @@ function App() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="navbar-nav">
             <div className="nav-item active" id="home">
-              <span className="nav-link" href="#">CompE</span>
+              <span className="nav-link" href="#">Tekkom</span>
             </div>
             <div className="nav-item">
               <span className="nav-link" href="#">ThreeFiber</span>
@@ -53,11 +67,20 @@ function App() {
         <h1 className="h1">Computer Engineering</h1>
       </div>
       <div id="three">
-        <div className="section block">
-          <h1 className="h1">About Three Fiber</h1>
+        <div className="part content">
+          <h1 className="h1">Three Fiber</h1>
         </div>
-        <div className="section bg">
-          <img src="/assets/room.jpg" alt="room"/>
+        <div className="part demo">
+          <div className="box">
+            <Box
+              scale={demo3D.prop.scale}
+              speed={demo3D.prop.speed}
+              light={demo3D.prop.light}
+              pos={demo3D.prop.pos}
+              rot={demo3D.prop.rot}
+              src={demo3D.prop.src}
+            />
+          </div>
         </div>
       </div>
       <div id="exp">
@@ -65,13 +88,13 @@ function App() {
         <div className="block">
           {
             parts.map(part => (
-              <div key={part.src} className="item">
+              <Link key={part.src} className="item">
                 <img src={`/assets/${part.src}.png`} alt={part.name} />
                 <div className="preview">
                   <div className="title">{part.name}</div>
                   <div className="prev">{part.prev}</div>
                 </div>
-              </div>
+              </Link>
             ))
           }
         </div>

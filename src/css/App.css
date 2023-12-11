@@ -57,7 +57,16 @@
   position: absolute;
   justify-content: space-between;
   width: 100%;
-  padding: 40px 100px;
+}
+@media screen and (max-width: 600px) {
+  #App nav {
+    padding: 40px 10px;
+  }
+}
+@media screen and (min-width: 600px) {
+  #App nav {
+    padding: 40px 100px;
+  }
 }
 #App nav #navbarNav {
   width: 100%;
@@ -100,6 +109,7 @@
   height: 110vh;
 }
 #App #jumbotron .head {
+  font-size: 2rem;
   font-family: marsBold, sans-serif;
   margin-bottom: 30px;
 }
@@ -135,45 +145,116 @@
 }
 #App #about {
   z-index: 11;
-  height: 120vh;
+  min-height: 120vh;
   color: #343841;
   position: relative;
   background-color: #E8F1F2;
 }
+#App #about .h1 {
+  padding: 50px 0;
+}
+@media screen and (max-width: 600px) {
+  #App #about .h1 {
+    font-size: 1.4rem;
+  }
+}
 #App #three {
   z-index: 10;
-  height: 120vh;
+  min-height: 80vmin;
   position: relative;
   display: flex;
+  color: #1F2041;
+  background-color: #F79256;
 }
 @media screen and (min-width: 500px) {
-  #App #three .section {
+  #App #three {
+    max-height: 100vmin;
+  }
+  #App #three .part {
     width: 50%;
   }
 }
 @media screen and (max-width: 500px) {
   #App #three {
     flex-direction: column;
+    padding: 50px 0;
+    padding-bottom: 0;
   }
 }
-#App #three .block {
-  background-color: #343841;
-  color: #E8F1F2;
+#App #three .learn {
+  background-color: #1F2041;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0 30px 0;
 }
-#App #three .bg {
-  height: inherit;
+#App #three .h1 {
+  text-align: left;
+  padding: 0 45px 20px 45px;
 }
-#App #three .bg img {
-  height: inherit;
+#App #three .inner {
+  margin-bottom: 10px;
+}
+#App #three .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  text-wrap: balance;
+  padding: 0 50px;
+}
+#App #three .content p, #App #three .content button {
+  font-family: "Nova Square", sans-serif;
+}
+#App #three .demo {
+  min-height: 80vmin;
+  text-align: center;
+  background-color: #1F2041;
+}
+#App #three .box {
+  height: 80vmin;
+  background-color: #F79256;
+}
+@media screen and (min-width: 500px) {
+  #App #three .box {
+    -webkit-clip-path: polygon(89% 0, 100% 11%, 100% 89%, 89% 100%, 0 100%, 0 0);
+            clip-path: polygon(89% 0, 100% 11%, 100% 89%, 89% 100%, 0 100%, 0 0);
+  }
+}
+@media screen and (max-width: 500px) {
+  #App #three .box {
+    -webkit-clip-path: polygon(100% 0, 100% 89%, 89% 100%, 11% 100%, 0 89%, 0 0);
+            clip-path: polygon(100% 0, 100% 89%, 89% 100%, 11% 100%, 0 89%, 0 0);
+  }
 }
 #App #exp {
   z-index: 9;
-  padding: 0 50px;
   position: relative;
   min-height: 100vmin;
   padding-bottom: 50px;
   background-color: #1F2041;
   color: #F26430;
+}
+@media screen and (min-width: 600px) {
+  #App #exp {
+    padding: 0 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #App #exp {
+    padding: 0 20px;
+  }
+}
+#App #exp .h1 {
+  padding: 50px 0;
+}
+@media screen and (max-width: 600px) {
+  #App #exp .h1 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
 }
 #App #exp .block {
   gap: 30px 50px;
@@ -185,25 +266,41 @@
 }
 @media (max-width: 500px) {
   #App #exp .block {
-    height: 80vh;
+    min-height: 80vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "." "." "." ".";
   }
 }
 #App #exp .item {
-  opacity: 0.7;
   padding: 10px;
   transition: 0.2s;
   background-color: #1a1b38;
   border-radius: 10px 40px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-auto-flow: row dense;
-  grid-template-areas: ". . ." ". ." ". . .";
+  display: flex;
+}
+@media screen and (max-width: 500px) {
+  #App #exp .item {
+    flex-wrap: wrap;
+  }
+}
+#App #exp .item .img {
+  text-align: center;
+}
+@media screen and (min-width: 500px) {
+  #App #exp .item .img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #App #exp .item .img {
+    width: 100%;
+    padding-top: 20px;
+  }
 }
 #App #exp .item img {
-  width: 100%;
+  display: inline-block;
+  width: 200px;
   border-radius: 10px 40px;
 }
 #App #exp .item .preview {
@@ -217,25 +314,30 @@
 }
 #App #exp .item .preview .prev {
   color: #e8f1f2;
+  -webkit-text-decoration: underline #1a1b38;
+          text-decoration: underline #1a1b38;
 }
 #App #exp .item:hover {
-  opacity: 1;
+  background-color: #222447;
   transform: translate(5px, -5px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3137254902);
 }
 #App #exp .more button {
   cursor: pointer;
   margin-top: 50px;
   padding: 10px 15px;
   border-radius: 10px;
-  background-color: #f26430;
+  background-color: #c74f24;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3137254902);
   font-weight: bold;
   transition: 0.2s;
   border: none;
 }
 #App #exp .more button:hover {
-  background-color: #db5727;
+  background-color: #db5626;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5647058824);
 }
 #App .h1 {
+  font-size: 2rem;
   font-family: marsBold, sans-serif;
-  padding: 50px 0;
 }/*# sourceMappingURL=App.css.map */
