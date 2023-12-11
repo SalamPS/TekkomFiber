@@ -4,7 +4,7 @@ This project made to fulfill one of my Final Project Assignment. Feel free to ut
 
 ---
 
-![Static Badge](https://img.shields.io/badge/node-v20.10.0-1603) ![Static Badge](https://img.shields.io/badge/bun-v1.0.16-f472b6)
+[![Static Badge](https://img.shields.io/badge/node-v20.10.0-1603)][node] ![Static Badge](https://img.shields.io/badge/bun-v1.0.16-f472b6)
 
 ## Installation
 
