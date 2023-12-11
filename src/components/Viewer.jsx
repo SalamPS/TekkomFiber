@@ -196,7 +196,7 @@ function Viewer() {
   return (
     <div id="Viewer">
       <div className="title">
-        {/* <img src="./assets/tekkom.png" alt="Tkm"/> */}
+        {/* <img src="./TekkomFiber/assets/tekkom.png" alt="Tkm"/> */}
         <img src="/assets/tekkom.png" alt="Tkm"/>
       </div>
 
