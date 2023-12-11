@@ -4,7 +4,8 @@ This project made to fulfill one of my Final Project Assignment. Feel free to ut
 
 ---
 
-[![Static Badge](https://img.shields.io/badge/node-v20.10.0-1603)][node] [![Static Badge](https://img.shields.io/badge/bun-v1.0.16-f472b6)][bun1.0.16]
+[![Static Badge](https://img.shields.io/badge/node-v20.10.0-1603)][node] [![Static Badge](https://img.shields.io/badge/bun-v1.0.16-f472b6)][bun1.0.16] [![Static Badge](https://img.shields.io/badge/React-v18.2.0-087ea4)][react] [![Static Badge](https://img.shields.io/badge/Vite-v4-ffdb33)][vite]
+
 
 ## Installation
 
@@ -39,5 +40,6 @@ Thanks to all my friends for helping me finish this project. Cheers! 🥂
 [node]: https://nodejs.org/en/blog/release/v20.10.0
 [bun]: https://bun.sh/docs
 [bun1.0.16]: https://bun.sh/blog/bun-v1.0.16
-[vite]: https://vitejs.dev/guide/
+[react]: https://react.dev/learn
+[vite]: https://v4.vitejs.dev/
 [deploy]: https://github.com/SenzawaG/TekkomFiber.dev/tree/deploy
