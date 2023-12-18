@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './css/index.css'
@@ -13,21 +13,11 @@ export default function Routing() {
   return (
     <Router>
       <Routes>
-        <Route path="/">
-          <Route index element={<Suspense fallback={<div>Loading...</div>}>
-            <App />
-          </Suspense>}/>
-          <Route path="*" element={<Suspense fallback={<div>Loading...</div>}>
-            <Error/>
-          </Suspense>}/>
+        <Route path="/" element={<App />} index></Route>
+        <Route path="*" element={<Error />} index></Route>
 
-          <Route path="viewer/" element={<Suspense fallback={<div>Loading...</div>}>
-            <Viewer/>
-          </Suspense>}/>
-          <Route path="viewer/:part/" element={<Suspense fallback={<div>Loading...</div>}>
-            <Viewer/>
-          </Suspense>}/>
-        </Route>
+        <Route path="viewer/" element={<Viewer />}/>
+        <Route path="viewer/:part/" element={<Viewer />}/>
       </Routes>
     </Router>
   );

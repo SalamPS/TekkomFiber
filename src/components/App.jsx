@@ -4,7 +4,7 @@
 // import { useState } from "react"
 import Box from "../canvas/Box"
 import object from './object'
-import { Link } from 'react-router-dom'
+import { useNavigate, Link } from "react-router-dom"
 
 const demo3D = new object('demo','block','3dblock',
   {
@@ -25,6 +25,7 @@ const parts = [
 ]
 
 function App() {
+  const navigate = useNavigate();
   const scroll = id => { 
     document.querySelector(`#${id}`).scrollIntoView()
   }
@@ -68,6 +69,19 @@ function App() {
       </div>
       <div id="about">
         <h1 className="h1">Computer Engineering</h1>
+        <div className="content">
+          <div id="intro">
+            <div className="text">
+              <p>
+              Scientific discipline that includes computer science, computer design, construction technology, implementation and maintenance of modern computer software and hardware and computer-controlled equipment.
+              </p>
+              <button className="visit">Learn More</button>
+            </div>
+            <div className="context">
+              <img width="300px" src="./assets/arduino.png" alt="arduino" />
+            </div>
+          </div>
+        </div>
       </div>
       <div id="three">
         <div className="part info">
@@ -106,7 +120,7 @@ function App() {
         <div className="block">
           {
             parts.map(part => (
-              <Link key={part.src} to={`/viewer/${part.url}`} className="item">
+              <div key={part.src} onClick={() => {navigate(`/viewer/${part.url}`)}} className="item">
                 <div className="thumbnail">
                   <img src={`./assets/${part.src}.png`} alt={part.name} />
                 </div>
@@ -114,7 +128,7 @@ function App() {
                   <div className="title">{part.name}</div>
                   <div className="prev">{part.prev}</div>
                 </div>
-              </Link>
+              </div>
             ))
           }
         </div>

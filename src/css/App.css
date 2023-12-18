@@ -143,9 +143,28 @@
     transform: translateY(-10px);
   }
 }
+@keyframes moveUpLeft {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -5px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 #App #about {
+  display: flex;
+  flex-direction: column;
   z-index: 11;
-  min-height: 120vh;
+  min-height: 90vh;
   color: #343841;
   position: relative;
   background-color: #E8F1F2;
@@ -157,6 +176,42 @@
   #App #about .h1 {
     font-size: 1.4rem;
   }
+}
+#App #about .content {
+  flex-grow: 1;
+}
+@media screen and (max-width: 600px) {
+  #App #about .content {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 600px) {
+  #App #about .content {
+    padding: 0 50px;
+  }
+}
+#App #about .content #intro {
+  padding: 0 150px;
+  display: flex;
+}
+#App #about .content #intro div {
+  align-self: center;
+}
+#App #about .content #intro .text {
+  padding-right: 150px;
+  text-align: left;
+}
+#App #about .content #intro .visit {
+  background-color: #1F2041;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#App #about .content #intro .context img {
+  animation: moveUpLeft 3s linear infinite;
 }
 #App #three {
   z-index: 10;
