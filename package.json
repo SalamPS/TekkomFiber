@@ -10,13 +10,13 @@
     "build:server": "vite build --ssr src/entry-server.jsx --outDir dist/server",
     "preview": "cross-env NODE_ENV=production node server",
 
-    "fixui": "git-add && git-fui && git-push",
-    "fixbug": "git-add && git-fbug && git-push",
+    "fui": "bun run git:add && bun run git:fui && bun run git:push",
+    "fbug": "bun run git:add && bun run git:fbug && bun run git:push",
 
-    "git-add": "git add .",
-    "git-fui": "git commit -m 'fix: ui'",
-    "git-fbug": "git commit -m 'fix: bug'",
-    "git-push": "git push origin main"
+    "git:add": "git add .",
+    "git:fui": "git commit -m 'fix: ui'",
+    "git:fbug": "git commit -m 'fix: bug'",
+    "git:push": "git push origin main"
   },
   "dependencies": {
     "@react-three/drei": "^9.88.17",
