@@ -1,6 +1,6 @@
 # Tekkom x ThreeFiber
 
-This webpage serves as an informative platform, providing detailed explanations about the different components of a computer through the use of 3D simulations accompanied by comprehensive descriptions. 
+This webpage serves as an informative platform, providing detailed explanations about the different components of a computer through the use of 3D simulations using React ThreeFiber accompanied by comprehensive descriptions. 
 
 By exploring the interactive 3D objects, users can delve into the intricate details of each computer component, gaining insights into their visual attributes and functionalities. Whether it's understanding the physical appearance or comprehending the specific roles and operations of these components, this platform offers a comprehensive learning experience for individuals eager to expand their knowledge of computer systems.
 
