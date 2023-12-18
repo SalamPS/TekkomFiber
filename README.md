@@ -6,6 +6,11 @@ This project made to fulfill one of my Final Project Assignment. Feel free to ut
 
 [![Static Badge](https://img.shields.io/badge/node-20.10.0-1603)][node] [![Static Badge](https://img.shields.io/badge/bun-1.0.16-f472b6)][bun1.0.16] [![Static Badge](https://img.shields.io/badge/React-18.2.0-087ea4)][react] [![Static Badge](https://img.shields.io/badge/Vite-v4-ffdb33)][vite]
 
+## About
+
+This webpage serves as an informative platform, providing detailed explanations about the different components of a computer through the use of 3D simulations accompanied by comprehensive descriptions. 
+
+By exploring the interactive 3D objects, users can delve into the intricate details of each computer component, gaining insights into their visual attributes and functionalities. Whether it's understanding the physical appearance or comprehending the specific roles and operations of these components, this platform offers a comprehensive learning experience for individuals eager to expand their knowledge of computer systems.
 
 ## Installation
 
