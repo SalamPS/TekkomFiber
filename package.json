@@ -8,7 +8,15 @@
     "build": "bun run build:client && bun run build:server",
     "build:client": "vite build --ssrManifest --outDir dist/client",
     "build:server": "vite build --ssr src/entry-server.jsx --outDir dist/server",
-    "preview": "cross-env NODE_ENV=production node server"
+    "preview": "cross-env NODE_ENV=production node server",
+
+    "fixui": "git-add && git-fui && git-push",
+    "fixbug": "git-add && git-fbug && git-push",
+
+    "git-add": "git add .",
+    "git-fui": "git commit -m 'fix: ui'",
+    "git-fbug": "git commit -m 'fix: bug'",
+    "git-push": "git push origin main"
   },
   "dependencies": {
     "@react-three/drei": "^9.88.17",
