@@ -8,7 +8,7 @@ This project made to fulfill one of my Final Project Assignment. Feel free to ut
 
 ---
 
-[![Static Badge](https://img.shields.io/badge/node-20.10.0-1603)][node] [![Static Badge](https://img.shields.io/badge/bun-1.0.16-f472b6)][bun1.0.16] [![Static Badge](https://img.shields.io/badge/React-18.2.0-087ea4)][react] [![Static Badge](https://img.shields.io/badge/NextJS-14-161616)][next]
+[![Static Badge](https://img.shields.io/badge/node-20.10.0-1603)][node] [![Static Badge](https://img.shields.io/badge/bun-1.0.16-f472b6)][bun1.0.16] [![Static Badge](https://img.shields.io/badge/ReactJS-18-087ea4)][react] [![Static Badge](https://img.shields.io/badge/NextJS-14-161616)][next]
 
 ## Installation
 
