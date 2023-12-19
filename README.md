@@ -40,7 +40,7 @@ MIT
 
 ## Preview
 
-![preview](./public/assets/preview.png)
+![preview](./public/preview.png)
 
 Thanks to all my friends for helping me finish this project. Cheers! 🥂
 
