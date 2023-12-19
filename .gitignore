@@ -12,6 +12,8 @@
 *.scss
 *.css.map
 
+*.zip
+
 public/*/textures
 public/*/*.gltf
 public/*/*.bin
