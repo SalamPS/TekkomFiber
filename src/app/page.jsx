@@ -1,10 +1,12 @@
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable react/prop-types */
+'use client'
 
 // import { useState } from "react"
-import Box from "../canvas/Box"
-import object from './object'
-import { useNavigate, Link } from "react-router-dom"
+import Box from "../components/Box"
+import object from '../components/object'
+import styles from './index.css'
+
+import Link from 'next/link';
+import Image from 'next/image'
 
 const demo3D = new object('demo','block','3dblock',
   {
@@ -25,13 +27,19 @@ const parts = [
 ]
 
 function App() {
-  const navigate = useNavigate();
   const scroll = id => { 
     document.querySelector(`#${id}`).scrollIntoView()
   }
   return (
     <div id='App'>
-      <img src="./assets/closeup.jpg" alt="closeup" className='closeup prl700'/>
+      <Image
+        src="/closeup.jpg"
+        alt="closeup"
+        className='closeup prl700'
+        layout="fill"
+        objectFit="cover"
+        priority
+      />
 
       <nav className="navbar">
         <div className="collapse navbar-collapse" id="navbarNav">
@@ -78,7 +86,13 @@ function App() {
               <button className="visit">Learn More</button>
             </div>
             <div className="context">
-              <img width="300px" src="./assets/arduino.png" alt="arduino" />
+              <Image
+                src="/arduino.png"
+                alt="arduino"
+                width={300}
+                height={300}
+                priority
+              />
             </div>
           </div>
         </div>
@@ -93,7 +107,7 @@ function App() {
           </div>
           <div className="content">
             <button className="learn">
-              <Link to={'https://docs.pmnd.rs/react-three-fiber/getting-started/introduction'} target="_blank">Read Docs</Link>
+              <a to={'https://docs.pmnd.rs/react-three-fiber/getting-started/introduction'} target="_blank">Read Docs</a>
             </button>
           </div>
           <div className="content">
@@ -120,15 +134,21 @@ function App() {
         <div className="block">
           {
             parts.map(part => (
-              <div key={part.src} onClick={() => {navigate(`/viewer/${part.url}`)}} className="item">
+              <Link key={part.src} href={`/view/${part.url}`} className="item">
                 <div className="thumbnail">
-                  <img src={`./assets/${part.src}.png`} alt={part.name} />
+                  <Image
+                    src={`/${part.src}.png`}
+                    alt="arduino"
+                    width={200}
+                    height={200}
+                    priority
+                  />
                 </div>
                 <div className="preview">
                   <div className="title">{part.name}</div>
                   <div className="prev">{part.prev}</div>
                 </div>
-              </div>
+              </Link>
             ))
           }
         </div>

@@ -50,7 +50,7 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
 
   return (
     <>
-      <group ref={group} scale={scale} position={[pos[0],pos[1],pos[2]]} rotation={[rot[0],rot[1],rot[2]]}/>
+      <group ref={group} scale={scale} position={pos ? [pos[0],pos[1],pos[2]] : [0,0,0]} rotation={rot ? [rot[0],rot[1],rot[2]] : [0,0,0]}/>
       <hemisphereLight intensity={(light? light : 5)} groundColor='black' />
       <spotLight
         position={[20, 50, 10]}

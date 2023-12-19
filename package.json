@@ -1,50 +1,30 @@
 {
-  "name": "3dtekkom",
+  "name": "tfnext",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "node server",
-    "build": "bun run build:client && bun run build:server",
-    "build:client": "vite build --ssrManifest --outDir dist/client",
-    "build:server": "vite build --ssr src/entry-server.jsx --outDir dist/server",
-    "preview": "cross-env NODE_ENV=production node server",
-
-    "fui": "bun run git:add && bun run git:fui && bun run git:push",
-    "fbug": "bun run git:add && bun run git:fbug && bun run git:push",
-
-    "git:add": "git add .",
-    "git:fui": "git commit -m 'fix: ui'",
-    "git:fbug": "git commit -m 'fix: bug'",
-    "git:push": "git push origin main"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/drei": "^9.88.17",
-    "@react-three/fiber": "^8.15.11",
-    "bootstrap": "^5.3.2",
-    "bootstrap-icons": "^1.11.2",
-    "compression": "^1.7.4",
-    "express": "^4.18.2",
-    "framer-motion": "^10.16.5",
-    "maath": "^0.10.4",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.9.1",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.0",
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
+    "@react-three/drei": "^9.92.4",
+    "@react-three/fiber": "^8.15.12",
+    "framer-motion": "^10.16.16",
+    "maath": "^0.10.7",
+    "next": "^14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
-    "sirv": "^2.0.3",
-    "three": "^0.158.0"
+    "sharp": "^0.33.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
-    "@vitejs/plugin-react": "^4.2.0",
-    "eslint": "^8.53.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.4",
-    "tailwindcss": "^3.3.5",
-    "vite": "^5.0.0"
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3"
   }
 }

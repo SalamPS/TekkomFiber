@@ -1,7 +1,12 @@
-/* eslint-disable react/prop-types */
-import { useParams } from "react-router-dom";
-import Box from "../canvas/Box";
+'use client'
+
 import { useState } from "react";
+
+import Box from "../../components/Box";
+import styles from './viewer.css'
+
+import Image from 'next/image'
+import { useRouter } from 'next/router';
 
 class object {
   constructor (type,name,desc,prop,origin) {
@@ -115,10 +120,9 @@ const list = [
   )
 ];
 
-const View = ({view, toggleView}) => {
-  const {part} = useParams();
+const View = ({part, view, toggleView}) => {
   const show = list.find(item => item.type == part);
-  const prop = show.prop;
+  const prop = show ? show.prop : {};
 
   const [toggle, setToggle] = useState(false);
   const toggleSpeed = () => {
@@ -131,7 +135,7 @@ const View = ({view, toggleView}) => {
         <button className={`view ${view ? "" : "-hide"}`} title="Jump Before">
           <span className="bi bi-arrow-bar-left"></span>
         </button>
-        <button className={`view ${view ? "" : "-hide"} ${(prop.speed.some(speedValue => speedValue !== 0) ? "show" : "hide")}`} onClick={toggleSpeed} >
+        <button className={`view ${view ? "" : "-hide"} ${(prop.speed ? (prop.speed.some(speedValue => speedValue !== 0) ? "show" : "hide") : 0)}`} onClick={toggleSpeed} >
           <span className={`bi bi-toggle-${toggle ? "on" : "off"}`}></span>
         </button>
       </div>
@@ -163,8 +167,7 @@ const View = ({view, toggleView}) => {
   </>
 }
 
-const Bar = ({view}) => {
-  const {part} = useParams();
+const Bar = ({part, view}) => {
   const show = list.find(item => item.type == part);
 
   const [hide, setHide] = useState(false);
@@ -179,15 +182,15 @@ const Bar = ({view}) => {
           <span className={`bi bi-chevron-compact-${hide ? "left" : "right"}`}></span>
         </div>
         <div className={`del ${hide ? "hidden" : ""}`} id="content">
-          <h1>{show.name}</h1>
-          <p>{show.desc}</p>
+          <h1>{show ? show.name : ''}</h1>
+          <p>{show ? show.desc : ''}</p>
         </div>
       </div>
     </>
   )
 }
 
-function Viewer() {
+function Viewer({part}) {
   const [view, setView] = useState(true);
   const toggleView = () => {
     setView(!view);
@@ -197,11 +200,17 @@ function Viewer() {
     <div id="Viewer">
       <div className="title">
         {/* <img src="/TekkomFiber/assets/tekkom.png" alt="Tkm"/> */}
-        <img src="/assets/tekkom.png" alt="Tkm"/>
+        <Image
+          src="/tekkom.png"
+          alt="Tekkom"
+          width={100}
+          height={40}
+          priority
+        />
       </div>
 
-      <View view={view} toggleView={toggleView}/>
-      <Bar view={view}/>
+      <View part={part} view={view} toggleView={toggleView}/>
+      <Bar part={part} view={view}/>
     </div>
   )
 }
