@@ -1,6 +1,6 @@
-import { Inter } from 'next/font/google'
 import './globals.css'
 import { Nova_Square } from 'next/font/google'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const nova = Nova_Square({subsets: ['latin'], weight: '400'})
 
