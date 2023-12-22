@@ -31,8 +31,9 @@ function Components() {
           <span className='title'>Components List</span>
         </div>
         <div className="body">
-          {Object.entries(sectors).map(([sector]) => (
+          {Object.entries(sectors).map(([sector, item]) => (
             <div key={sector} className='box'>
+              <span className={`icon ${item.icon}`}></span>
               <span className="title">{sector.toUpperCase()}</span>
             </div>
           ))}
