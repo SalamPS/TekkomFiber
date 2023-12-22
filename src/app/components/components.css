@@ -4,4 +4,50 @@
   overflow: hidden;
   height: 100vh;
   width: 100vw;
+  display: flex;
+}
+#Components .particles {
+  z-index: 1;
+}
+#Components #sectorList {
+  position: relative;
+  color: #1F2041;
+  z-index: 2;
+}
+@media screen and (min-width: 1000px) {
+  #Components #sectorList {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(232, 241, 242, 0.8666666667);
+  }
+}
+#Components #sectorList .head {
+  box-shadow: 0 2px 3px rgba(31, 32, 65, 0.3333333333);
+  font-size: 24px;
+  padding: 20px;
+  width: 100%;
+}
+#Components #sectorList .head .title {
+  display: inline-block;
+  margin-left: 5px;
+}
+#Components #sectorList .body {
+  padding: 20px;
+}
+#Components #sectorList .body .box {
+  color: white;
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: rgba(31, 32, 65, 0.3333333333);
+  border-radius: 10px;
+  padding: 10px;
+}
+#Components #sectorPreview {
+  position: relative;
+  flex-grow: 1;
+  z-index: 2;
+}
+#Components #sectorPreview.shown {
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
 }/*# sourceMappingURL=components.css.map */
