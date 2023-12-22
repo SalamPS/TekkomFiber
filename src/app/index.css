@@ -1,5 +1,7 @@
 #App {
+  overflow: hidden;
   text-align: center;
+  position: relative;
 }
 @keyframes parallax-1200 {
   to {
@@ -189,7 +191,6 @@
   margin-bottom: 10px;
 }
 #App #about .content {
-  margin-top: 50px;
   flex-grow: 1;
 }
 @media screen and (max-width: 600px) {
@@ -199,19 +200,38 @@
 }
 @media screen and (min-width: 600px) {
   #App #about .content {
+    margin-top: 50px;
     padding: 0 50px;
   }
 }
 #App #about #intro {
-  padding: 0 150px;
   display: flex;
+}
+@media screen and (min-width: 500px) {
+  #App #about #intro {
+    padding: 0 150px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #App #about #intro {
+    flex-direction: column-reverse;
+  }
 }
 #App #about #intro div {
   align-self: center;
 }
 #App #about #intro .text {
-  padding-right: 150px;
   text-align: left;
+}
+@media screen and (min-width: 500px) {
+  #App #about #intro .text {
+    padding-right: 150px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #App #about #intro .text {
+    margin-top: 30px;
+  }
 }
 #App #about #intro .visit {
   background-color: #1F2041;
@@ -221,6 +241,11 @@
   border: none;
   cursor: pointer;
   margin: 20px 0;
+}
+@media screen and (max-width: 500px) {
+  #App #about #intro .context {
+    scale: 0.7;
+  }
 }
 #App #about #intro .context img {
   animation: moveUpLeft 3s linear infinite;
@@ -233,8 +258,12 @@
   justify-content: center;
   margin-top: 20px;
 }
+@media screen and (max-width: 500px) {
+  #App #about #more .cards {
+    flex-direction: column;
+  }
+}
 #App #about #more .card {
-  width: 320px;
   padding: 40px 30px 80px 30px;
   background-color: #222447;
   border-radius: 20px;
@@ -243,6 +272,11 @@
   text-wrap: balance;
   transition: 0.2s;
   box-shadow: 7px 7px rgba(37, 61, 65, 0.388);
+}
+@media screen and (min-width: 500px) {
+  #App #about #more .card {
+    width: 320px;
+  }
 }
 #App #about #more .card:hover {
   scale: 1.02;

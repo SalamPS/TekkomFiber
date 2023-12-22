@@ -39,7 +39,6 @@ function App() {
         className='closeup prl700'
         width={1000}
         height={1000}
-        priority
       />
 
       <nav className="navbar">
