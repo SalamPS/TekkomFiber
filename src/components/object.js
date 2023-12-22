@@ -1,5 +1,5 @@
 class object {
-  constructor (type,name,desc,prop,sector,origin) {
+  constructor (type,name,desc,sector,prop,origin) {
     this.type = type;
     this.name = name;
     this.desc = desc;
