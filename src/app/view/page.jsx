@@ -141,7 +141,7 @@ const View = ({part, view, toggleView, togglePad}) => {
         </button>
       </div>
       <div id="navigate">
-        <button className={`view ${view ? "" : "-hide"}`} title="Controls">
+        <button className={`view ${view ? "" : "-hide"}`} title="Controls" onClick={togglePad}>
           <span className="bi bi-dpad"></span>
         </button>
         <button className={`view ${view ? "" : "-hide"}`} title="Visit 3D Asset Original Source" onClick={() => window.open(show.origin, '_blank')}>
@@ -164,14 +164,14 @@ const View = ({part, view, toggleView, togglePad}) => {
         </button>
       </div>
     </div>
-    <Box
+    {/* <Box
       scale={prop.scale ? prop.scale : 1}
       speed={toggle ? prop.speed : [0,0,0]}
       light={prop.light}
       pos={prop.pos}
       rot={prop.rot}
       src={prop.src}
-    />
+    /> */}
   </>
 }
 
@@ -208,12 +208,30 @@ function Viewer({part}) {
   const [view, setView] = useState(true);
   const toggleView = () => setView(!view);
 
+  const [dsp, setDsp] = useState(false);
   const [pad, setPad] = useState(false);
-  const togglePad = () => setPad(!pad);
+  const togglePad = () => {
+    if (!pad) {
+      setDsp(!dsp);
+      setTimeout(() => {
+        setPad(!pad);
+      }, 10);
+    }
+    else {
+      setPad(!pad);
+      setTimeout(() => {
+        setDsp(!dsp);
+      }, 300);
+    }
+  }
 
   return (
     <div id="Viewer">
-      .
+      <div className={`pad ${dsp ? 'dsp' : ''} ${pad ? 'show' : ''}`}>
+        <div className="container">
+          <span className="bi bi-x-lg" onClick={togglePad}></span>
+        </div>
+      </div>
       <div className="title">
         <Image
           src="/tekkom.png"
