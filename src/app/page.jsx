@@ -162,7 +162,7 @@ function App() {
           <div className="block">
             {
               parts.map(part => (
-                <Link key={part.src} href={`/view/${part.url}`} className="item">
+                <Link key={part.src} href={`/components/gpu/${part.url}`} className="item">
                   <div className="thumbnail">
                     <Image
                       src={`/${part.src}.png`}
