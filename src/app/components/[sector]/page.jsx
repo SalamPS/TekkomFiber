@@ -1,13 +1,9 @@
-import styles from './sector.css'
+// 'use client'
 
-import Image from 'next/image'
-import list from '../../../components/list'
+import Components from "../page"
 
 export default function Sector ({params}) {
-  const show = list.filter(item => item.sector == params.sector)
   return (
-    <div id="Sector">
-      All Components from Specific Sector Shown here
-    </div>
+    <Components params={params}/>
   )
 }
