@@ -392,14 +392,6 @@
   background-color: #1F2041;
   color: #F26430;
 }
-#App #exp .particles {
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  z-index: 4;
-  width: 100%;
-  height: 100%;
-}
 #App #exp .inner {
   position: relative;
   z-index: 10;

@@ -1,9 +1,11 @@
+'use client'
+
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
 import React, {useCallback} from 'react'
 
-export default function ParticlesContainer () {
+export default function ParticlesContainer ({amount}) {
   // const [init, setInit] = useState(false);
   let init = false;
   initParticlesEngine(async (engine) => {;
@@ -77,7 +79,7 @@ export default function ParticlesContainer () {
               enable: true,
               area: 800
             },
-            value: 40
+            value: amount
           },
           opacity: {
             value: 0.5

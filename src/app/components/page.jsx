@@ -2,11 +2,13 @@ import styles from './components.css'
 
 import Image from 'next/image'
 import list from '../../components/list'
+import ParticlesContainer from '../../components/ParticlesContainer'
 
 function Components() {
   return (
     <div id="Components">
-      All Sector Shown here
+      <ParticlesContainer amount={80}/>
+      All Sector Shown heree
     </div>
   )
 }

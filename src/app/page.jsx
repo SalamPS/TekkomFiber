@@ -156,7 +156,7 @@ function App() {
         </div>
       </div>
       <div id="exp">
-        <ParticlesContainer/>
+        <ParticlesContainer amount={40}/>
         <div className="inner">
           <h1 className="h1">Explore Components</h1>
           <div className="block">

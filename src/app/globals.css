@@ -84,6 +84,14 @@ body {
   scroll-behavior: smooth;
 }
 
+.particles {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
