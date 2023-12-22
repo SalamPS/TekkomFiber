@@ -1,3 +1,6 @@
+#App {
+  text-align: center;
+}
 @keyframes parallax-1200 {
   to {
     transform: translateY(1200px);
@@ -37,7 +40,9 @@
 #App .closeup {
   left: 0;
   position: absolute;
-  height: 100vmax;
+  height: 150vh;
+  width: auto;
+  filter: brightness(0.4);
 }
 #App .parallax {
   position: absolute;
@@ -91,7 +96,7 @@
   bottom: 0;
   width: 0px;
   height: 2px;
-  background-color: #2594aa;
+  background-color: #46bbd3;
 }
 #App nav .nav-item:hover::after {
   width: 150px;
@@ -115,6 +120,9 @@
 }
 #App #jumbotron .tagline {
   font-family: sticknobill, sans-serif;
+}
+#App #jumbotron h1 {
+  scale: 1.4;
 }
 #App .main {
   margin-bottom: 10vh;
@@ -167,7 +175,7 @@
   min-height: 90vh;
   color: #343841;
   position: relative;
-  background-color: #E8F1F2;
+  background: #e8f1f2;
 }
 #App #about .h1 {
   padding: 50px 0;
@@ -177,7 +185,11 @@
     font-size: 1.4rem;
   }
 }
+#App #about h2 {
+  margin-bottom: 10px;
+}
 #App #about .content {
+  margin-top: 50px;
   flex-grow: 1;
 }
 @media screen and (max-width: 600px) {
@@ -190,28 +202,60 @@
     padding: 0 50px;
   }
 }
-#App #about .content #intro {
+#App #about #intro {
   padding: 0 150px;
   display: flex;
 }
-#App #about .content #intro div {
+#App #about #intro div {
   align-self: center;
 }
-#App #about .content #intro .text {
+#App #about #intro .text {
   padding-right: 150px;
   text-align: left;
 }
-#App #about .content #intro .visit {
+#App #about #intro .visit {
   background-color: #1F2041;
   border-radius: 10px;
   padding: 10px 20px;
   font-weight: bold;
   border: none;
   cursor: pointer;
+  margin: 20px 0;
+}
+#App #about #intro .context img {
+  animation: moveUpLeft 3s linear infinite;
+}
+#App #about #more {
+  margin: 50px 0;
+}
+#App #about #more .cards {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
-#App #about .content #intro .context img {
-  animation: moveUpLeft 3s linear infinite;
+#App #about #more .card {
+  width: 320px;
+  padding: 40px 30px 80px 30px;
+  background-color: #222447;
+  border-radius: 20px;
+  color: white;
+  margin: 20px;
+  text-wrap: balance;
+  transition: 0.2s;
+  box-shadow: 7px 7px rgba(37, 61, 65, 0.388);
+}
+#App #about #more .card:hover {
+  scale: 1.02;
+  box-shadow: 9px 9px rgba(37, 61, 65, 0.188);
+}
+#App #about #more .card .sec {
+  margin-bottom: 10px !important;
+}
+#App #about #more .card p {
+  font-size: 13px;
+  line-height: 1.3;
+  margin-top: 30px;
+  text-align: left;
 }
 #App #three {
   z-index: 10;
@@ -309,10 +353,22 @@
 #App #exp {
   z-index: 9;
   position: relative;
-  min-height: 100vmin;
+  min-height: 100vh;
   padding-bottom: 50px;
   background-color: #1F2041;
   color: #F26430;
+}
+#App #exp .particles {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+#App #exp .inner {
+  position: relative;
+  z-index: 10;
 }
 @media screen and (min-width: 600px) {
   #App #exp {
@@ -352,7 +408,8 @@
 #App #exp .item {
   padding: 10px;
   transition: 0.2s;
-  background-color: #1a1b38;
+  background: rgb(26, 27, 56);
+  background: linear-gradient(130deg, rgb(26, 27, 56) 0%, rgba(28, 29, 60, 0.5) 46%, rgba(31, 32, 65, 0) 100%);
   border-radius: 10px 40px;
   display: flex;
 }
@@ -391,8 +448,6 @@
 }
 #App #exp .item .preview .prev {
   color: #e8f1f2;
-  -webkit-text-decoration: underline #1a1b38;
-          text-decoration: underline #1a1b38;
 }
 #App #exp .item:hover {
   background-color: #222447;

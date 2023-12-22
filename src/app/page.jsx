@@ -3,6 +3,7 @@
 // import { useState } from "react"
 import Box from "../components/Box"
 import object from '../components/object'
+import ParticlesContainer from '../components/ParticlesContainer'
 import styles from './index.css'
 
 import Link from 'next/link';
@@ -36,8 +37,8 @@ function App() {
         src="/closeup.jpg"
         alt="closeup"
         className='closeup prl700'
-        layout="fill"
-        objectFit="cover"
+        width={1000}
+        height={1000}
         priority
       />
 
@@ -80,8 +81,9 @@ function App() {
         <div className="content">
           <div id="intro">
             <div className="text">
+              <h2>What is it?</h2>
               <p>
-              Scientific discipline that includes computer science, computer design, construction technology, implementation and maintenance of modern computer software and hardware and computer-controlled equipment.
+              Computer Engineering is a scientific discipline that includes computer science, computer design, construction technology, implementation and maintenance of modern computer software and hardware and computer-controlled equipment.
               </p>
               <button className="visit">Learn More</button>
             </div>
@@ -89,10 +91,35 @@ function App() {
               <Image
                 src="/arduino.png"
                 alt="arduino"
-                width={300}
+                width={320}
                 height={300}
                 priority
               />
+            </div>
+          </div>
+        </div>
+        <div className="content">
+          <div id="more">
+            <h2>Area of Expertise</h2>
+            <div className="cards">
+              <div className="card">
+                <h3>Intelligent Device</h3>
+                <p>
+                  Studying the development of Device Design and Construction including Hardware & Software that applies the principles of Automation, Configuration as well as applications in fields such as industry, biomedicine, agriculture, electronics, mechatronics & robotics.
+                </p>
+              </div>
+              <div className="card">
+                <h3>Embedded System</h3>
+                <p>
+                  Studying Computer Architecture & Organization, implementing Embedded Systems & developing High Performance Computing technology prototypes, as well as reviewing Real Time System, Computer Graphic Image Processing, AR & VR technology.
+                </p>
+              </div>
+              <div className="card">
+                <h3>Network and Security</h3>
+                <p>
+                  Study the structure & application of Computer Networks, Computer Network analysis, types of Network Protocols & Interfaces. Implement Network Security and understand the concepts of Vulnerability, Cyber Attacks, Cryptography, & Ethical Hacking.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -102,7 +129,7 @@ function App() {
           <h1 className="h1">Three Fiber</h1>
           <div className="content">
             <p>
-            Seamlessly integrating React.js and Three.js, creating a visually engaging experience with real-time manipulation of 3D objects
+            Seamlessly integrating React.js and Three.js empowers the creation of a visually engaging and dynamically immersive experience, allowing for real-time manipulation and interaction with 3D objects.
             </p>
           </div>
           <div className="content">
@@ -130,30 +157,33 @@ function App() {
         </div>
       </div>
       <div id="exp">
-        <h1 className="h1">Explore Components</h1>
-        <div className="block">
-          {
-            parts.map(part => (
-              <Link key={part.src} href={`/view/${part.url}`} className="item">
-                <div className="thumbnail">
-                  <Image
-                    src={`/${part.src}.png`}
-                    alt="arduino"
-                    width={200}
-                    height={200}
-                    priority
-                  />
-                </div>
-                <div className="preview">
-                  <div className="title">{part.name}</div>
-                  <div className="prev">{part.prev}</div>
-                </div>
-              </Link>
-            ))
-          }
-        </div>
-        <div className="more">
-          <button>SHOW MORE</button>
+        <ParticlesContainer/>
+        <div className="inner">
+          <h1 className="h1">Explore Components</h1>
+          <div className="block">
+            {
+              parts.map(part => (
+                <Link key={part.src} href={`/view/${part.url}`} className="item">
+                  <div className="thumbnail">
+                    <Image
+                      src={`/${part.src}.png`}
+                      alt="arduino"
+                      width={200}
+                      height={200}
+                      priority
+                    />
+                  </div>
+                  <div className="preview">
+                    <div className="title">{part.name}</div>
+                    <div className="prev">{part.prev}</div>
+                  </div>
+                </Link>
+              ))
+            }
+          </div>
+          <div className="more">
+            <button>SHOW MORE</button>
+          </div>
         </div>
       </div>
     </div>
