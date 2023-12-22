@@ -91,15 +91,6 @@ const list = [
     src: 'ssd_samsung_980_pro_1tb'
   },"https://sketchfab.com/3d-models/ssd-samsung-980-pro-1tb-208b846d5a5948368b4ad0676bf4ab97"
   ),
-  new object('desktop', 'Desktop PC', 'Personal Computer', 'setup', 'pc-display', {
-    scale: 1,
-    speed: [0, 0, 0],
-    light: undefined,
-    pos: [0, 0, 0],
-    rot: [0, 0, 0],
-    src: 'desktop_pc'
-  },"https://sketchfab.com/3d-models/tforce-delta-ram-aee3bb8d00ff409986aca6009b91d5e8"
-  )
 ];
 
 export default list
