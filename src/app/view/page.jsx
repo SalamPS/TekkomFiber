@@ -229,7 +229,9 @@ function Viewer({part}) {
     <div id="Viewer">
       <div className={`pad ${dsp ? 'dsp' : ''} ${pad ? 'show' : ''}`}>
         <div className="container">
-          <span className="bi bi-x-lg" onClick={togglePad}></span>
+          <div className="head">
+            <span className="bi bi-x-lg" onClick={togglePad}></span>
+          </div>
         </div>
       </div>
       <div className="title">
