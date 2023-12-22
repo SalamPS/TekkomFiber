@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Box from "../../components/Box";
 import styles from './viewer.css'
@@ -120,7 +120,7 @@ const list = [
   )
 ];
 
-const View = ({part, view, toggleView}) => {
+const View = ({part, view, toggleView, togglePad}) => {
   const show = list.find(item => item.type == part);
   const prop = show ? show.prop : {};
 
@@ -131,12 +131,13 @@ const View = ({part, view, toggleView}) => {
 
   return <>
     <div className="control">
-      <div id="pages">
+      <div id="left">
         <button className={`view ${view ? "" : "-hide"}`} title="Jump Before">
           <span className="bi bi-arrow-bar-left"></span>
+          <span className="name">BACK</span>
         </button>
-        <button className={`view ${view ? "" : "-hide"} ${(prop.speed ? (prop.speed.some(speedValue => speedValue !== 0) ? "show" : "hide") : 0)}`} onClick={toggleSpeed} >
-          <span className={`bi bi-toggle-${toggle ? "on" : "off"}`}></span>
+        <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
+          <span className="bi bi-house"></span>
         </button>
       </div>
       <div id="navigate">
@@ -151,10 +152,17 @@ const View = ({part, view, toggleView}) => {
         </button>
       </div>
     </div>
-    <div className="control" id="pages">
-      <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
-        <span className="bi bi-arrow-bar-right"></span>
-      </button>
+    <div className="control r">
+      <div id="right">
+        <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
+          <span className="name">NEXT</span>
+          <span className="bi bi-arrow-bar-right"></span>
+        </button>
+        <button 
+          className={`view ${view ? "" : "-hide"} ${(prop.speed ? (prop.speed.some(speedValue => speedValue !== 0) ? "show" : "hide") : 0)}`} onClick={toggleSpeed} >
+          <span className={`bi bi-toggle-${toggle ? "on" : "off"}`}></span>
+        </button>
+      </div>
     </div>
     <Box
       scale={prop.scale ? prop.scale : 1}
@@ -190,16 +198,23 @@ const Bar = ({part, view}) => {
   )
 }
 
+const ControlPad = ({}) => {
+  return (
+    <></>
+  )
+}
+
 function Viewer({part}) {
   const [view, setView] = useState(true);
-  const toggleView = () => {
-    setView(!view);
-  }
+  const toggleView = () => setView(!view);
+
+  const [pad, setPad] = useState(false);
+  const togglePad = () => setPad(!pad);
 
   return (
     <div id="Viewer">
+      .
       <div className="title">
-        {/* <img src="/TekkomFiber/assets/tekkom.png" alt="Tkm"/> */}
         <Image
           src="/tekkom.png"
           alt="Tekkom"
@@ -209,7 +224,7 @@ function Viewer({part}) {
         />
       </div>
 
-      <View part={part} view={view} toggleView={toggleView}/>
+      <View part={part} view={view} toggleView={toggleView} togglePad={togglePad}/>
       <Bar part={part} view={view}/>
     </div>
   )

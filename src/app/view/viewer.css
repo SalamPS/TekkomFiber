@@ -1,4 +1,5 @@
 #Viewer {
+  position: relative;
   overflow: hidden;
   height: 100vh;
   width: 100vw;
@@ -11,6 +12,12 @@
   width: 100%;
   margin-top: 20px;
 }
+#Viewer .-hide {
+  opacity: 0;
+}
+#Viewer .view {
+  transition: 0.3s;
+}
 #Viewer .control {
   top: 0;
   left: 0;
@@ -21,14 +28,30 @@
   flex-direction: column;
   justify-content: space-between;
 }
-#Viewer .control#pages {
+#Viewer .control .name {
+  display: inline-block;
+  font-size: 14px;
+  transform: translateY(-2.5px);
+  margin: 0 5px;
+}
+#Viewer .control.r {
   left: auto;
   right: 0;
+  direction: rtl;
 }
-#Viewer .control #pages button, #Viewer .control#pages button {
+#Viewer .control.r button {
+  direction: ltr;
+}
+#Viewer .control #right button, #Viewer .control #left button {
   background-color: #2374ab;
   border-radius: 10px;
   padding-top: 10px;
+}
+#Viewer .control #right button:hover {
+  translate: -5px 0;
+}
+#Viewer .control #left button:hover {
+  translate: 5px 0;
 }
 #Viewer .control #navigate button {
   margin-top: 15px;
