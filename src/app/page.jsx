@@ -9,7 +9,7 @@ import styles from './index.css'
 import Link from 'next/link';
 import Image from 'next/image'
 
-const demo3D = new object('demo','block','3dblock',
+const demo3D = new object('demo','block','3dblock','blocks',
   {
     scale: 3,
     speed: [0, 0, 0],
