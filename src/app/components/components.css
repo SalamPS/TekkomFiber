@@ -1,5 +1,6 @@
 #Components {
-  background-color: #1f2041;
+  background: rgb(56, 58, 112);
+  background: linear-gradient(90deg, rgb(56, 58, 112) 0%, rgb(31, 32, 65) 100%);
   position: relative;
   overflow: hidden;
   height: 100vh;
@@ -16,14 +17,14 @@
 }
 @media screen and (min-width: 1000px) {
   #Components #sectorList {
-    width: 20%;
+    min-width: 20%;
     height: 100%;
-    background-color: rgba(232, 241, 242, 0.7333333333);
+    background-color: rgba(232, 241, 242, 0.5333333333);
   }
 }
 #Components #sectorList .head {
   box-shadow: 0 2px 3px rgba(31, 32, 65, 0.3333333333);
-  background-color: rgba(232, 241, 242, 0.4666666667);
+  background-color: rgba(232, 241, 242, 0.6);
   font-size: 24px;
   padding: 20px;
   width: 100%;
@@ -36,17 +37,18 @@
   padding: 20px;
 }
 #Components #sectorList .body .box {
+  display: block;
   width: 100%;
   padding: 10px;
   color: white;
   cursor: pointer;
   margin-bottom: 10px;
-  background-color: rgba(31, 32, 65, 0.4666666667);
+  background-color: rgba(31, 32, 65, 0.6);
   border-radius: 10px;
   transition: 0.2s;
 }
 #Components #sectorList .body .box:hover {
-  background-color: rgba(31, 32, 65, 0.6666666667);
+  background-color: rgba(31, 32, 65, 0.8666666667);
 }
 #Components #sectorList .body .box .icon {
   margin-right: 10px;
@@ -59,4 +61,25 @@
 #Components #sectorPreview.shown {
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
+}
+#Components #sectorPreview #preview {
+  height: 100vh;
+  display: flex;
+  text-align: right;
+  place-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#Components #sectorPreview #preview .tag {
+  width: 100%;
+}
+#Components #sectorPreview #preview h1 {
+  font-family: marsBold, sans-serif;
+  font-size: 4rem;
+}
+#Components #sectorPreview #preview h2 {
+  text-wrap: balance;
+  margin-top: 10px;
+  margin-right: 40px;
+  font-weight: lighter;
 }/*# sourceMappingURL=components.css.map */
