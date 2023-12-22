@@ -42,7 +42,7 @@ MIT
 
 ![preview](./public/preview.png)
 
-Thanks to all my friends for helping me finish this project. Cheers! 🥂
+Thanks to all my friends for helping me on this project. Cheers! 🥂
 
 [node]: https://nodejs.org/en/blog/release/v20.10.0
 [bun]: https://bun.sh/docs
