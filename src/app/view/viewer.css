@@ -139,6 +139,23 @@
   width: 0;
   padding: 0;
 }
+#Viewer .explainer .head {
+  display: flex;
+  justify-content: space-between;
+}
+#Viewer .explainer button {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #3985b8;
+  transition: 0.3s;
+}
+#Viewer .explainer button:hover {
+  box-shadow: 3px 3px 2px #165783;
+}
+#Viewer .explainer p {
+  margin-top: 5px;
+}
 @media screen and (max-width: 1000px) {
   #Viewer .explainer {
     min-height: 30%;

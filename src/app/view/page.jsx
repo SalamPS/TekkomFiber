@@ -120,7 +120,7 @@ const list = [
   )
 ];
 
-const View = ({part, view, toggleView, togglePad}) => {
+const View = ({part, view, toggleView}) => {
   const show = list.find(item => item.type == part);
   const prop = show ? show.prop : {};
 
@@ -141,9 +141,6 @@ const View = ({part, view, toggleView, togglePad}) => {
         </button>
       </div>
       <div id="navigate">
-        <button className={`view ${view ? "" : "-hide"}`} title="Controls" onClick={togglePad}>
-          <span className="bi bi-dpad"></span>
-        </button>
         <button className={`view ${view ? "" : "-hide"}`} title="Visit 3D Asset Original Source" onClick={() => window.open(show.origin, '_blank')}>
           <span className="bi bi-arrow-up-right-circle"></span>
         </button>
@@ -175,7 +172,7 @@ const View = ({part, view, toggleView, togglePad}) => {
   </>
 }
 
-const Bar = ({part, view}) => {
+const Bar = ({part, view, togglePad}) => {
   const show = list.find(item => item.type == part);
 
   const [hide, setHide] = useState(false);
@@ -190,7 +187,10 @@ const Bar = ({part, view}) => {
           <span className={`bi bi-chevron-compact-${hide ? "left" : "right"}`}></span>
         </div>
         <div className={`del ${hide ? "hidden" : ""}`} id="content">
-          <h1>{show ? show.name : ''}</h1>
+          <div className="head">
+            <h1>{show ? show.name : ''}</h1>
+            <button title="show" onClick={togglePad}>Show more</button>
+          </div>
           <p>{show ? show.desc : ''}</p>
         </div>
       </div>
@@ -198,7 +198,7 @@ const Bar = ({part, view}) => {
   )
 }
 
-const ControlPad = ({}) => {
+const DescPad = ({}) => {
   return (
     <></>
   )
@@ -242,8 +242,8 @@ function Viewer({part}) {
         />
       </div>
 
-      <View part={part} view={view} toggleView={toggleView} togglePad={togglePad}/>
-      <Bar part={part} view={view}/>
+      <View part={part} view={view} toggleView={toggleView}/>
+      <Bar part={part} view={view} togglePad={togglePad}/>
     </div>
   )
 }
