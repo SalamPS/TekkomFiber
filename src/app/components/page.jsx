@@ -7,7 +7,7 @@ import Image from 'next/image'
 import list from '../../components/list'
 import ParticlesContainer from '../../components/ParticlesContainer'
 
-function Components() {
+function Components({params}) {
   const [active, setActive] = useState(-1)
 
   const sectors = list.reduce((result, item) => {
@@ -33,14 +33,14 @@ function Components() {
         <div className="body">
           {Object.entries(sectors).map(([sector, item]) => (
             <div key={sector} className='box'>
-              <span className={`icon ${item.icon}`}></span>
+              <span className={`icon bi bi-${item[0].icon}`}></span>
               <span className="title">{sector.toUpperCase()}</span>
             </div>
           ))}
         </div>
       </div>
       <div id="sectorPreview">
-
+        {params.sector ? <>Sector</> : <></>}
       </div>
     </div>
   )

@@ -18,11 +18,12 @@
   #Components #sectorList {
     width: 20%;
     height: 100%;
-    background-color: rgba(232, 241, 242, 0.8666666667);
+    background-color: rgba(232, 241, 242, 0.7333333333);
   }
 }
 #Components #sectorList .head {
   box-shadow: 0 2px 3px rgba(31, 32, 65, 0.3333333333);
+  background-color: rgba(232, 241, 242, 0.4666666667);
   font-size: 24px;
   padding: 20px;
   width: 100%;
@@ -39,13 +40,16 @@
   padding: 10px;
   color: white;
   cursor: pointer;
-  margin-bottom: 5px;
-  background-color: rgba(31, 32, 65, 0.3333333333);
+  margin-bottom: 10px;
+  background-color: rgba(31, 32, 65, 0.4666666667);
   border-radius: 10px;
   transition: 0.2s;
 }
 #Components #sectorList .body .box:hover {
-  background-color: rgba(31, 32, 65, 0.5333333333);
+  background-color: rgba(31, 32, 65, 0.6666666667);
+}
+#Components #sectorList .body .box .icon {
+  margin-right: 10px;
 }
 #Components #sectorPreview {
   position: relative;
