@@ -1,42 +1,43 @@
 class buildSector {
-  constructor (sector,icon,desc) {
+  constructor (sector,name,icon,desc) {
     this.sector = sector;
+    this.name = name;
     this.icon = icon;
     this.desc = desc;
   }
 }
 
 const sector = [
-  new buildSector('gpu', 'gpu-card',
+  new buildSector('gpu', 'Graphic Processing Unit', 'gpu-card',
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac risus nec metus consequat cursus. Aliquam erat volutpat. Duis nec purus nec tortor commodo condimentum vel ut odio."),
-  
-  new buildSector('display', 'tv-fill',
+
+  new buildSector('display', 'Display Monitor', 'tv-fill',
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac risus nec metus consequat cursus. Aliquam erat volutpat. Duis nec purus nec tortor commodo condimentum vel ut odio."),
-  
-  new buildSector('motherboard', 'motherboard-fill',
+
+  new buildSector('motherboard', 'Motherboard', 'motherboard-fill',
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac risus nec metus consequat cursus. Aliquam erat volutpat. Duis nec purus nec tortor commodo condimentum vel ut odio."),
-  
-  new buildSector('ram', 'memory-k',
+
+  new buildSector('ram', 'Random Access Memory', 'memory',
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac risus nec metus consequat cursus. Aliquam erat volutpat. Duis nec purus nec tortor commodo condimentum vel ut odio."),
-  
-  new buildSector('cpu', 'cpu-fill',
+
+  new buildSector('cpu', 'Central Processing Unit', 'cpu-fill',
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac risus nec metus consequat cursus. Aliquam erat volutpat. Duis nec purus nec tortor commodo condimentum vel ut odio."),
-  
-  new buildSector('mouse', 'mouse3-fill',
+
+  new buildSector('mouse', 'Mouse as Pointer', 'mouse3-fill',
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac risus nec metus consequat cursus. Aliquam erat volutpat. Duis nec purus nec tortor commodo condimentum vel ut odio."),
-  
-  new buildSector('keyboard', 'keyboard-fill',
+
+  new buildSector('keyboard', 'Keyboard', 'keyboard-fill',
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac risus nec metus consequat cursus. Aliquam erat volutpat. Duis nec purus nec tortor commodo condimentum vel ut odio."),
-  
-  new buildSector('cooling', 'fan-k',
+
+  new buildSector('cooling', 'Cooling System', 'fan',
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac risus nec metus consequat cursus. Aliquam erat volutpat. Duis nec purus nec tortor commodo condimentum vel ut odio."),
-  
-  new buildSector('speaker', 'speaker-fill',
+
+  new buildSector('speaker', 'Speaker', 'speaker-fill',
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac risus nec metus consequat cursus. Aliquam erat volutpat. Duis nec purus nec tortor commodo condimentum vel ut odio."),
-  
-  new buildSector('storage', 'hdd-fill',
+
+  new buildSector('storage', 'Storage', 'hdd-fill',
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac risus nec metus consequat cursus. Aliquam erat volutpat. Duis nec purus nec tortor commodo condimentum vel ut odio."),
-  
+
 ];
 
 export default sector

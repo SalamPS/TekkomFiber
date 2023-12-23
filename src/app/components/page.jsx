@@ -8,15 +8,24 @@ import Image from 'next/image'
 import list from '../../components/list'
 import ParticlesContainer from '../../components/ParticlesContainer'
 
-const Sector = () => {
-  
-}
-
 const Preview = () => {
   return (
     <div id="preview">
       <h1 className='tag'>Tekkom.3Fiber</h1>
       <h2 className='tag'>Dive into a dynamic visual experience, interact with intricate details, and gain insights into the inner workings of Computer components</h2>
+    </div>
+  )
+}
+
+const Sector = ({sector}) => {
+  return (
+    <div id="sector">
+      <div id="list">
+        A
+      </div>
+      <div id="desc">
+        <h1>{sector.toUpperCase()}</h1>
+      </div>
     </div>
   )
 }
@@ -56,7 +65,7 @@ function Components({params}) {
         </div>
       </div>
       <div id="sectorPreview">
-        {params.sector ? <Sector/> : <Preview/>}
+        {params.sector ? <Sector sector={params.sector}/> : <Preview/>}
       </div>
     </div>
   )

@@ -11,10 +11,11 @@
   z-index: 1;
 }
 #Components #sectorList {
-  position: relative;
+  z-index: 3;
   color: #1F2041;
-  z-index: 2;
+  position: relative;
   background-color: rgba(232, 241, 242, 0.5333333333);
+  box-shadow: 5px 0 50px rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 700px) {
   #Components #sectorList {
@@ -79,7 +80,7 @@
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
 }
-#Components #sectorPreview #preview {
+#Components #preview {
   height: 100vh;
   display: flex;
   text-align: right;
@@ -87,16 +88,31 @@
   justify-content: center;
   flex-direction: column;
 }
-#Components #sectorPreview #preview .tag {
+#Components #preview .tag {
   width: 100%;
 }
-#Components #sectorPreview #preview h1 {
+#Components #preview h1 {
   font-family: marsBold, sans-serif;
   font-size: 4rem;
 }
-#Components #sectorPreview #preview h2 {
+#Components #preview h2 {
   text-wrap: balance;
   margin-top: 10px;
   margin-right: 40px;
   font-weight: lighter;
+}
+#Components #sector #list {
+  height: 300px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+#Components #sector #desc {
+  padding: 20px;
+  background-color: rgba(31, 32, 65, 0.8666666667);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  height: calc(100vh - 300px);
+}
+#Components #sector #desc h1 {
+  font-size: 3rem;
 }/*# sourceMappingURL=components.css.map */
