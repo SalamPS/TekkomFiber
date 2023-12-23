@@ -21,10 +21,10 @@ const demo3D = new object('demo','block','3dblock','blocks','box',
 )
 
 const parts = [
-  {name : "Virtual Graphics Array", url: "vga", src:"vga0", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-  {name : "Virtual Graphics Array", url: "vga", src:"vga1", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-  {name : "Virtual Graphics Array", url: "vga", src:"vga2", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-  {name : "Virtual Graphics Array", url: "vga", src:"vga3", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+  {name : "Graphic Processing Unit", url: "gpu", src:"vga0", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  {name : "Display Monitor", url: "display", src:"vga1", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  {name : "Motherboard", url: "motherboard", src:"vga2", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  {name : "Random Access Memory", url: "ram", src:"vga3", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
 ]
 
 function App() {
@@ -162,7 +162,7 @@ function App() {
           <div className="block">
             {
               parts.map(part => (
-                <Link key={part.src} href={`/components/gpu/${part.url}`} className="item">
+                <Link key={part.src} href={`/components/${part.url}`} className="item">
                   <div className="thumbnail">
                     <Image
                       src={`/${part.src}.png`}
@@ -181,7 +181,9 @@ function App() {
             }
           </div>
           <div className="more">
-            <button>SHOW MORE</button>
+            <Link href="/components/">
+              <button>SHOW MORE</button>
+            </Link>
           </div>
         </div>
       </div>
