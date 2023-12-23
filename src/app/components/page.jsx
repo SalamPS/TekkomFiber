@@ -66,19 +66,31 @@ function Components({params}) {
           </div>
         </Link>
         <div className="body">
-          {Object.entries(sectors).map(([sector, item]) => (
-            <Link key={sector} className={`box ${params.sector == sector ? 'active' : ''}`} href={`/components/${sector}`}>
+          <div className="nav">
+            {Object.entries(sectors).map(([sector, item]) => (
+              <Link key={sector} className={`box ${params.sector == sector ? 'active' : ''}`} href={`/components/${sector}`}>
+                <div className="inner">
+                  <div className="def">
+                    <span className={`icon bi bi-${item[0].icon}`}></span>
+                    <span className="title">{sector.toUpperCase()}</span>
+                  </div>
+                  <div className="on">
+                    <span className={`bi bi-record-circle${params.sector == sector ? '-fill' : ' off'}`}></span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="home">
+            <Link className="box home" href={'/'}>
               <div className="inner">
                 <div className="def">
-                  <span className={`icon bi bi-${item[0].icon}`}></span>
-                  <span className="title">{sector.toUpperCase()}</span>
-                </div>
-                <div className="on">
-                  <span className={`bi bi-record-circle${params.sector == sector ? '-fill' : ' off'}`}></span>
+                  <span className="icon bi bi-house-fill"></span>
+                  <span className="title">Home</span>
                 </div>
               </div>
             </Link>
-          ))}
+          </div>
         </div>
       </div>
       <div id="sectorPreview">

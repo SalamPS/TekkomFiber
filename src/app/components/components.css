@@ -73,6 +73,10 @@
 }
 #Components #sectorList .body {
   padding: 20px;
+  display: flex;
+  height: calc(100vh - 70px);
+  flex-direction: column;
+  justify-content: space-between;
 }
 #Components #sectorList .body .box {
   display: block;
@@ -88,6 +92,9 @@
 }
 #Components #sectorList .body .box:hover {
   background-color: rgba(31, 32, 65, 0.8666666667);
+}
+#Components #sectorList .body .box.home:hover {
+  background-color: rgba(112, 48, 48, 0.8666666667);
 }
 #Components #sectorList .body .box.active {
   background-color: rgba(31, 32, 65, 0.7333333333);
