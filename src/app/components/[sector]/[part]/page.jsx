@@ -19,8 +19,6 @@ const View = ({part, view, toggleView}) => {
     setToggle(!toggle);
   };
 
-  // const category = list.filter(item => item.category == show.category)
-
   return <>
     <div className="control">
       <div id="left">
@@ -53,14 +51,14 @@ const View = ({part, view, toggleView}) => {
         </button>
       </div>
     </div>
-    {/* <Box
+    <Box
       scale={prop.scale ? prop.scale : 1}
       speed={toggle ? prop.speed : [0,0,0]}
       light={prop.light}
       pos={prop.pos}
       rot={prop.rot}
       src={prop.src}
-    /> */}
+    />
   </>
 }
 
