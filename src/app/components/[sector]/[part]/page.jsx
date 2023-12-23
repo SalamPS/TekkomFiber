@@ -30,7 +30,7 @@ const View = ({part, view, toggleView}) => {
         <Link href={`/components/${back.sector}/${back.type}`}>
           <button className={`view ${view ? "" : "-hide"}`} title="Jump Before">
             <span className="bi bi-arrow-bar-left"></span>
-            <span className="name">{back.sector.toUpperCase()} {back.type}</span>
+            <span className="name">{back.type.charAt(0).toUpperCase() + back.type.slice(1)}</span>
           </button>
         </Link>
         <Link href={`/`}>
@@ -54,7 +54,7 @@ const View = ({part, view, toggleView}) => {
       <div id="right">
         <Link href={`/components/${next.sector}/${next.type}`}>
           <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
-            <span className="name">{next.sector.toUpperCase()} {next.type}</span>
+            <span className="name">{next.type.charAt(0).toUpperCase() + next.type.slice(1)}</span>
             <span className="bi bi-arrow-bar-right"></span>
           </button>
         </Link>
