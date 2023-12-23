@@ -124,4 +124,8 @@
 #Components #sector #desc h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+}
+#Components #sector #desc p {
+  text-wrap: balance;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=components.css.map */
