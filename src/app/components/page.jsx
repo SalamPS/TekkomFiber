@@ -6,7 +6,7 @@ import styles from './components.css'
 import Link from 'next/link';
 import Image from 'next/image'
 import list from '../../components/list'
-import sector from '../../components/sector'
+import sectors from '../../components/sectors'
 import ParticlesContainer from '../../components/ParticlesContainer'
 
 const Preview = () => {
@@ -19,6 +19,7 @@ const Preview = () => {
 }
 
 const Sector = ({sector}) => {
+  console.log(sector)
   return (
     <div id="sector">
       <div id="list">
