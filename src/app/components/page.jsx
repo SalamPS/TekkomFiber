@@ -5,8 +5,8 @@ import styles from './components.css'
 
 import Link from 'next/link';
 import Image from 'next/image'
-import list from '../../components/list'
 import sectors from '../../components/sectors'
+import list from '../../components/list'
 import ParticlesContainer from '../../components/ParticlesContainer'
 
 const Preview = () => {
@@ -19,13 +19,22 @@ const Preview = () => {
 }
 
 const Sector = ({sector}) => {
+
+  const [active, setActive] = useState(sectors.find(item => item.sector == sector))
+  useEffect(() => {
+    setActive(sectors.find(item => item.sector == sector))
+    console.log(active.name)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sector])
+
   return (
     <div id="sector">
       <div id="list">
         A
       </div>
       <div id="desc">
-        <h1>{sector.toUpperCase()}</h1>
+        <h1>{active.name}</h1>
+        <p>{active.desc}</p>
       </div>
     </div>
   )
