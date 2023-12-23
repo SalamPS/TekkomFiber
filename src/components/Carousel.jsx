@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Link from 'next/link';
 
 const Carousel = ({ items }) => {
   const settings = {
@@ -16,22 +17,24 @@ const Carousel = ({ items }) => {
   return (
     <Slider {...settings}>
       {items.map((item, index) => (
-        <div key={index} className='carous'>
-          <div className="item">
-            <Image
-              src={`/${item.sector}-${item.type}.png`}
-              alt={`${item.sector} ${item.type}`}
-              className='img'
-              width={266}
-              height={150}
-              priority
-            />
-            <div className="desc">
-              <h3>{item.name}</h3>
-              <p>{item.desc}</p>
+        <Link key={index} href={`/components/${item.sector}/${item.type}`}>
+          <div className='carous'>
+            <div className="item">
+              <Image
+                src={`/${item.sector}-${item.type}.png`}
+                alt={`${item.sector} ${item.type}`}
+                className='img'
+                width={266}
+                height={150}
+                priority
+              />
+              <div className="desc">
+                <h3>{item.name}</h3>
+                <p>{item.desc}</p>
+              </div>
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </Slider>
   );
