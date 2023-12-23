@@ -6,7 +6,7 @@ import Box from "../../../../components/Box";
 import styles from './part.css'
 
 import Image from 'next/image'
-import { useRouter } from 'next/router';
+import Link from "next/link";
 
 import list from '../../../../components/list'
 
@@ -22,18 +22,24 @@ const View = ({part, view, toggleView}) => {
   return <>
     <div className="control">
       <div id="left">
-        <button className={`view ${view ? "" : "-hide"}`} title="Jump Before">
-          <span className="bi bi-arrow-bar-left"></span>
-          <span className="name">BACK</span>
-        </button>
-        <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
-          <span className="bi bi-house"></span>
-        </button>
+        <Link href={`/`}>
+          <button className={`view ${view ? "" : "-hide"}`} title="Jump Before">
+            <span className="bi bi-arrow-bar-left"></span>
+            <span className="name">BACK</span>
+          </button>
+        </Link>
+        <Link href={`/`}>
+          <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
+            <span className="bi bi-house"></span>
+          </button>
+        </Link>
       </div>
       <div id="navigate">
-        <button className={`view ${view ? "" : "-hide"}`} title="Visit 3D Asset Original Source" onClick={() => window.open(show.origin, '_blank')}>
-          <span className="bi bi-arrow-up-right-circle"></span>
-        </button>
+        <Link href={show.origin} target="_blank">
+          <button className={`view ${view ? "" : "-hide"}`} title="Visit 3D Asset Original Source">
+            <span className="bi bi-arrow-up-right-circle"></span>
+          </button>
+        </Link>
         <button className={`view ${view ? "" : "-lil"}`} title="Hide Elements" onClick={toggleView} >
           <span className="bi bi-aspect-ratio"></span>
         </button>
@@ -41,10 +47,12 @@ const View = ({part, view, toggleView}) => {
     </div>
     <div className="control r">
       <div id="right">
-        <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
-          <span className="name">NEXT</span>
-          <span className="bi bi-arrow-bar-right"></span>
-        </button>
+        <Link href={`/`}>
+          <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
+            <span className="name">NEXT</span>
+            <span className="bi bi-arrow-bar-right"></span>
+          </button>
+        </Link>
         <button 
           className={`view ${view ? "" : "-hide"} ${(prop.speed ? (prop.speed.some(speedValue => speedValue !== 0) ? "show" : "hide") : 0)}`} onClick={toggleSpeed} >
           <span className={`bi bi-toggle-${toggle ? "on" : "off"}`}></span>
@@ -85,12 +93,6 @@ const Bar = ({part, view, togglePad}) => {
         </div>
       </div>
     </>
-  )
-}
-
-const DescPad = ({}) => {
-  return (
-    <></>
   )
 }
 
