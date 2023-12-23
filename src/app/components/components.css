@@ -19,13 +19,8 @@
 }
 @media screen and (min-width: 750px) {
   #Components #sectorList {
-    min-width: 35%;
-    height: 100%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #Components #sectorList {
-    min-width: 20%;
+    max-width: 300px;
+    width: 300px;
     height: 100%;
   }
 }
@@ -81,7 +76,6 @@
 }
 #Components #sectorPreview {
   position: relative;
-  flex-grow: 1;
   z-index: 2;
 }
 #Components #sectorPreview.shown {
@@ -109,10 +103,52 @@
   margin-right: 40px;
   font-weight: lighter;
 }
+@media screen and (min-width: 750px) {
+  #Components #sector {
+    width: calc(100vw - 300px);
+  }
+}
+@media screen and (max-width: 750px) {
+  #Components #sector {
+    width: 100vw;
+  }
+}
 #Components #sector #list {
   height: 300px;
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
+  padding: 10px 50px;
+}
+#Components #sector #list .slick-slider {
+  height: 95%;
+}
+#Components #sector #list .carous {
+  text-align: center;
+}
+#Components #sector #list .img {
+  border-radius: 10px;
+}
+#Components #sector #list .item {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 300px;
+  padding: 17px;
+  display: inline-block;
+  text-align: left;
+  transition: 0.2s;
+  margin-bottom: 15px;
+  border-radius: 10px 10px 40px 10px;
+  background: rgb(26, 27, 56);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3137254902);
+  background: linear-gradient(130deg, rgb(26, 27, 56) 0%, rgba(28, 29, 60, 0.5) 46%, rgba(31, 32, 65, 0) 100%);
+}
+#Components #sector #list .item:hover {
+  background-color: #2c2e5a;
+  transform: scale(1.05);
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3137254902);
+}
+#Components #sector #list .desc {
+  margin-top: 10px;
 }
 #Components #sector #desc {
   padding: 30px;

@@ -5,9 +5,10 @@ import styles from './components.css'
 
 import Link from 'next/link';
 import Image from 'next/image'
+import ParticlesContainer from '../../components/ParticlesContainer'
+import Carousel from '../../components/Carousel'
 import sectors from '../../components/sectors'
 import list from '../../components/list'
-import ParticlesContainer from '../../components/ParticlesContainer'
 
 const Preview = () => {
   return (
@@ -25,6 +26,7 @@ const Sector = ({sector}) => {
   return (
     <div id="sector">
       <div id="list">
+        <Carousel items={visit}/>
       </div>
       <div id="desc">
         <div className="text">

@@ -16,16 +16,21 @@ const Carousel = ({ items }) => {
   return (
     <Slider {...settings}>
       {items.map((item, index) => (
-        <div key={index}>
-          <Image
-            src={`/${sector}-${visit}.png`}
-            alt={`${sector} ${visit}`}
-            width={355}
-            height={200}
-            priority
-          />
-          <h3>{item.title}</h3>
-          <p>{item.description}</p>
+        <div key={index} className='carous'>
+          <div className="item">
+            <Image
+              src={`/${item.sector}-${item.type}.png`}
+              alt={`${item.sector} ${item.type}`}
+              className='img'
+              width={266}
+              height={150}
+              priority
+            />
+            <div className="desc">
+              <h3>{item.name}</h3>
+              <p>{item.desc}</p>
+            </div>
+          </div>
         </div>
       ))}
     </Slider>
