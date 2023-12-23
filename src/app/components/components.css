@@ -108,7 +108,7 @@
 }
 #Components #sector #desc {
   padding: 20px;
-  background-color: rgba(31, 32, 65, 0.8666666667);
+  background-color: rgba(31, 32, 65, 0.7333333333);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   height: calc(100vh - 300px);

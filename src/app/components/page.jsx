@@ -19,7 +19,6 @@ const Preview = () => {
 }
 
 const Sector = ({sector}) => {
-  console.log(sector)
   return (
     <div id="sector">
       <div id="list">
