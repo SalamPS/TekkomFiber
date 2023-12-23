@@ -19,13 +19,8 @@ const Preview = () => {
 }
 
 const Sector = ({sector}) => {
-
-  const [active, setActive] = useState(sectors.find(item => item.sector == sector))
-  useEffect(() => {
-    setActive(sectors.find(item => item.sector == sector))
-    console.log(active.name)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sector])
+  const active = sectors.find(item => item.sector == sector)
+  const visit = list.find(item => item.sector == sector)
 
   return (
     <div id="sector">
@@ -33,8 +28,17 @@ const Sector = ({sector}) => {
         A
       </div>
       <div id="desc">
-        <h1>{active.name}</h1>
-        <p>{active.desc}</p>
+        <div className="text">
+          <h1>{active.name}</h1>
+          <p>{active.desc}</p>
+        </div>
+        <div className="dive">
+          <Link href={`/components/${sector}/${visit.type}`}>
+            <button>
+              <span>Visit 3D</span>
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   )

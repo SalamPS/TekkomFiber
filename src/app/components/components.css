@@ -120,6 +120,12 @@
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   height: calc(100vh - 300px);
+  display: flex;
+}
+@media screen and (max-width: 1000px) {
+  #Components #sector #desc {
+    flex-direction: column;
+  }
 }
 #Components #sector #desc h1 {
   font-size: 3rem;
@@ -128,4 +134,20 @@
 #Components #sector #desc p {
   text-wrap: balance;
   margin-bottom: 15px;
+}
+#Components #sector #desc button {
+  font-family: sticknobill;
+  font-size: 1.2rem;
+  min-width: 92px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #c74f24;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3137254902);
+  transition: 0.2s;
+  border: none;
+}
+#Components #sector #desc button:hover {
+  background-color: #db5626;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5647058824);
 }/*# sourceMappingURL=components.css.map */
