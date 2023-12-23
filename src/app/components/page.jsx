@@ -20,7 +20,7 @@ const Preview = () => {
 
 const Sector = ({sector}) => {
   const active = sectors.find(item => item.sector == sector)
-  const visit = list.find(item => item.sector == sector)
+  const visit = list.find(item => item.sector == sector).type
 
   return (
     <div id="sector">
@@ -33,7 +33,7 @@ const Sector = ({sector}) => {
           <p>{active.desc}</p>
         </div>
         <div className="dive">
-          <Link href={`/components/${sector}/${visit.type}`}>
+          <Link href={`/components/${sector}/${visit}`}>
             <button>
               <span>Visit 3D</span>
             </button>
