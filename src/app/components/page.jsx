@@ -41,9 +41,16 @@ function Components({params}) {
         </div>
         <div className="body">
           {Object.entries(sectors).map(([sector, item]) => (
-            <Link key={sector} className='box' href={`/components/${sector}`}>
-              <span className={`icon bi bi-${item[0].icon}`}></span>
-              <span className="title">{sector.toUpperCase()}</span>
+            <Link key={sector} className={`box ${params.sector == sector ? 'active' : ''}`} href={`/components/${sector}`}>
+              <div className="inner">
+                <div className="def">
+                  <span className={`icon bi bi-${item[0].icon}`}></span>
+                  <span className="title">{sector.toUpperCase()}</span>
+                </div>
+                <div className="on">
+                  <span className={`bi bi-record-circle${params.sector == sector ? '-fill' : ' off'}`}></span>
+                </div>
+              </div>
             </Link>
           ))}
         </div>
