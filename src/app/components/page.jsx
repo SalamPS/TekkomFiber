@@ -6,6 +6,7 @@ import styles from './components.css'
 import Link from 'next/link';
 import Image from 'next/image'
 import list from '../../components/list'
+import sector from '../../components/sector'
 import ParticlesContainer from '../../components/ParticlesContainer'
 
 const Preview = () => {
