@@ -58,11 +58,13 @@ function Components({params}) {
   return (
     <div id="Components">
       <ParticlesContainer amount={80}/>
-      <div id="sectorList">
-        <div className="head">
-          <i className="bi bi-view-list"></i>
-          <span className='title'>Components List</span>
-        </div>
+      <div id="sectorList" className={params.sector ? 'hide': 'show'}>
+        <Link href={'/components'}>
+          <div className="head">
+            <i className="bi bi-view-list"></i>
+            <span className='title'>Components List</span>
+          </div>
+        </Link>
         <div className="body">
           {Object.entries(sectors).map(([sector, item]) => (
             <Link key={sector} className={`box ${params.sector == sector ? 'active' : ''}`} href={`/components/${sector}`}>

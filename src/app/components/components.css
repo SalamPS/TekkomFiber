@@ -10,16 +10,32 @@
 #Components .particles {
   z-index: 1;
 }
+@keyframes hideme {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(100vh - 70px));
+  }
+}
+@keyframes showme {
+  0% {
+    transform: translateY(calc(100vh - 70px));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 #Components #sectorList {
   z-index: 3;
   color: #1F2041;
   position: relative;
   background-color: rgba(232, 241, 242, 0.5333333333);
   box-shadow: 5px 0 50px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
 }
 @media screen and (min-width: 750px) {
   #Components #sectorList {
-    max-width: 300px;
     width: 300px;
     height: 100%;
   }
@@ -31,13 +47,25 @@
     position: absolute;
     background-color: #8b90a1;
   }
+  #Components #sectorList.hide {
+    transform: translateY(calc(100vh - 70px));
+    animation: hideme 0.5s;
+  }
+  #Components #sectorList.show {
+    transform: translateY(0);
+    animation: showme 0.5s;
+  }
 }
 #Components #sectorList .head {
   box-shadow: 0 2px 3px rgba(31, 32, 65, 0.3333333333);
   background-color: rgba(232, 241, 242, 0.6);
   font-size: 24px;
   padding: 20px;
-  width: 100%;
+}
+@media screen and (min-width: 750px) {
+  #Components #sectorList .head {
+    width: 300px;
+  }
 }
 #Components #sectorList .head .title {
   display: inline-block;
@@ -102,6 +130,11 @@
   margin-top: 10px;
   margin-right: 40px;
   font-weight: lighter;
+}
+@media screen and (max-width: 750px) {
+  #Components #preview {
+    display: none;
+  }
 }
 @media screen and (min-width: 750px) {
   #Components #sector {
