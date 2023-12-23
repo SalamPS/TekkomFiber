@@ -1,7 +1,25 @@
 import object from './object'
 
 const list = [
-  new object('vga', 'AsusROG Geforce-RTX', 'Virtual Graphic Array', 'gpu', 'gpu-card', {
+  new object('discrete', 'Geforce-RTX Discrete', 'Virtual Graphic Array', 'gpu', 'gpu-card', {
+    scale: 5,
+    speed: [0.0005, 0, 0],
+    light: undefined,
+    pos: [-1, 0, 3],
+    rot: [0, 0, 0],
+    src: 'asus_rog_geforce_rtx_VGA_CARD'
+  },"https://sketchfab.com/3d-models/asus-rog-geforce-rtx-4090-v20-6f527569f14b4efc94c7072842bd41ac"
+  ),
+  new object('mobile', 'Geforce-RTX Mobile', 'Virtual Graphic Array', 'gpu', 'gpu-card', {
+    scale: 5,
+    speed: [0.0005, 0, 0],
+    light: undefined,
+    pos: [-1, 0, 3],
+    rot: [0, 0, 0],
+    src: 'asus_rog_geforce_rtx_VGA_CARD'
+  },"https://sketchfab.com/3d-models/asus-rog-geforce-rtx-4090-v20-6f527569f14b4efc94c7072842bd41ac"
+  ),
+  new object('integrated', 'Geforce-RTX Integrated', 'Virtual Graphic Array', 'gpu', 'gpu-card', {
     scale: 5,
     speed: [0.0005, 0, 0],
     light: undefined,
