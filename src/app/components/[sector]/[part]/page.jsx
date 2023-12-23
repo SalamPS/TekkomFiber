@@ -14,6 +14,11 @@ const View = ({part, view, toggleView}) => {
   const show = list.find(item => item.type == part);
   const prop = show ? show.prop : {};
 
+  const parts = list.filter(item => item.sector == show.sector)
+  const known = parts.indexOf(show)
+  const back = parts[known ? known-1 : parts.length-1]
+  const next = parts[known == parts.length-1 ? 0 : known+1]
+
   const [toggle, setToggle] = useState(false);
   const toggleSpeed = () => {
     setToggle(!toggle);
@@ -22,10 +27,10 @@ const View = ({part, view, toggleView}) => {
   return <>
     <div className="control">
       <div id="left">
-        <Link href={`/`}>
+        <Link href={`/components/${back.sector}/${back.type}`}>
           <button className={`view ${view ? "" : "-hide"}`} title="Jump Before">
             <span className="bi bi-arrow-bar-left"></span>
-            <span className="name">BACK</span>
+            <span className="name">{back.sector.toUpperCase()} {back.type}</span>
           </button>
         </Link>
         <Link href={`/`}>
@@ -47,9 +52,9 @@ const View = ({part, view, toggleView}) => {
     </div>
     <div className="control r">
       <div id="right">
-        <Link href={`/`}>
+        <Link href={`/components/${next.sector}/${next.type}`}>
           <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
-            <span className="name">NEXT</span>
+            <span className="name">{next.sector.toUpperCase()} {next.type}</span>
             <span className="bi bi-arrow-bar-right"></span>
           </button>
         </Link>
