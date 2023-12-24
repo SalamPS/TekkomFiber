@@ -3,7 +3,10 @@
 import { useRef } from "react";
 import { Canvas, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader';
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, Plane, useHelper } from "@react-three/drei";
+import { useControls } from "leva";
+import { DirectionalLightHelper, PointLightHelper, SpotLightHelper, RectAreaLightHelper } from 'three';
+
 import * as THREE from 'three';
 
 const Computers = ({ scale, speed, src, light, pos, rot }) => {
@@ -46,35 +49,53 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
       console.error('Error loading 3D model', error);
     }
   );
-
+  
+  // const {intensity, distance, angle, x, y, z, width, height, color} = useControls({
+  //   intensity: {value: 1, min: 0, max: 100}, 
+  //   distance: {value: 1, min: 0, max: 10}, 
+  //   angle: {value: 1, min: 0, max: 10}, 
+  //   width: {value: 1, min: 0, max: 10}, 
+  //   height: {value: 1, min: 0, max: 10}, 
+  //   color: "#fff", 
+  //   x: {value: 0, min: -5, max:10},
+  //   y: {value: 10, min: -5, max:10},
+  //   z: {value: 0, min: -5, max:10}
+  // })
+  const bottomLight = useRef();
+  useHelper(bottomLight, DirectionalLightHelper, 1, 'red');
+  const upperLight = useRef();
+  useHelper(upperLight, DirectionalLightHelper, 1, 'red');
+  const frontLight = useRef();
+  useHelper(frontLight, DirectionalLightHelper, 1, 'yellow');
+  const backLight = useRef();
+  useHelper(backLight, DirectionalLightHelper, 1, 'yellow');
+  const rightLight = useRef();
+  useHelper(rightLight, DirectionalLightHelper, 1, 'blue');
+  const leftLight = useRef();
+  useHelper(leftLight, DirectionalLightHelper, 1, 'blue');
   return (
     <>
+      <directionalLight position={[0,20,0]} ref={bottomLight}/>
+      <directionalLight position={[0,-20,0]} ref={upperLight}/>
+      <directionalLight position={[0,0,20]} ref={frontLight}/>
+      <directionalLight position={[0,0,-20]} ref={backLight}/>
+      <directionalLight position={[20,0,0]} ref={rightLight}/>
+      <directionalLight position={[-20,0,0]} ref={leftLight}/>
       <group ref={group} scale={scale} position={pos ? [pos[0],pos[1],pos[2]] : [0,0,0]} rotation={rot ? [rot[0],rot[1],rot[2]] : [0,0,0]}/>
-      <hemisphereLight intensity={(light? light : 5)} groundColor='black' />
-      <spotLight
-        position={[20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={100}
-        castShadow
-        shadow-mapSize={1024}
-      />
-      <pointLight intensity={(light? 2*light : 2)} />
     </>
   );
 };
+
 
 export default function Box ({scale, speed, src, light, pos, rot}) {
   return (
     <Canvas
       shadows
-      dpr={[1, 2]}
-      camera={{ position: [20,20,20], fov: 50 }}
+      camera={{ position: [20,20,20], fov: 50, }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <OrbitControls/>
       <Computers scale={scale} speed={speed} src={src} light={light} pos={pos} rot={rot}/>
-
     </Canvas>
   );
 }
