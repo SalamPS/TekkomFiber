@@ -26,6 +26,44 @@
     transform: translateY(0);
   }
 }
+@keyframes listshow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes previn {
+  0% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes sectortop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes sectorbot {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 #Components #sectorList {
   z-index: 3;
   color: #1F2041;
@@ -38,6 +76,9 @@
   #Components #sectorList {
     width: 300px;
     height: 100%;
+  }
+  #Components #sectorList.show {
+    animation: listshow 2s ease;
   }
 }
 @media screen and (max-width: 750px) {
@@ -125,6 +166,11 @@
   justify-content: center;
   flex-direction: column;
 }
+@media screen and (min-width: 750px) {
+  #Components #preview {
+    animation: previn 2s ease-out;
+  }
+}
 #Components #preview .tag {
   width: 100%;
 }
@@ -165,6 +211,11 @@
 #Components #sector #list .carous {
   text-align: center;
 }
+@media screen and (min-width: 750px) {
+  #Components #sector #list .carous {
+    animation: sectortop 1s ease-out;
+  }
+}
 #Components #sector #list .img {
   border-radius: 10px;
 }
@@ -197,6 +248,11 @@
           backdrop-filter: blur(2px);
   height: calc(100vh - 300px);
   display: flex;
+}
+@media screen and (min-width: 750px) {
+  #Components #sector #desc {
+    animation: sectorbot 1s ease-out;
+  }
 }
 @media screen and (max-width: 1000px) {
   #Components #sector #desc {

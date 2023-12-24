@@ -84,7 +84,13 @@ body {
   scroll-behavior: smooth;
 }
 
+@keyframes particles {
+  0% {opacity: 0};
+  100% {opacity: 1};
+}
+
 .particles {
+  animation: particles .7s ease;
   overflow: hidden;
   position: absolute;
   left: 0;
