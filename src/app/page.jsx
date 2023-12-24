@@ -165,7 +165,7 @@ function App() {
                 <Link key={part.src} href={`/components/${part.url}`} className="item">
                   <div className="thumbnail">
                     <Image
-                      src={`/${part.src}.png`}
+                      src={`/preview/${part.src}.png`}
                       alt="arduino"
                       width={200}
                       height={200}

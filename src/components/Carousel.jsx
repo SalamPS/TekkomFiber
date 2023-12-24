@@ -23,7 +23,7 @@ const Carousel = ({ items }) => {
           <div className='carous'>
             <div className="item">
               <Image
-                src={`/${item.sector}-${item.type}.png`}
+                src={`/preview/${item.sector}-${item.type}.png`}
                 alt={`${item.sector} ${item.type}`}
                 className='img'
                 width={266}
