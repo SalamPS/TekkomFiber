@@ -2,10 +2,10 @@ import styles from './components.css'
 
 import Link from 'next/link';
 import Image from 'next/image'
-import ParticlesContainer from '../../components/ParticlesContainer'
-import Carousel from '../../components/Carousel'
-import sectors from '../../components/sectors'
-import list from '../../components/list'
+import ParticlesContainer from '@/components/ParticlesContainer'
+import Carousel from '@/components/Carousel'
+import sectors from '@/components/sectors'
+import list from '@/components/list'
 
 export const metadata = {
   title: "ShowCase"

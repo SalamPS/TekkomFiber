@@ -1,14 +1,15 @@
 'use client'
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-import Box from "../../../../components/Box";
+import Box from "@/components/Box";
 import styles from './part.css'
 
 import Image from 'next/image'
 import Link from "next/link";
 
-import list from '../../../../components/list'
+import list from '@/components/list'
+import upperCase from "@/components/upperCase";
 
 const View = ({part, view, toggleView}) => {
   const show = list.find(item => item.type == part);
@@ -30,12 +31,13 @@ const View = ({part, view, toggleView}) => {
         <Link href={`/components/${back.sector}/${back.type}`}>
           <button className={`view ${view ? "" : "-hide"}`} title="Jump Before">
             <span className="bi bi-arrow-bar-left"></span>
-            <span className="name">{back.type.charAt(0).toUpperCase() + back.type.slice(1)}</span>
+            <span className="name">{upperCase(back.type)}</span>
           </button>
         </Link>
         <Link href={`/components/${show.sector}`}>
           <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
             <span className={`bi bi-${show.icon}`}></span>
+            <span className="name">{upperCase(show.sector)}</span>
           </button>
         </Link>
       </div>
@@ -54,7 +56,7 @@ const View = ({part, view, toggleView}) => {
       <div id="right">
         <Link href={`/components/${next.sector}/${next.type}`}>
           <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
-            <span className="name">{next.type.charAt(0).toUpperCase() + next.type.slice(1)}</span>
+            <span className="name">{upperCase(next.type)}</span>
             <span className="bi bi-arrow-bar-right"></span>
           </button>
         </Link>

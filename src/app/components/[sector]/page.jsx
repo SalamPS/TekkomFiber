@@ -1,11 +1,12 @@
 import Components from "../page"
+import upperCase from "@/components/upperCase"
 
 export const metadata = {
   title: ""
 }
 
 export default function Sector ({params}) {
-  metadata.title = params.sector.length < 4 ? params.sector.toUpperCase() : `${params.sector.charAt(0).toUpperCase()}${params.sector.slice(1)}`
+  metadata.title = upperCase(params.sector)
   return (
     <Components params={params}/>
   )

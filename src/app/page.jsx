@@ -1,9 +1,9 @@
 'use client'
 
 // import { useState } from "react"
-import Box from "../components/Box"
-import object from '../components/object'
-import ParticlesContainer from '../components/ParticlesContainer'
+import Box from "@/components/Box"
+import object from '@/components/object'
+import ParticlesContainer from '@/components/ParticlesContainer'
 import styles from './index.css'
 
 import Link from 'next/link';
