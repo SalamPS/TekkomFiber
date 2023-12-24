@@ -1,11 +1,12 @@
 import Viewer from "./Viewer"
+import upperCase from "@/components/upperCase"
 
 export const metadata = {
   title: ""
 }
 
 export default function Sector ({params}) {
-  metadata.title = params.part.length < 5 ? params.part.toUpperCase() : `${params.part.charAt(0).toUpperCase()}${params.part.slice(1)}`
+  metadata.title = upperCase(params.part)
   return (
     <Viewer params={params}/>
   )
