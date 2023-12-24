@@ -3,42 +3,6 @@
   text-align: center;
   position: relative;
 }
-@keyframes parallax-1200 {
-  to {
-    transform: translateY(1200px);
-  }
-}
-@keyframes parallax-1300 {
-  to {
-    transform: translateY(-1300px);
-  }
-}
-@keyframes parallax-2000 {
-  to {
-    transform: translateY(2000px);
-  }
-}
-@keyframes parallax-700 {
-  to {
-    transform: translateY(700px);
-  }
-}
-#App .prl1200 {
-  animation: parallax-1200 linear;
-  animation-timeline: scroll();
-}
-#App .prl1300 {
-  animation: parallax-1300 linear;
-  animation-timeline: scroll();
-}
-#App .prl2000 {
-  animation: parallax-2000 linear;
-  animation-timeline: scroll();
-}
-#App .prl700 {
-  animation: parallax-700 linear;
-  animation-timeline: scroll();
-}
 #App .closeup {
   left: 0;
   position: absolute;
@@ -60,10 +24,14 @@
 }
 @keyframes dropme {
   0% {
-    transform: translateY(-10%);
+    transform: translateY(-50%);
+    opacity: 0;
   }
-  100% {
-    transform: translateY(0);
+}
+@keyframes liftme {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
   }
 }
 #App nav {
@@ -71,6 +39,7 @@
   text-align: left;
   position: absolute;
   justify-content: space-between;
+  animation: dropme 1s ease-out;
   width: 100%;
 }
 @media screen and (max-width: 600px) {
@@ -124,11 +93,13 @@
   height: 110vh;
 }
 #App #jumbotron .head {
+  animation: dropme 1s ease-out;
   font-size: 2rem;
   font-family: marsBold, sans-serif;
   margin-bottom: 30px;
 }
 #App #jumbotron .tagline {
+  animation: liftme 1s ease-out;
   font-family: sticknobill, sans-serif;
 }
 #App #jumbotron h1 {
@@ -136,9 +107,10 @@
 }
 #App .main {
   margin-bottom: 10vh;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 #App .go-next {
+  animation: liftme 1s ease-out;
   width: 100%;
   text-align: center;
   translate: 0 150px;
