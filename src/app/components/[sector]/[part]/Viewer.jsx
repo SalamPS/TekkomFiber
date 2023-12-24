@@ -28,12 +28,13 @@ const View = ({part, view, toggleView}) => {
   return <>
     <div className="control">
       <div id="left">
+        {show == back ? '' : 
         <Link href={`/components/${back.sector}/${back.type}`}>
           <button className={`view ${view ? "" : "-hide"}`} title="Jump Before">
             <span className="bi bi-arrow-bar-left"></span>
             <span className="name">{upperCase(back.type)}</span>
           </button>
-        </Link>
+        </Link>}
         <Link href={`/components/${show.sector}`}>
           <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
             <span className={`bi bi-${show.icon}`}></span>
@@ -54,12 +55,13 @@ const View = ({part, view, toggleView}) => {
     </div>
     <div className="control r">
       <div id="right">
+        {show == next ? '' : 
         <Link href={`/components/${next.sector}/${next.type}`}>
           <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
             <span className="name">{upperCase(next.type)}</span>
             <span className="bi bi-arrow-bar-right"></span>
           </button>
-        </Link>
+        </Link>}
         <button 
           className={`view ${view ? "" : "-hide"} ${(prop.speed ? (prop.speed.some(speedValue => speedValue !== 0) ? "show" : "hide") : 0)}`} onClick={toggleSpeed} >
           <span className={`bi bi-toggle-${toggle ? "on" : "off"}`}></span>
