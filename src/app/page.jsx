@@ -5,6 +5,7 @@ import Box from "@/components/Box"
 import object from '@/components/object'
 import sector from "@/components/sectors"
 import ParticlesContainer from '@/components/ParticlesContainer'
+import ParticlesCustom from "@/components/ParticlesCustom"
 import styles from './index.css'
 
 import Link from 'next/link';
@@ -52,6 +53,7 @@ function App() {
       </nav>
 
       <div id='jumbotron'>
+        <ParticlesCustom amount={30} color={["ffffff","ffffff"]}/>
         <div>
           <div className='main prl1300'>
             <h1 className='head'>
