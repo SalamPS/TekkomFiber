@@ -3,13 +3,14 @@
 // import { useState } from "react"
 import Box from "@/components/Box"
 import object from '@/components/object'
+import sector from "@/components/sectors"
 import ParticlesContainer from '@/components/ParticlesContainer'
 import styles from './index.css'
 
 import Link from 'next/link';
 import Image from 'next/image'
 
-const demo3D = new object('demo','block','3dblock','blocks','box',
+const demo3D = new object('demo','','','','','',
   {
     scale: 3,
     speed: [0, 0, 0],
@@ -21,10 +22,10 @@ const demo3D = new object('demo','block','3dblock','blocks','box',
 )
 
 const parts = [
-  {name : "Graphic Processing Unit", url: "gpu", src:"vga0", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-  {name : "Display Monitor", url: "display", src:"vga1", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-  {name : "Motherboard", url: "motherboard", src:"vga2", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-  {name : "Random Access Memory", url: "ram", src:"vga3", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+  {name : "Motherboard", url: "motherboard", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  {name : "Random Access Memory", url: "ram", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  {name : "Graphic Processing Unit", url: "gpu", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  {name : "Central Processing Unit", url: "cpu", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
 ]
 
 function App() {
@@ -161,22 +162,23 @@ function App() {
           <h1 className="h1">Explore Components</h1>
           <div className="block">
             {
-              parts.map(part => (
-                <Link key={part.src} href={`/components/${part.url}`} className="item">
+              sector.map((item,i) => (
+                (i >= 4 ? '' : 
+                <Link key={item.sector} href={`/components/${item.sector}`} className="item">
                   <div className="thumbnail">
                     <Image
-                      src={`/preview/${part.src}.png`}
-                      alt="arduino"
+                      src={`/preview/${item.sector}.png`}
+                      alt={item.name}
                       width={200}
                       height={200}
                       priority
                     />
                   </div>
                   <div className="preview">
-                    <div className="title">{part.name}</div>
-                    <div className="prev">{part.prev}</div>
+                    <div className="title">{item.name}</div>
+                    <div className="prev">{item.desc}</div>
                   </div>
-                </Link>
+                </Link>)
               ))
             }
           </div>
