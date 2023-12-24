@@ -21,13 +21,6 @@ const demo3D = new object('demo','','','','','',
   }
 )
 
-const parts = [
-  {name : "Motherboard", url: "motherboard", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-  {name : "Random Access Memory", url: "ram", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-  {name : "Graphic Processing Unit", url: "gpu", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-  {name : "Central Processing Unit", url: "cpu", prev: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-]
-
 function App() {
   const scroll = id => { 
     document.querySelector(`#${id}`).scrollIntoView()
