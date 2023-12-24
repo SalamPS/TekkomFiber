@@ -137,7 +137,7 @@ export default function Viewer ({params}) {
       </div>
       <div className="title">
         <Image
-          src="/tekkom.png"
+          src="/common/tekkom.png"
           alt="Tekkom"
           width={100}
           height={40}
