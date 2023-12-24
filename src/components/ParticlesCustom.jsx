@@ -25,7 +25,7 @@ export default function ParticlesCustom ({amount, color}) {
               mode: 'push'
             },
             onHover: {
-              enable: true,
+              enable: false,
               mode: 'repulse'
             },
             resize: true
@@ -52,7 +52,7 @@ export default function ParticlesCustom ({amount, color}) {
             width: 1
           },
           collisions: {
-            enable: true
+            enable: false
           },
           move: {
             directions: 'none',

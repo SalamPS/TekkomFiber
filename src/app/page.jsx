@@ -53,8 +53,8 @@ function App() {
       </nav>
 
       <div id='jumbotron'>
-        <ParticlesCustom amount={30} color={["ffffff","ffffff"]}/>
-        <div>
+        <ParticlesCustom amount={80} color={["ffffff","ffffff"]}/>
+        <div className="inner">
           <div className='main prl1300'>
             <h1 className='head'>
               Tekkom . 3Fiber
