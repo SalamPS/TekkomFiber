@@ -1,5 +1,5 @@
 class object {
-  constructor (sector,type,name,desc,icon,prev,prop,info,origin) {
+  constructor (sector,type,name,desc,icon,prev,prop,info,spec,origin) {
     this.sector = sector;
     this.type = type;
     this.name = name;
@@ -9,6 +9,7 @@ class object {
 
     this.prop = prop;
     this.info = info;
+    this.spec = spec;
     this.origin = origin;
   }
 }
