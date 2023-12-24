@@ -28,7 +28,7 @@ function App() {
   return (
     <div id='App'>
       <Image
-        src="/closeup.jpg"
+        src="/common/closeup.jpg"
         alt="closeup"
         className='closeup prl700'
         width={1000}
@@ -82,7 +82,7 @@ function App() {
             </div>
             <div className="context">
               <Image
-                src="/arduino.png"
+                src="/common/arduino.png"
                 alt="arduino"
                 width={320}
                 height={300}

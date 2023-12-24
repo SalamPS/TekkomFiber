@@ -36,7 +36,7 @@ MIT
 
 ## Preview
 
-![preview](./public/preview.png)
+![preview](./public/common/preview.png)
 
 Thanks to all my friends for helping me on this project. Cheers! 🥂
 
