@@ -3,7 +3,16 @@
   text-align: center;
   position: relative;
 }
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #App .closeup {
+  animation: fade 0.8s ease;
   left: 0;
   position: absolute;
   height: 150vh;
