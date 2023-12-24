@@ -52,7 +52,7 @@ export default function ParticlesCustom ({amount, color}) {
             width: 1
           },
           collisions: {
-            enable: false
+            enable: true
           },
           move: {
             directions: 'none',

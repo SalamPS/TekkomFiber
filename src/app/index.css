@@ -58,6 +58,14 @@
   padding: 0;
   position: absolute;
 }
+@keyframes dropme {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 #App nav {
   display: flex;
   text-align: left;
