@@ -1,6 +1,3 @@
-'use client'
-
-import { useEffect, useState } from 'react'
 import styles from './components.css'
 
 import Link from 'next/link';
@@ -9,6 +6,10 @@ import ParticlesContainer from '../../components/ParticlesContainer'
 import Carousel from '../../components/Carousel'
 import sectors from '../../components/sectors'
 import list from '../../components/list'
+
+export const metadata = {
+  title: "ShowCase"
+}
 
 const Preview = () => {
   return (
@@ -23,10 +24,25 @@ const Sector = ({sector}) => {
   const active = sectors.find(item => item.sector == sector)
   const visit = list.filter(item => item.sector == sector)
 
+  const pass = []
+  visit.forEach(item => {
+    pass.push(
+      {
+        type: item.type,
+        name: item.name,
+        desc: item.desc,
+        icon: item.icon,
+        prop: item.prop,
+        sector: item.sector,
+        origin: item.origin
+      }
+    )
+  })
+
   return (
     <div id="sector">
       <div id="list">
-        <Carousel items={visit}/>
+        <Carousel items={pass}/>
       </div>
       <div id="desc">
         <div className="text">

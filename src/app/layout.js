@@ -5,7 +5,11 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 const nova = Nova_Square({subsets: ['latin'], weight: '400'})
 
 export const metadata = {
-  title: 'Tekkom ThreeFiber',
+  title: {
+    absolute: 'Tekkom ThreeFiber',
+    default: 'Tekkom ThreeFiber',
+    template: '%s | Tekkom3Fiber'
+  },
   description: 'Tekkom Introduction to Computer Components using ThreeFiber',
 }
 

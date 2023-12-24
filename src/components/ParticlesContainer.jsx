@@ -3,22 +3,21 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-import React, {useCallback} from 'react'
+import React, {useEffect, useState} from 'react'
 
 export default function ParticlesContainer ({amount}) {
-  // const [init, setInit] = useState(false);
-  let init = false;
-  initParticlesEngine(async (engine) => {;
-    await loadSlim(engine);
-  }).then(() => {
-    init = true;
-  });
+  const [init, setInit] = useState()
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {;
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, [])
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  const particlesLoaded = () => {};
 
-  return (
+  if (init) return (
     <Particles
       id='tsparticles'
       init={initParticlesEngine}
@@ -95,4 +94,5 @@ export default function ParticlesContainer ({amount}) {
       }}
     />
   )
+  return (<></>)
 }
