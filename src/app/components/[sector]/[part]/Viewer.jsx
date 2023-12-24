@@ -33,9 +33,9 @@ const View = ({part, view, toggleView}) => {
             <span className="name">{back.type.charAt(0).toUpperCase() + back.type.slice(1)}</span>
           </button>
         </Link>
-        <Link href={`/`}>
+        <Link href={`/components/${show.sector}`}>
           <button className={`view ${view ? "" : "-hide"}`} title="Jump Next">
-            <span className="bi bi-house"></span>
+            <span className={`bi bi-${show.icon}`}></span>
           </button>
         </Link>
       </div>
