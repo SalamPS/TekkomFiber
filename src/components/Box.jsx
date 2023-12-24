@@ -75,12 +75,12 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
   useHelper(leftLight, DirectionalLightHelper, 1, 'blue');
   return (
     <>
-      <directionalLight position={[0,20,0]} ref={bottomLight}/>
-      <directionalLight position={[0,-20,0]} ref={upperLight}/>
-      <directionalLight position={[0,0,20]} ref={frontLight}/>
-      <directionalLight position={[0,0,-20]} ref={backLight}/>
-      <directionalLight position={[20,0,0]} ref={rightLight}/>
-      <directionalLight position={[-20,0,0]} ref={leftLight}/>
+      <directionalLight intensity={light} position={[0,20,0]} ref={bottomLight}/>
+      <directionalLight intensity={light} position={[0,-20,0]} ref={upperLight}/>
+      <directionalLight intensity={light} position={[0,0,20]} ref={frontLight}/>
+      <directionalLight intensity={light} position={[0,0,-20]} ref={backLight}/>
+      <directionalLight intensity={light} position={[20,0,0]} ref={rightLight}/>
+      <directionalLight intensity={light} position={[-20,0,0]} ref={leftLight}/>
       <group ref={group} scale={scale} position={pos ? [pos[0],pos[1],pos[2]] : [0,0,0]} rotation={rot ? [rot[0],rot[1],rot[2]] : [0,0,0]}/>
     </>
   );
