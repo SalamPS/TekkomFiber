@@ -15,6 +15,7 @@ const Parallax = ({ children, speed, id }) => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [speed]);
 
   return (
