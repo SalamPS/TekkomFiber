@@ -14,7 +14,7 @@ This project made to fulfill one of my Final Project Assignment. Feel free to ut
 
 ## Installation
 
-See the [Docs][bun] for the guide to Bun. I used [Next JS][next] to initialize react-app and applying Server-Side Rendering.
+See the [Docs][bun] for the guide to Bun. This project deployed via [Vercel][vercel] to applying Server-Side Rendering.
 
 Install dependencies:
 ```
@@ -26,7 +26,7 @@ Run in dev mode:
 bun run dev
 ```
 
-Since this Project Deployed using vercel, this branch include the whole `scene.bin`, `scene.gltf` and `textures` of the 3D assets, so it might not return error from now on 👍
+Since this Project Deployed using vercel, main branch included the whole `scene.bin`, `scene.gltf` and `textures` of the 3D assets, so it might not return error from now on 👍
 
 ## License
 
@@ -46,3 +46,4 @@ Thanks to all my friends for helping me on this project. Cheers! 🥂
 [react]: https://react.dev/learn
 [next]: https://nextjs.org/
 [deploy]: https://github.com/SenzawaG/TekkomFiber.dev/tree/deploy
+[vercel]: https://vercel.com/
