@@ -26,7 +26,7 @@ Run in dev mode:
 bun run dev
 ```
 
-Since this Project Deployed using vercel, this branch include the whole `scene.bin`, `scene.gltf` and `textures` of the 3D assets in this branch, so it might not return error from now on 👍.
+Since this Project Deployed using vercel, this branch include the whole `scene.bin`, `scene.gltf` and `textures` of the 3D assets, so it might not return error from now on 👍
 
 ## License
 
