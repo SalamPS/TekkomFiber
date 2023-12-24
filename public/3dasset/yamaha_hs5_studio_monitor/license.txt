@@ -1,0 +1,11 @@
+Model Information:
+* title:	Yamaha HS5 Studio Monitor
+* source:	https://sketchfab.com/3d-models/yamaha-hs5-studio-monitor-eec7203e4f964fa5976df3afee33f946
+* author:	Ivan_WSK (https://sketchfab.com/ivan-wsk)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Yamaha HS5 Studio Monitor" (https://sketchfab.com/3d-models/yamaha-hs5-studio-monitor-eec7203e4f964fa5976df3afee33f946) by Ivan_WSK (https://sketchfab.com/ivan-wsk) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

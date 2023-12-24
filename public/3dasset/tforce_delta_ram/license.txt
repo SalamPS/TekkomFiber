@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tforce Delta Ram
+* source:	https://sketchfab.com/3d-models/tforce-delta-ram-aee3bb8d00ff409986aca6009b91d5e8
+* author:	miharbico (https://sketchfab.com/miharbico)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tforce Delta Ram" (https://sketchfab.com/3d-models/tforce-delta-ram-aee3bb8d00ff409986aca6009b91d5e8) by miharbico (https://sketchfab.com/miharbico) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

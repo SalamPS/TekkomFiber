@@ -1,0 +1,11 @@
+Model Information:
+* title:	DDR3 8GB
+* source:	https://sketchfab.com/3d-models/ddr3-8gb-085f1f0ceb7e4505a683866c056b3275
+* author:	fotl10 (https://sketchfab.com/fotl10)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "DDR3 8GB" (https://sketchfab.com/3d-models/ddr3-8gb-085f1f0ceb7e4505a683866c056b3275) by fotl10 (https://sketchfab.com/fotl10) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	INTEL CPU
+* source:	https://sketchfab.com/3d-models/intel-cpu-ec11f729b05848488522ba6f8c6f254f
+* author:	Kuat-Entralla 3D Engineering (https://sketchfab.com/KuatEntralla3D)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "INTEL CPU" (https://sketchfab.com/3d-models/intel-cpu-ec11f729b05848488522ba6f8c6f254f) by Kuat-Entralla 3D Engineering (https://sketchfab.com/KuatEntralla3D) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

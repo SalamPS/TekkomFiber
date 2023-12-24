@@ -1,0 +1,11 @@
+Model Information:
+* title:	24" Samsung Monitor Curved Display -
+* source:	https://sketchfab.com/3d-models/24-samsung-monitor-curved-display-0efa6a241fa4439983d8ff2d488cedae
+* author:	Mateus Calmon (https://sketchfab.com/calmon)
+
+Model License:
+* license type:	CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)
+* requirements:	Author must be credited. Modified versions can not be distributed. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "24" Samsung Monitor Curved Display -" (https://sketchfab.com/3d-models/24-samsung-monitor-curved-display-0efa6a241fa4439983d8ff2d488cedae) by Mateus Calmon (https://sketchfab.com/calmon) licensed under CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)

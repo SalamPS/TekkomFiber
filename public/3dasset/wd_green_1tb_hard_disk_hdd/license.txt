@@ -1,0 +1,11 @@
+Model Information:
+* title:	WD Green 1TB Hard Disk HDD
+* source:	https://sketchfab.com/3d-models/wd-green-1tb-hard-disk-hdd-e9244f56e0724dd097570e29bae4b7c6
+* author:	MG990 (https://sketchfab.com/MG990)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "WD Green 1TB Hard Disk HDD" (https://sketchfab.com/3d-models/wd-green-1tb-hard-disk-hdd-e9244f56e0724dd097570e29bae4b7c6) by MG990 (https://sketchfab.com/MG990) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Jamo P404 active speakers
+* source:	https://sketchfab.com/3d-models/jamo-p404-active-speakers-fed68e7e303945dc877a9d414dea9627
+* author:	pester (https://sketchfab.com/pester)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Jamo P404 active speakers" (https://sketchfab.com/3d-models/jamo-p404-active-speakers-fed68e7e303945dc877a9d414dea9627) by pester (https://sketchfab.com/pester) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

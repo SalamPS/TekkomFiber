@@ -1,0 +1,11 @@
+Model Information:
+* title:	NZXT N7 Z490 Mother board
+* source:	https://sketchfab.com/3d-models/nzxt-n7-z490-mother-board-7be09e98ba2b40e69c0d6f17b0a5679b
+* author:	Max (https://sketchfab.com/Max-5532)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "NZXT N7 Z490 Mother board" (https://sketchfab.com/3d-models/nzxt-n7-z490-mother-board-7be09e98ba2b40e69c0d6f17b0a5679b) by Max (https://sketchfab.com/Max-5532) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

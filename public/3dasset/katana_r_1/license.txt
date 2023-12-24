@@ -1,0 +1,11 @@
+Model Information:
+* title:	Katana R-1
+* source:	https://sketchfab.com/3d-models/katana-r-1-d8fcfc391c95462bbb2f47e032050ec8
+* author:	Quasar (https://sketchfab.com/ProximaB)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Katana R-1" (https://sketchfab.com/3d-models/katana-r-1-d8fcfc391c95462bbb2f47e032050ec8) by Quasar (https://sketchfab.com/ProximaB) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	motherboard_lab
+* source:	https://sketchfab.com/3d-models/motherboard-lab-7114a56e5ff74b3892896ab8b53804b6
+* author:	mantevian (https://sketchfab.com/mantevian)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "motherboard_lab" (https://sketchfab.com/3d-models/motherboard-lab-7114a56e5ff74b3892896ab8b53804b6) by mantevian (https://sketchfab.com/mantevian) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

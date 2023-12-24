@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lowpoly Trackball Mouse
+* source:	https://sketchfab.com/3d-models/lowpoly-trackball-mouse-31c3de4bd6204b81b1bd4228405ba806
+* author:	sleepyjoshua (https://sketchfab.com/sleepyjoshua)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lowpoly Trackball Mouse" (https://sketchfab.com/3d-models/lowpoly-trackball-mouse-31c3de4bd6204b81b1bd4228405ba806) by sleepyjoshua (https://sketchfab.com/sleepyjoshua) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

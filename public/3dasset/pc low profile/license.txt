@@ -1,0 +1,11 @@
+Model Information:
+* title:	Office PC
+* source:	https://sketchfab.com/3d-models/office-pc-69188a48a0b04b18aa015719b0551eaa
+* author:	fluffyw0lf (https://sketchfab.com/fluffyw0lf)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Office PC" (https://sketchfab.com/3d-models/office-pc-69188a48a0b04b18aa015719b0551eaa) by fluffyw0lf (https://sketchfab.com/fluffyw0lf) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Loud- Speaker- Passive
+* source:	https://sketchfab.com/3d-models/loud-speaker-passive-3d94179f5eed4cf5bb6d9cfbd2e81495
+* author:	Tizio_Bello (https://sketchfab.com/kingmasterfavino)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Loud- Speaker- Passive" (https://sketchfab.com/3d-models/loud-speaker-passive-3d94179f5eed4cf5bb6d9cfbd2e81495) by Tizio_Bello (https://sketchfab.com/kingmasterfavino) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

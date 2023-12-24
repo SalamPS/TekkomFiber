@@ -1,0 +1,11 @@
+Model Information:
+* title:	Asset Numi - Vga Card
+* source:	https://sketchfab.com/3d-models/asset-numi-vga-card-a6d7dc81ac2f4ba9a69888cb9bb81901
+* author:	numiteg (https://sketchfab.com/numiteg)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Asset Numi - Vga Card" (https://sketchfab.com/3d-models/asset-numi-vga-card-a6d7dc81ac2f4ba9a69888cb9bb81901) by numiteg (https://sketchfab.com/numiteg) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

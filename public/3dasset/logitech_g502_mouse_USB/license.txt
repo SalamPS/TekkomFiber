@@ -1,0 +1,11 @@
+Model Information:
+* title:	Logitech G502 Mouse
+* source:	https://sketchfab.com/3d-models/logitech-g502-mouse-341de2d66cf84faaa1683f0d7039a167
+* author:	creamycreamcreme (https://sketchfab.com/creamycreamcreme)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Logitech G502 Mouse" (https://sketchfab.com/3d-models/logitech-g502-mouse-341de2d66cf84faaa1683f0d7039a167) by creamycreamcreme (https://sketchfab.com/creamycreamcreme) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

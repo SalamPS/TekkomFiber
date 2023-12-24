@@ -1,0 +1,11 @@
+Model Information:
+* title:	Goodram USB Flash Drive
+* source:	https://sketchfab.com/3d-models/goodram-usb-flash-drive-b1098389cc3b460bb1f1ce558d4b0764
+* author:	Dmytro Rohovyi (https://sketchfab.com/dmitriyslavyanskiy)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Goodram USB Flash Drive" (https://sketchfab.com/3d-models/goodram-usb-flash-drive-b1098389cc3b460bb1f1ce558d4b0764) by Dmytro Rohovyi (https://sketchfab.com/dmitriyslavyanskiy) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

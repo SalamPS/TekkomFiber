@@ -1,0 +1,11 @@
+Model Information:
+* title:	[RAM DDR4] G.Skill Trident Z RGB
+* source:	https://sketchfab.com/3d-models/ram-ddr4-gskill-trident-z-rgb-07e3eb8b4cca46ada63641bbd7c5a236
+* author:	Zon Digital (https://sketchfab.com/ZonDigital.Technology)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "[RAM DDR4] G.Skill Trident Z RGB" (https://sketchfab.com/3d-models/ram-ddr4-gskill-trident-z-rgb-07e3eb8b4cca46ada63641bbd7c5a236) by Zon Digital (https://sketchfab.com/ZonDigital.Technology) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)

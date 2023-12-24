@@ -1,0 +1,11 @@
+Model Information:
+* title:	Subwoofer
+* source:	https://sketchfab.com/3d-models/subwoofer-70fa19e87dc44a34b495caa95b00dbe4
+* author:	Ivan_WSK (https://sketchfab.com/ivan-wsk)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Subwoofer" (https://sketchfab.com/3d-models/subwoofer-70fa19e87dc44a34b495caa95b00dbe4) by Ivan_WSK (https://sketchfab.com/ivan-wsk) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

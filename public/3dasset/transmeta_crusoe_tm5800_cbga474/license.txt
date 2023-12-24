@@ -1,0 +1,11 @@
+Model Information:
+* title:	Transmeta Crusoe TM5800 CBGA474
+* source:	https://sketchfab.com/3d-models/transmeta-crusoe-tm5800-cbga474-7cf5e14cf53e43c4a7434136389f93c0
+* author:	Хлюпич (https://sketchfab.com/foxplay382)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Transmeta Crusoe TM5800 CBGA474" (https://sketchfab.com/3d-models/transmeta-crusoe-tm5800-cbga474-7cf5e14cf53e43c4a7434136389f93c0) by Хлюпич (https://sketchfab.com/foxplay382) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

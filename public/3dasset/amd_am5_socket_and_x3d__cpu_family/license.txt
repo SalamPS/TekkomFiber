@@ -1,0 +1,11 @@
+Model Information:
+* title:	AMD AM5 Socket and X3D  CPU Family
+* source:	https://sketchfab.com/3d-models/amd-am5-socket-and-x3d-cpu-family-7a0bba112c1c44d1b1108f480775f837
+* author:	seazerkei (https://sketchfab.com/seazerkei_cg)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "AMD AM5 Socket and X3D  CPU Family" (https://sketchfab.com/3d-models/amd-am5-socket-and-x3d-cpu-family-7a0bba112c1c44d1b1108f480775f837) by seazerkei (https://sketchfab.com/seazerkei_cg) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

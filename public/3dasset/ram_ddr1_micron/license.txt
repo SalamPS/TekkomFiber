@@ -1,0 +1,11 @@
+Model Information:
+* title:	RAM DDR1 MICRON
+* source:	https://sketchfab.com/3d-models/ram-ddr1-micron-5a406ca9624a426a9723b15b2dd07655
+* author:	Umut Arda (https://sketchfab.com/UBenli)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "RAM DDR1 MICRON" (https://sketchfab.com/3d-models/ram-ddr1-micron-5a406ca9624a426a9723b15b2dd07655) by Umut Arda (https://sketchfab.com/UBenli) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

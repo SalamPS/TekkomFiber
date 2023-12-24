@@ -1,0 +1,11 @@
+Model Information:
+* title:	Speaker Vipe Nitro X7
+* source:	https://sketchfab.com/3d-models/speaker-vipe-nitro-x7-f8ad99da408f4211b224ef51f08cee06
+* author:	madebyvipe (https://sketchfab.com/madebyvipe)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Speaker Vipe Nitro X7" (https://sketchfab.com/3d-models/speaker-vipe-nitro-x7-f8ad99da408f4211b224ef51f08cee06) by madebyvipe (https://sketchfab.com/madebyvipe) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

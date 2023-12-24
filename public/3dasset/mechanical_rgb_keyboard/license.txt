@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mechanical RGB Keyboard
+* source:	https://sketchfab.com/3d-models/mechanical-rgb-keyboard-4650f5bafe934a90b9f09396b843a966
+* author:	BigBrotherHCH (https://sketchfab.com/BigBrotherHCH)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mechanical RGB Keyboard" (https://sketchfab.com/3d-models/mechanical-rgb-keyboard-4650f5bafe934a90b9f09396b843a966) by BigBrotherHCH (https://sketchfab.com/BigBrotherHCH) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

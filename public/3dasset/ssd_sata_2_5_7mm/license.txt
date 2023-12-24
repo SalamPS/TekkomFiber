@@ -1,0 +1,11 @@
+Model Information:
+* title:	SSD SATA 2 5 7mm
+* source:	https://sketchfab.com/3d-models/ssd-sata-2-5-7mm-1e35cdc38fe34089813551a08767b104
+* author:	GmedranoTIC (https://sketchfab.com/gmedranotic)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "SSD SATA 2 5 7mm" (https://sketchfab.com/3d-models/ssd-sata-2-5-7mm-1e35cdc38fe34089813551a08767b104) by GmedranoTIC (https://sketchfab.com/gmedranotic) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

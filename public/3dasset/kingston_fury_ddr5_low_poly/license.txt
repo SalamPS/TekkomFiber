@@ -1,0 +1,11 @@
+Model Information:
+* title:	Kingston FURY DDR5 Low Poly
+* source:	https://sketchfab.com/3d-models/kingston-fury-ddr5-low-poly-bcb196fb929843f485e61fc75727e915
+* author:	cityon360 (https://sketchfab.com/cityon360)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Kingston FURY DDR5 Low Poly" (https://sketchfab.com/3d-models/kingston-fury-ddr5-low-poly-bcb196fb929843f485e61fc75727e915) by cityon360 (https://sketchfab.com/cityon360) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
