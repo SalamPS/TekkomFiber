@@ -4,8 +4,8 @@
 import Box from "@/components/Box"
 import object from '@/components/object'
 import sector from "@/components/sectors"
+import Parallax from "@/components/Parallax"
 import ParticlesContainer from '@/components/ParticlesContainer'
-import ParticlesCustom from "@/components/ParticlesCustom"
 import styles from './index.css'
 
 import Link from 'next/link';
@@ -28,13 +28,16 @@ function App() {
   }
   return (
     <div id='App'>
-      <Image
+      <Parallax speed={0.5}>
+        <Image
         src="/common/closeup.jpg"
         alt="closeup"
-        className='closeup prl700'
+        className='closeup'
         width={1000}
         height={1000}
-      />
+        priority
+        />
+      </Parallax>
 
       <nav className="navbar">
         <div className="collapse navbar-collapse" id="navbarNav">
@@ -54,10 +57,8 @@ function App() {
 
       <div id='jumbotron'>
         <div className="inner">
-          <div className='main prl1300'>
-            <h1 className='head'>
-              Tekkom . 3Fiber
-            </h1>
+          <div className='main prl700'>
+            <h1 className='head'>Tekkom . 3Fiber</h1>
             <h3 className='tagline'>PMM - Kelompok 5</h3>
           </div>
 
@@ -165,7 +166,6 @@ function App() {
                       alt={item.name}
                       width={200}
                       height={200}
-                      priority
                     />
                   </div>
                   <div className="preview">
