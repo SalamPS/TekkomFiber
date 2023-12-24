@@ -78,7 +78,7 @@ function Components({params}) {
         <Link href={'/components'}>
           <div className="head">
             <i className="bi bi-view-list"></i>
-            <span className='title'>Components List</span>
+            <span className='title'>Components</span>
           </div>
         </Link>
         <div className="body">
