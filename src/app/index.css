@@ -85,6 +85,7 @@
   color: rgba(255, 255, 255, 0.8705882353);
 }
 #App #jumbotron {
+  position: relative;
   overflow: hidden;
   z-index: 5;
   display: flex;

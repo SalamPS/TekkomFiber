@@ -28,7 +28,7 @@ function App() {
   }
   return (
     <div id='App'>
-      <Parallax speed={0.5}>
+      <Parallax speed={0.5} id={"closeup"}>
         <Image
         src="/common/closeup.jpg"
         alt="closeup"
@@ -57,18 +57,24 @@ function App() {
 
       <div id='jumbotron'>
         <div className="inner">
-          <div className='main prl700'>
-            <h1 className='head'>Tekkom . 3Fiber</h1>
-            <h3 className='tagline'>PMM - Kelompok 5</h3>
+          <div className='main'>
+            <Parallax speed={0.55} id={"jb-head"}>
+              <h1 className='head'>Tekkom . 3Fiber</h1>
+            </Parallax>
+            <Parallax speed={0.52} id={"jb-tag"}>
+              <h3 className='tagline'>PMM - Kelompok 5</h3>
+            </Parallax>
           </div>
 
-          <div className="go-next prl1300">
-            <span onClick={() => {scroll('about')}}>
-              <div className='ico'>
-                <i className="bi bi-caret-down"></i>
-              </div>
-            </span>
-          </div>
+          <Parallax speed={0.26} id={"jb-drop"}>
+            <div className="go-next">
+              <span onClick={() => {scroll('about')}}>
+                <div className='ico'>
+                  <i className="bi bi-caret-down"></i>
+                </div>
+              </span>
+            </div>
+          </Parallax>
         </div>
       </div>
       <div id="about">

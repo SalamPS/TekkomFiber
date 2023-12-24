@@ -2,12 +2,13 @@
 
 import { useEffect } from 'react';
 
-const Parallax = ({ children, speed }) => {
+const Parallax = ({ children, speed, id }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const translateY = scrollTop * speed;
-      document.getElementById('parallax').style.transform = `translateY(${translateY}px)`;
+      const me = document.getElementById(id)
+      me ? me.style.transform = `translateY(${translateY}px)` : ''
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -17,7 +18,7 @@ const Parallax = ({ children, speed }) => {
   }, [speed]);
 
   return (
-    <div id="parallax" style={{ willChange: 'transform' }}>
+    <div id={id} style={{ willChange: 'transform' }}>
       {children}
     </div>
   );
