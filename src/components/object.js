@@ -1,11 +1,14 @@
 class object {
-  constructor (type,name,desc,sector,icon,prop,origin) {
+  constructor (sector,type,name,desc,icon,prev,prop,info,origin) {
+    this.sector = sector;
     this.type = type;
     this.name = name;
     this.desc = desc;
     this.icon = icon;
+    this.prev = prev;
+
     this.prop = prop;
-    this.sector = sector;
+    this.info = info;
     this.origin = origin;
   }
 }
