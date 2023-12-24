@@ -109,11 +109,8 @@
   border-radius: 10px;
   padding-top: 10px;
 }
-#Viewer .control #right button:hover {
-  translate: -5px 0;
-}
-#Viewer .control #left button:hover {
-  translate: 5px 0;
+#Viewer .control #right button:hover, #Viewer .control #left button:hover {
+  scale: 1.05;
 }
 #Viewer .control #navigate button {
   margin-top: 15px;
