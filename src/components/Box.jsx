@@ -61,6 +61,11 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
   //   y: {value: 10, min: -5, max:10},
   //   z: {value: 0, min: -5, max:10}
   // })
+
+  const point = light[0] == 'point' || light[0] == 'batch'
+  const direct = light[0] == 'direct' || light[0] == 'batch'
+  const extra = light[2];
+
   const bottomLight = useRef();
   useHelper(bottomLight, DirectionalLightHelper, 1, 'red');
   const upperLight = useRef();
@@ -75,12 +80,19 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
   useHelper(leftLight, DirectionalLightHelper, 1, 'blue');
   return (
     <>
-      <directionalLight intensity={light} position={[0,20,0]} ref={bottomLight}/>
-      <directionalLight intensity={light} position={[0,-20,0]} ref={upperLight}/>
-      <directionalLight intensity={light} position={[0,0,20]} ref={frontLight}/>
-      <directionalLight intensity={light} position={[0,0,-20]} ref={backLight}/>
-      <directionalLight intensity={light} position={[20,0,0]} ref={rightLight}/>
-      <directionalLight intensity={light} position={[-20,0,0]} ref={leftLight}/>
+      <pointLight intensity={point ? light[1]*100 : 0} position={[0,15,0]} ref={bottomLight}/>
+      <pointLight intensity={point ? light[1]*100 : 0} position={[0,-15,0]} ref={upperLight}/>
+      <pointLight intensity={point ? light[1]*100 : 0} position={[0,0,15]} ref={frontLight}/>
+      <pointLight intensity={point ? light[1]*100 : 0} position={[0,0,-15]} ref={backLight}/>
+      <pointLight intensity={point ? light[1]*100 : 0} position={[15,0,0]} ref={rightLight}/>
+      <pointLight intensity={point ? light[1]*100 : 0} position={[-15,0,0]} ref={leftLight}/>
+
+      <directionalLight intensity={direct ? light[1] : 0} position={[0,15,0]} ref={bottomLight}/>
+      <directionalLight intensity={direct ? light[1] : 0} position={[0,-15,0]} ref={upperLight}/>
+      <directionalLight intensity={direct ? light[1] : 0} position={[0,0,15]} ref={frontLight}/>
+      <directionalLight intensity={direct ? light[1] : 0} position={[0,0,-15]} ref={backLight}/>
+      <directionalLight intensity={direct ? light[1] : 0} position={[15,0,0]} ref={rightLight}/>
+      <directionalLight intensity={direct ? light[1] : 0} position={[-15,0,0]} ref={leftLight}/>
       <group ref={group} scale={scale} position={pos ? [pos[0],pos[1],pos[2]] : [0,0,0]} rotation={rot ? [rot[0],rot[1],rot[2]] : [0,0,0]}/>
     </>
   );
