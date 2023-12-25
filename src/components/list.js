@@ -397,10 +397,10 @@ const list = [
   new object('mouse', 'gaming', 'A4tech Bloody V3M', 'Gaming Mouse', 'mouse3-fill',
   "Rp 287.999",
   {
-    scale: 1,
+    scale: 20,
     speed: [0, 0, 0],
-    light: ["direct", undefined],
-    pos: [0, 0, 0],
+    light: ["batch", 1],
+    pos: [32, 0, 10],
     rot: [0, 0, 0],
     src: 'gaming_mouse'
   },
