@@ -4,9 +4,7 @@ import { useRef } from "react";
 import { Canvas, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader';
 import { OrbitControls, Plane, useHelper } from "@react-three/drei";
-import { DirectionalLightHelper, PointLightHelper, SpotLightHelper, RectAreaLightHelper } from 'three';
-
-import {AnimationMixer} from 'three';
+import { AnimationMixer, DirectionalLightHelper } from 'three'
 
 const Computers = ({ scale, speed, src, light, pos, rot }) => {
   const group = useRef();
