@@ -74,12 +74,12 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
   const rightLight = useRef();
   const leftLight = useRef();
   
-  useHelper(bottomLight, DirectionalLightHelper, 1, 'black');
-  useHelper(upperLight, DirectionalLightHelper, 1, 'red');
-  useHelper(frontLight, DirectionalLightHelper, 1, 'yellow');
-  useHelper(backLight, DirectionalLightHelper, 1, 'black');
-  useHelper(rightLight, DirectionalLightHelper, 1, 'blue');
-  useHelper(leftLight, DirectionalLightHelper, 1, 'black');
+  // useHelper(bottomLight, DirectionalLightHelper, 1, 'black');
+  // useHelper(upperLight, DirectionalLightHelper, 1, 'red');
+  // useHelper(frontLight, DirectionalLightHelper, 1, 'yellow');
+  // useHelper(backLight, DirectionalLightHelper, 1, 'black');
+  // useHelper(rightLight, DirectionalLightHelper, 1, 'blue');
+  // useHelper(leftLight, DirectionalLightHelper, 1, 'black');
 
   return (
     <>
