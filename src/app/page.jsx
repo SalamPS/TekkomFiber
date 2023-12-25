@@ -11,11 +11,11 @@ import styles from './index.css'
 import Link from 'next/link';
 import Image from 'next/image'
 
-const demo3D = new object('demo','','','','','',
+const demo3D = new object('demo','type','name','desc','icon','prev',
   {
     scale: 3,
     speed: [0, 0, 0],
-    light: undefined,
+    light: ["point", 2, ['bt']],
     pos: [0, -6, 0],
     rot: [0, 0, 0],
     src: 'rgb_lego_cubes'
