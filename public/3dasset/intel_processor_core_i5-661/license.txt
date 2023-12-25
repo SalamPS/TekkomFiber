@@ -1,0 +1,11 @@
+Model Information:
+* title:	Intel Processor Core i5-661
+* source:	https://sketchfab.com/3d-models/intel-processor-core-i5-661-1940447b5a7b41f3a7ebdd73ce2f590d
+* author:	Dr_Mint (https://sketchfab.com/Dr_Mint)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Intel Processor Core i5-661" (https://sketchfab.com/3d-models/intel-processor-core-i5-661-1940447b5a7b41f3a7ebdd73ce2f590d) by Dr_Mint (https://sketchfab.com/Dr_Mint) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

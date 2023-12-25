@@ -80,12 +80,12 @@ const list = [
   new object('cpu', 'intel', 'Intel CPU', 'CPU Intel', 'cpu-fill',
   "",
   {
-    scale: 5,
+    scale: 40,
     speed: [0, 0, 0],
     light: ["direct", 4],
-    pos: [0, .3, 0],
-    rot: [0, 0, 0],
-    src: ''
+    pos: [0.6, -1.2, -4.4],
+    rot: [0.5, -2.4, 0.37],
+    src: 'intel_processor_core_i5-661'
   },
   [
 
@@ -405,12 +405,12 @@ const list = [
   new object('mouse', 'track-ball', 'Logitech Trackman Marble', 'Track Ball Mouse', 'mouse3-fill',
   "Rp 305.000",
   {
-    scale: 100,
+    scale: .1,
     speed: [0, 0, 0],
     light: ["direct", 1],
     pos: [0, 0, 0],
     rot: [0, 0, 0],
-    src: ''
+    src: 'trackball'
   },
   [
     "Trackball mouse adalah jenis mouse yang memiliki sebuah bola kecil yang memiliki sensor gerak untuk menggerakkan pointer.",
