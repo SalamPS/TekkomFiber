@@ -6,8 +6,8 @@ const nova = Nova_Square({subsets: ['latin'], weight: '400'})
 
 export const metadata = {
   title: {
-    absolute: 'Tekkom ThreeFiber',
-    default: 'Tekkom ThreeFiber',
+    absolute: 'TEKKOM x ThreeFiber',
+    default: 'TEKKOM x ThreeFiber',
     template: '%s | Tekkom3Fiber'
   },
   description: 'Tekkom Introduction to Computer Components using ThreeFiber',
