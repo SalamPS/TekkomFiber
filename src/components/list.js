@@ -273,7 +273,7 @@ const list = [
     speed: [0, 0, 0],
     light: ["batch", 2],
     pos: [0, 0, 0],
-    rot: [0, 0, 0],
+    rot: [0, .8, 0],
     src: 'wd_green_1tb_hard_disk_hdd'
   },
   [
@@ -311,7 +311,7 @@ const list = [
     speed: [0, 0, 0],
     light: ["direct", undefined],
     pos: [0, 3, 0],
-    rot: [.8, .6, 2.6],
+    rot: [.8, .62, 2.6],
     src: 'ssd_samsung_980_pro_1tb'
   },
   [
@@ -345,7 +345,7 @@ const list = [
 
   
   // Parts of keyboard
-  new object('keyboard', 'wireless', 'Wireless Mechanical Keyboard', 'Wireless Keyboard', 'keyboard-fill',
+  new object('keyboard', 'wireless-kb', 'Wireless Mechanical Keyboard', 'Wireless Keyboard', 'keyboard-fill',
   "",
   {
     scale: 10,
@@ -388,7 +388,7 @@ const list = [
     speed: [0.0005, 0, 0],
     light: ["batch", 2],
     pos: [0, 0, 0],
-    rot: [0, .8, 0],
+    rot: [0, .79, 0],
     src: 'mechanical_rgb_keyboard'
   },
   [
@@ -471,7 +471,7 @@ const list = [
   {
     scale: 20,
     speed: [0, 0, 0],
-    light: ["batch", 1],
+    light: ["batch", 2],
     pos: [32, 0, 10],
     rot: [0, 0, 0],
     src: 'gaming_mouse'
@@ -554,7 +554,7 @@ const list = [
     speed: [0, 0, 0],
     light: ["direct", 5],
     pos: [0, 3, 0],
-    rot: [1.1, 0.4, -0.7],
+    rot: [1.1, 0.44, -0.7],
     src: 'katana_r_1'
   },
   [
@@ -571,8 +571,8 @@ const list = [
     scale: 7,
     speed: [0, 0, 0],
     light: ["direct", 2],
-    pos: [0, 0, 3],
-    rot: [0, -1.57, 0],
+    pos: [3.8, 0, 3],
+    rot: [0, -.78, 0.1],
     src: 'corsair_h150i_elitie_cpu_liquid_cooler'
   },
   [
@@ -628,8 +628,8 @@ const list = [
     scale: .6,
     speed: [0, 0, 0],
     light: ["direct", 1],
-    pos: [0, -17.8, 0],
-    rot: [0, -.7, 0],
+    pos: [0, -20.2, 0],
+    rot: [0, -0.9, 0.18],
     src: 'bluetooth_speaker'
   },
   [
