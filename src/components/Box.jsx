@@ -1,11 +1,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 import { useRef } from "react";
-import { Canvas, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader';
-import { OrbitControls, Plane, useHelper } from "@react-three/drei";
-import { AnimationMixer, DirectionalLightHelper } from 'three'
-import { useControls } from "leva";
+import { OrbitControls } from "@react-three/drei";
+import { AnimationMixer } from 'three'
+import { Canvas, useFrame } from '@react-three/fiber';
 
 const Computers = ({ scale, speed, src, light, pos, rot }) => {
   const group = useRef();
@@ -47,18 +46,6 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
       console.error('Error loading 3D model', error);
     }
   );
-  
-  // const {intensity, distance, angle, x, y, z, width, height, color} = useControls({
-  //   intensity: {value: 1, min: 0, max: 100}, 
-  //   distance: {value: 1, min: 0, max: 10}, 
-  //   angle: {value: 1, min: 0, max: 10}, 
-  //   width: {value: 1, min: 0, max: 10}, 
-  //   height: {value: 1, min: 0, max: 10}, 
-  //   color: "#fff", 
-  //   x: {value: 0, min: -5, max:10},
-  //   y: {value: 10, min: -5, max:10},
-  //   z: {value: 0, min: -5, max:10}
-  // })
 
   const point = light[0] == 'point' || light[0] == 'batch'
   const direct = light[0] == 'direct' || light[0] == 'batch'
@@ -66,47 +53,22 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
   const off = light[2];
   const isOff = (source) => {return off ? off.includes(source) : false}
 
-  const bottomLight = useRef();
-  const upperLight = useRef();
-  const frontLight = useRef();
-  const backLight = useRef();
-  const rightLight = useRef();
-  const leftLight = useRef();
-  
-  // useHelper(bottomLight, DirectionalLightHelper, 1, 'red');
-  // useHelper(upperLight, DirectionalLightHelper, 1, 'red');
-  // useHelper(frontLight, DirectionalLightHelper, 1, 'yellow');
-  // useHelper(backLight, DirectionalLightHelper, 1, 'yellow');
-  // useHelper(rightLight, DirectionalLightHelper, 1, 'blue');
-  // useHelper(leftLight, DirectionalLightHelper, 1, 'blue');
-
-  // const {rx,ry,rz, px, py, pz, scales} = useControls({
-  //   rx: {value: rot[0], min: rot[0]-5, max: rot[0]+5},
-  //   ry: {value: rot[1], min: rot[1]-5, max: rot[1]+5},
-  //   rz: {value: rot[2], min: rot[2]-5, max: rot[2]+5},
-  //   px: {value: pos[0], min: pos[0]-10, max: pos[0]+10},
-  //   py: {value: pos[1], min: pos[1]-10, max: pos[1]+10},
-  //   pz: {value: pos[2], min: pos[2]-10, max: pos[2]+10},
-  //   scales: {value: scale, min: scale-10, max: scale+10},
-  // })
-
   return (
     <>
-      <pointLight intensity={point && !isOff('up') ? light[1]*100 : 0} position={[0,15,0]} ref={bottomLight}/>
-      <pointLight intensity={point && !isOff('bt') ? light[1]*100 : 0} position={[0,-15,0]} ref={upperLight}/>
-      <pointLight intensity={point && !isOff('fr') ? light[1]*100 : 0} position={[0,0,15]} ref={frontLight}/>
-      <pointLight intensity={point && !isOff('bc') ? light[1]*100 : 0} position={[0,0,-15]} ref={backLight}/>
-      <pointLight intensity={point && !isOff('rg') ? light[1]*100 : 0} position={[15,0,0]} ref={rightLight}/>
-      <pointLight intensity={point && !isOff('lf') ? light[1]*100 : 0} position={[-15,0,0]} ref={leftLight}/>
+      <pointLight intensity={point && !isOff('up') ? light[1]*100 : 0} position={[0,15,0]}/>
+      <pointLight intensity={point && !isOff('bt') ? light[1]*100 : 0} position={[0,-15,0]}/>
+      <pointLight intensity={point && !isOff('fr') ? light[1]*100 : 0} position={[0,0,15]}/>
+      <pointLight intensity={point && !isOff('bc') ? light[1]*100 : 0} position={[0,0,-15]}/>
+      <pointLight intensity={point && !isOff('rg') ? light[1]*100 : 0} position={[15,0,0]}/>
+      <pointLight intensity={point && !isOff('lf') ? light[1]*100 : 0} position={[-15,0,0]}/>
 
-      <directionalLight intensity={direct && !isOff('up') ? light[1] : 0} position={[0,15,0]} ref={bottomLight}/>
-      <directionalLight intensity={direct && !isOff('bt') ? light[1] : 0} position={[0,-15,0]} ref={upperLight}/>
-      <directionalLight intensity={direct && !isOff('fr') ? light[1] : 0} position={[0,0,15]} ref={frontLight}/>
-      <directionalLight intensity={direct && !isOff('bc') ? light[1] : 0} position={[0,0,-15]} ref={backLight}/>
-      <directionalLight intensity={direct && !isOff('rg') ? light[1] : 0} position={[15,0,0]} ref={rightLight}/>
-      <directionalLight intensity={direct && !isOff('lf') ? light[1] : 0} position={[-15,0,0]} ref={leftLight}/>
+      <directionalLight intensity={direct && !isOff('up') ? light[1] : 0} position={[0,15,0]}/>
+      <directionalLight intensity={direct && !isOff('bt') ? light[1] : 0} position={[0,-15,0]}/>
+      <directionalLight intensity={direct && !isOff('fr') ? light[1] : 0} position={[0,0,15]}/>
+      <directionalLight intensity={direct && !isOff('bc') ? light[1] : 0} position={[0,0,-15]}/>
+      <directionalLight intensity={direct && !isOff('rg') ? light[1] : 0} position={[15,0,0]}/>
+      <directionalLight intensity={direct && !isOff('lf') ? light[1] : 0} position={[-15,0,0]}/>
       <group ref={group} scale={scale} position={pos ? [pos[0],pos[1],pos[2]] : [0,0,0]} rotation={rot ? [rot[0],rot[1],rot[2]] : [0,0,0]}/>
-      {/* <group ref={group} scale={scales} position={[px,py,pz]} rotation={[rx,ry,rz]}/> */}
     </>
   );
 };
