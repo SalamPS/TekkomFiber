@@ -58,15 +58,16 @@ function App() {
       <div id='jumbotron'>
         <div className="inner">
           <div className='main'>
-            <Parallax speed={0.55} id={"jb-head"}>
-              <h1 className='head'>Tekkom . 3Fiber</h1>
+            <Parallax speed={0.45} id={"jb-head"}>
+              <h1 className='head'>Tekkom</h1>
+              <h1 className='head'>Three.Fiber</h1>
             </Parallax>
-            <Parallax speed={0.52} id={"jb-tag"}>
+            <Parallax speed={0.42} id={"jb-tag"}>
               <h3 className='tagline'>PMM - Kelompok 5</h3>
             </Parallax>
           </div>
 
-          <Parallax speed={0.26} id={"jb-drop"}>
+          <Parallax speed={0.15} id={"jb-drop"}>
             <div className="go-next">
               <span onClick={() => {scroll('about')}}>
                 <div className='ico'>
