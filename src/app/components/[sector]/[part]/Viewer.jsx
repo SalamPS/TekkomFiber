@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 
-import Box from "@/components/Box";
 import styles from './part.css'
 
 import Image from 'next/image'
 import Link from "next/link";
 
+import Box from "@/components/Box";
 import list from '@/components/list'
 import upperCase from "@/components/upperCase";
 
@@ -105,6 +105,46 @@ const Bar = ({part, view, togglePad}) => {
   )
 }
 
+const Pad = ({togglePad, part}) => {
+  const content = list.find(item => item.type == part)
+
+  return (
+    <div className="container">
+      <div className="head">
+        <span className="bi bi-x-lg" onClick={togglePad}></span>
+        <div className="quick">
+          <span className={`bi bi-${content.icon}`}></span> 
+          <span>{upperCase(content.desc)}</span>
+        </div>
+      </div>
+      <div className="body">
+        <div id="desc" className="section">
+          <div id="name">
+            <h1>{content.name}</h1>
+          </div>
+          {content.info.map((item,i) => (
+            <p key={i}>{item}</p>
+          ))}
+          <h3>{content.name} Specification: </h3>
+          {content.spec.map((item,i) => (
+            <li key={i}>{item}</li>
+          ))}
+          {content.price != "" ? <p className="price">Harga Pasaran: ±{content.price}</p> : ''}
+        </div>
+        <div id="img" className="section">
+          <Image
+            src={`/preview/${content.sector}-${content.type}.png`}
+            alt="Tekkom"
+            width={300}
+            height={300/16*9}
+            priority
+          />
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function Viewer ({params}) {
   const [view, setView] = useState(true);
   const toggleView = () => setView(!view);
@@ -129,11 +169,7 @@ export default function Viewer ({params}) {
   return (
     <div id="Viewer">
       <div className={`pad ${dsp ? 'dsp' : ''} ${pad ? 'show' : ''}`}>
-        <div className="container">
-          <div className="head">
-            <span className="bi bi-x-lg" onClick={togglePad}></span>
-          </div>
-        </div>
+        <Pad togglePad={togglePad} part={params.part}/>
       </div>
       <div className="title">
         <Image

@@ -80,6 +80,59 @@
     border: solid 1px rgba(199, 199, 199, 0.5254901961);
   }
 }
+#Viewer .pad .quick {
+  text-align: left;
+  padding: 40px 0 0 40px;
+  font-size: 1.5rem;
+}
+#Viewer .pad .quick span {
+  margin-right: 5px;
+}
+#Viewer .pad .body {
+  display: flex;
+  padding: 0 40px;
+}
+#Viewer .pad .body .section {
+  width: 100%;
+  flex-grow: 1;
+}
+@media screen and (min-width: 750px) {
+  #Viewer .pad .body .section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  #Viewer .pad .body .section {
+    width: 50%;
+  }
+}
+#Viewer .pad .body p {
+  margin-bottom: 10px;
+}
+#Viewer .pad .body h3 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+#Viewer .pad .body .price {
+  margin-top: 10px;
+}
+#Viewer .pad .body #name {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 5px 10px 0 0;
+  display: inline-block;
+  border-top: solid 2px white;
+}
+#Viewer .pad .body #name h1 {
+  font-size: 2.3rem;
+}
+#Viewer .pad .body #img {
+  text-align: right;
+}
+#Viewer .pad .body #img img {
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
 #Viewer .control {
   top: 0;
   left: 0;

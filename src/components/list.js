@@ -368,6 +368,9 @@ const list = [
     "Format data USB: 16 bit/axis",
     "Report rate USB: 1000Hz (1 md)",
     "Mikroprosesor: 32-bit ARM",
+    "Format data USB: 16 bit/axis",
+    "Report rate USB: 1000Hz (1 md)",
+    "Mikroprosesor: 32-bit ARM",
   ],
   "https://sketchfab.com/3d-models/gaming-mouse-ab744476bdb343a9bf4544db12168af6"
   ),
@@ -391,7 +394,7 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/gaming-mouse-ab744476bdb343a9bf4544db12168af6"
   ),
-  new object('mouse', 'wireless', 'A4tech Bloody V3M', 'Gaming Mouse', 'mouse3-fill',
+  new object('mouse', 'gaming', 'A4tech Bloody V3M', 'Gaming Mouse', 'mouse3-fill',
   "Rp 287.999",
   {
     scale: 1,
