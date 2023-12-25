@@ -77,7 +77,7 @@ const list = [
 
   
   // Parts of cpu
-  new object('cpu', 'intel', 'Intel CPU', 'CPU Intel', 'cpu-fill',
+  new object('cpu', 'intel-661', 'Intel i5 661', 'CPU Intel', 'cpu-fill',
   "",
   {
     scale: 40,
@@ -95,7 +95,7 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/dream-computer-setup-82f78bbaf2d34f01af854a52151dbf49"
   ),
-  new object('cpu', 'amd', 'AMD Ryzen 6600H', 'CPU AMD', 'cpu-fill',
+  new object('cpu', 'amd-5950', 'AMD Ryzen 5950X', 'CPU AMD', 'cpu-fill',
   "",
   {
     scale: 300,
@@ -346,7 +346,7 @@ const list = [
 
   
   // Parts of keyboard
-  new object('keyboard', 'wireless-kb', 'Wireless Mechanical Keyboard', 'Wireless Keyboard', 'keyboard-fill',
+  new object('keyboard', 'wireless-kb', 'Wireless Keyboard', 'Wireless Era', 'keyboard-fill',
   "",
   {
     scale: 10,
@@ -355,24 +355,6 @@ const list = [
     pos: [17, 5, -5],
     rot: [0, .79, 0],
     src: 'mechanical_keyboard___aesthetic'
-  },
-  [
-
-  ],
-  [
-
-  ],
-  "https://sketchfab.com/3d-models/mechanical-rgbeyboard-4650f5bafe934a90b9f09396b843a966"
-  ),
-  new object('keyboard', 'membrane', 'Membrane Keyboard', 'Membran Key', 'keyboard-fill',
-  "",
-  {
-    scale: 1,
-    speed: [0.0005, 0, 0],
-    light: ["batch", 1],
-    pos: [0, 0, 0],
-    rot: [0, .8, 0],
-    src: 'wireless_keyboard'
   },
   [
 
@@ -400,10 +382,28 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/mechanical-rgbeyboard-4650f5bafe934a90b9f09396b843a966"
   ),
+  new object('keyboard', 'membrane', 'Membrane Keyboard', 'Membrane Key', 'keyboard-fill',
+  "",
+  {
+    scale: 1,
+    speed: [0.0005, 0, 0],
+    light: ["batch", 1],
+    pos: [0, 0, 0],
+    rot: [0, .8, 0],
+    src: 'wireless_keyboard'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/mechanical-rgbeyboard-4650f5bafe934a90b9f09396b843a966"
+  ),
 
   
   // Parts of mouse
-  new object('mouse', 'trackball', 'Logitech Trackman Marble', 'Track Ball Mouse', 'mouse3-fill',
+  new object('mouse', 'trackball', 'Unbranded Trackball', 'Track Ball Mouse', 'mouse3-fill',
   "Rp 305.000",
   {
     scale: .1,
@@ -548,7 +548,7 @@ const list = [
 
 
   // Parts of cooling
-  new object('cooling', 'exhaust', 'Fan CPU Cooler', 'Air Cooling', 'fan',
+  new object('cooling', 'exhaust', 'Katana R1 Fan Cooling', 'Air Cooling', 'fan',
   "",
   {
     scale: 100,
@@ -623,7 +623,7 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/speaker-vipe-nitro-x7-f8ad99da408f4211b224ef51f08cee06"
   ),
-  new object('speaker', 'bluetooth', 'Speaker Vipe Nitro X7', 'Bluetooth Speaker', 'speaker-fill',
+  new object('speaker', 'bluetooth', 'Imaignition Bluetooth', 'Bluetooth Speaker', 'speaker-fill',
   "",
   {
     scale: .6,
