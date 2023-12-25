@@ -1,51 +1,17 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
-import { useRef } from "react";
+'use client'
+
+import { Suspense, useRef } from "react";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader';
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { AnimationMixer } from 'three'
 import { Canvas, useFrame } from '@react-three/fiber';
 
+import CanvasLoader from '@/components/CanvasLoader'
+
 const Computers = ({ scale, speed, src, light, pos, rot }) => {
-  const group = useRef();
-
-  useFrame((state, delta) => {
-    if (group.current.mixer) {
-      group.current.mixer.update(delta);
-    }
-    group.current.rotation.y += (speed[0]);
-    group.current.rotation.x += (speed[1]);
-    group.current.rotation.z += (speed[2]);
-  });
-
-  const loader = new GLTFLoader();
-  const modelPath = `/3dasset/${src}/scene.gltf`;
-  
-  loader.load(
-    modelPath,
-    (gltf) => {
-      const model = gltf.scene;
-
-      if (gltf.animations && gltf.animations.length > 0) {
-        const animation = gltf.animations[0];
-        const mixer = new AnimationMixer(model);
-        const action = mixer.clipAction(animation);
-        action.play();
-
-        group.current.mixer = mixer;
-        group.current.children.forEach((child) => {
-          if (child !== model) {
-            group.current.remove(child);
-          }
-        });
-      }
-      group.current.add(model);
-    },
-    undefined,
-    (error) => {
-      console.error('Error loading 3D model', error);
-    }
-  );
+  const object = useGLTF(`/3dasset/${src}/scene.gltf`);
 
   const point = light[0] == 'point' || light[0] == 'batch'
   const direct = light[0] == 'direct' || light[0] == 'batch'
@@ -54,7 +20,7 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
   const isOff = (source) => {return off ? off.includes(source) : false}
 
   return (
-    <>
+    <mesh>
       <pointLight intensity={point && !isOff('up') ? light[1]*100 : 0} position={[0,15,0]}/>
       <pointLight intensity={point && !isOff('bt') ? light[1]*100 : 0} position={[0,-15,0]}/>
       <pointLight intensity={point && !isOff('fr') ? light[1]*100 : 0} position={[0,0,15]}/>
@@ -68,8 +34,13 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
       <directionalLight intensity={direct && !isOff('bc') ? light[1] : 0} position={[0,0,-15]}/>
       <directionalLight intensity={direct && !isOff('rg') ? light[1] : 0} position={[15,0,0]}/>
       <directionalLight intensity={direct && !isOff('lf') ? light[1] : 0} position={[-15,0,0]}/>
-      <group ref={group} scale={scale} position={pos ? [pos[0],pos[1],pos[2]] : [0,0,0]} rotation={rot ? [rot[0],rot[1],rot[2]] : [0,0,0]}/>
-    </>
+      <primitive
+        object={object.scene}
+        scale={scale}
+        position={pos ? [pos[0],pos[1],pos[2]] : [0,0,0]}
+        rotation={rot ? [rot[0],rot[1],rot[2]] : [0,0,0]}
+      />
+    </mesh>
   );
 };
 
@@ -77,12 +48,18 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
 export default function Box ({scale, speed, src, light, pos, rot}) {
   return (
     <Canvas
+      frameloop="demand"
+      dpr={[1, 2]}
       shadows
       camera={{ position: [20,20,20], fov: 50, }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <OrbitControls/>
-      <Computers scale={scale} speed={speed} src={src} light={light} pos={pos} rot={rot}/>
+      <Suspense fallback={<CanvasLoader/>}>
+        <OrbitControls/>
+        <Computers scale={scale} speed={speed} src={src} light={light} pos={pos} rot={rot}/>
+      </Suspense>
+
+      <Preload all/>
     </Canvas>
   );
 }
