@@ -7,7 +7,7 @@ const list = [
   {
     scale: 0.8,
     speed: [0, 0, 0],
-    light: undefined,
+    light: ["direct", undefined],
     pos: [0, -13, 0],
     rot: [1, 0.6, -0.7],
     src: 'asus_strix_b_550_f_gaming_motherboard_realistic'
@@ -23,15 +23,15 @@ const list = [
 
   
   // Parts of cpu
-  new object('cpu', 'intel', 'CPU Intel', 'Computer', 'cpu-fill',
+  new object('cpu', 'intel', 'Intel i9 12200H', 'CPU Intel', 'cpu-fill',
   "",
   {
-    scale: 1,
+    scale: 5,
     speed: [0, 0, 0],
-    light: undefined,
-    pos: [0, 0, 0],
+    light: ["direct", 4],
+    pos: [0, .3, 0],
     rot: [0, 0, 0],
-    src: 'dream_computer_CPU'
+    src: 'intel_cpu'
   },
   [
 
@@ -41,15 +41,33 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/dream-computer-setup-82f78bbaf2d34f01af854a52151dbf49"
   ),
-  new object('cpu', 'amd', 'CPU AMD', 'Computer', 'cpu-fill',
+  new object('cpu', 'amd', 'AMD Ryzen 6600H', 'CPU AMD', 'cpu-fill',
   "",
   {
     scale: 1,
     speed: [0, 0, 0],
-    light: undefined,
+    light: ["direct", undefined],
     pos: [0, 0, 0],
     rot: [0, 0, 0],
-    src: 'dream_computer_CPU'
+    src: 'amd_am5_socket_and_x3d__cpu_family'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/dream-computer-setup-82f78bbaf2d34f01af854a52151dbf49"
+  ),
+  new object('cpu', 'transmeta', 'Transmeta Crusoe 5304', 'CPU Transmeta', 'cpu-fill',
+  "",
+  {
+    scale: 3,
+    speed: [0, 0, 0],
+    light: ["point", 2, "30"],
+    pos: [0, 0, 0],
+    rot: [0, 0, 0],
+    src: 'transmeta_crusoe_tm5800_cbga474'
   },
   [
 
@@ -66,7 +84,7 @@ const list = [
   "gpu-discrete", {
     scale: 5,
     speed: [0.0005, 0, 0],
-    light: undefined,
+    light: ["direct", 2],
     pos: [-1, 0, 3],
     rot: [0, 0, 0],
     src: 'asus_rog_geforce_rtx_VGA_CARD'
@@ -83,12 +101,12 @@ const list = [
   new object('gpu', 'mobile', 'Geforce-RTX Mobile', 'Virtual Graphic Array', 'gpu-card',
   "",
   {
-    scale: 5,
+    scale: 1,
     speed: [0.0005, 0, 0],
-    light: undefined,
-    pos: [-1, 0, 3],
-    rot: [0, 0, 0],
-    src: 'asus_rog_geforce_rtx_VGA_CARD'
+    light: ["direct", 2],
+    pos: [0, 0, 0],
+    rot: [1.58, 1.58, 0],
+    src: 'geforce_rtx_3080_graphics_card'
   },
   [
 
@@ -99,15 +117,15 @@ const list = [
   "https://sketchfab.com/3d-models/asus-rog-geforce-rtx-4090-v20-6f527569f14b4efc94c7072842bd41ac",
   ),
 
-  new object('gpu', 'integrated', 'Geforce-RTX Integrated', 'Virtual Graphic Array', 'gpu-card',
+  new object('gpu', 'miner', 'ARM SkyMiner 2.0', 'Miner GPU', 'gpu-card',
   "",
   {
-    scale: 5,
+    scale: .5,
     speed: [0.0005, 0, 0],
-    light: undefined,
-    pos: [-1, 0, 3],
+    light: ["direct", undefined],
+    pos: [0, 3, 0],
     rot: [0, 0, 0],
-    src: 'asus_rog_geforce_rtx_VGA_CARD'
+    src: 'ARM_skyminer_2.0'
   },
   [
 
@@ -120,15 +138,69 @@ const list = [
 
   
   // Parts of ram
-  new object('ram', 'ddr4', 'Crucial Ballistix 3600', 'DDR4 RAM', 'memory',
+  new object('ram', 'ddr1', 'Plain DDR RAM', 'DDR1 Generation', 'memory',
   "",
   {
-    scale: 200,
+    scale: 180,
     speed: [0, 0, 0],
-    light: 15,
-    pos: [0, 0, 0],
+    light: ["direct", 2],
+    pos: [0, 2.5, 0],
+    rot: [-.5, 0, 0],
+    src: 'ram_ddr1_micron'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/crucial-ballistix-8gb-ddr4-3600-ram-black-1fce4935471e46cab6ee57ba140c87f9"
+  ),
+  new object('ram', 'ddr3', 'General DDR3 RAM', 'DDR3 Generation', 'memory',
+  "",
+  {
+    scale: 13,
+    speed: [0, 0, 0],
+    light: ["direct", `1.5`],
+    pos: [0, 2.5, 0],
+    rot: [-.3, 1.58, 0],
+    src: 'ddr3'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/crucial-ballistix-8gb-ddr4-3600-ram-black-1fce4935471e46cab6ee57ba140c87f9"
+  ),
+  new object('ram', 'ddr4', 'TridentZ GSkill RGB', 'DDR4 Generation', 'memory',
+  "",
+  {
+    scale: 2.5,
+    speed: [0, 0, 0],
+    light: ["direct", 3],
+    pos: [0, -5, 0],
     rot: [0, 0, 0],
-    src: 'crucial_ballistix_8gb_ddr4_3600_ram__black'
+    src: 'ram_ddr4_g.skill_trident_z_rgb'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/crucial-ballistix-8gb-ddr4-3600-ram-black-1fce4935471e46cab6ee57ba140c87f9"
+  ),
+  new object('ram', 'ddr5', 'Kingston FURY Beast', 'DDR5 Generation', 'memory',
+  "",
+  {
+    scale: 5,
+    speed: [0, 0, 0],
+    light: ["direct", 3],
+    pos: [0, 3, 0],
+    rot: [1.2, 0, 0],
+    src: 'kingston_fury_ddr5_low_poly'
   },
   [
 
@@ -146,7 +218,7 @@ const list = [
   {
     scale: 1,
     speed: [0, 0, 0],
-    light: undefined,
+    light: ["direct", undefined],
     pos: [0, 0, 0],
     rot: [0, 0, 0],
     src: 'wd_green_1tb_hard_disk_hdd'
@@ -166,7 +238,7 @@ const list = [
   {
     scale: 1,
     speed: [0, 0, 0],
-    light: undefined,
+    light: ["direct", undefined],
     pos: [0, 0, 0],
     rot: [0, 0, 0],
     src: 'ssd_samsung_980_pro_1tb'
@@ -184,7 +256,7 @@ const list = [
   {
     scale: 1,
     speed: [0, 0, 0],
-    light: undefined,
+    light: ["direct", undefined],
     pos: [0, 0, 0],
     rot: [0, 0, 0],
     src: 'ssd_samsung_980_pro_1tb'
@@ -201,12 +273,48 @@ const list = [
 
   
   // Parts of keyboard
+  new object('keyboard', 'mechanical-rgb', 'Gaming Mechanical Keyboard', 'Mechanical RGB Keyboard', 'keyboard-fill',
+  "",
+  {
+    scale: 0.3,
+    speed: [0.0005, 0, 0],
+    light: ["direct", undefined],
+    pos: [0, 0, 0],
+    rot: [0, 0, 0],
+    src: 'mechanical_rgb_keyboard'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/mechanical-rgbeyboard-4650f5bafe934a90b9f09396b843a966"
+  ),
   new object('keyboard', 'mechanical', 'Mechanical RGB Keyboard', 'RGB Keyboard', 'keyboard-fill',
   "",
   {
     scale: 0.3,
     speed: [0.0005, 0, 0],
-    light: undefined,
+    light: ["direct", undefined],
+    pos: [0, 0, 0],
+    rot: [0, 0, 0],
+    src: 'mechanical_rgb_keyboard'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/mechanical-rgbeyboard-4650f5bafe934a90b9f09396b843a966"
+  ),
+  new object('keyboard', 'mechanical', 'Mechanical RGB Keyboard', 'RGB Keyboard', 'keyboard-fill',
+  "",
+  {
+    scale: 0.3,
+    speed: [0.0005, 0, 0],
+    light: ["direct", undefined],
     pos: [0, 0, 0],
     rot: [0, 0, 0],
     src: 'mechanical_rgb_keyboard'
@@ -225,9 +333,9 @@ const list = [
   new object('mouse', 'track-ball', 'Logitech Trackman Marble', 'Track Ball Mouse', 'mouse3-fill',
   "Rp 305.000",
   {
-    scale: 1,
+    scale: 100,
     speed: [0, 0, 0],
-    light: undefined,
+    light: ["direct", 1],
     pos: [0, 0, 0],
     rot: [0, 0, 0],
     src: 'lowpoly_trackball_mouse'
@@ -245,11 +353,11 @@ const list = [
   new object('mouse', 'optic', 'Logitech G502', 'Optic Mouse', 'mouse3-fill',
   "Rp 629.000",
   {
-    scale: 1,
+    scale: 80,
     speed: [0, 0, 0],
-    light: undefined,
-    pos: [0, 0, 0],
-    rot: [0, 0, 0],
+    light: ["direct", 10],
+    pos: [6, -10, 10.5],
+    rot: [0, 4.68, 0],
     src: 'logitech_g502_mouse_USB'
   },
   [
@@ -266,11 +374,11 @@ const list = [
   new object('mouse', 'wireless', 'Logitech G700S', 'Wireless Mouse', 'mouse3-fill',
   "Rp 1.236.000",
   {
-    scale: 1,
+    scale: .15,
     speed: [0, 0, 0],
-    light: undefined,
-    pos: [0, 0, 0],
-    rot: [0, 0, 0],
+    light: ["direct", undefined],
+    pos: [0, -1, 0],
+    rot: [0, .65, 0],
     src: 'logitech_g700s_wireless'
   },
   [
@@ -288,7 +396,7 @@ const list = [
   {
     scale: 1,
     speed: [0, 0, 0],
-    light: undefined,
+    light: ["direct", undefined],
     pos: [0, 0, 0],
     rot: [0, 0, 0],
     src: 'gaming_mouse'
@@ -307,15 +415,33 @@ const list = [
 
   
   // Parts of display
-  new object('display', 'monitor', 'Asus PCG Monitor', 'Gaming Monitor', 'tv-fill',
+  new object('display', 'lcd', 'Unbranded LCD Monitor', 'LCD Monitor', 'tv-fill',
   "",
   {
-    scale: 15,
+    scale: 23,
     speed: [0, 0, 0],
-    light: undefined,
-    pos: [0, -5, 0],
-    rot: [-0.3, 3.95, -0.20],
-    src: 'asus_pc_gaming_monitor'
+    light: ["direct", 2],
+    pos: [-2.5, -6, -2.5],
+    rot: [-.5, .72, .35],
+    src: 'lcd_display'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/asus-pc-gaming-monitor-941ce968c30a42d0a640a5c9d7f56128"
+  ),
+  new object('display', 'curved', 'Samsung 24" Curved Display', 'Curved Monitor', 'tv-fill',
+  "",
+  {
+    scale: 30,
+    speed: [0, 0, 0],
+    light: ["direct", 2],
+    pos: [-23, -5, 22],
+    rot: [0, .8, 0],
+    src: '24_samsung_monitor_curved_display__'
   },
   [
 
@@ -328,15 +454,33 @@ const list = [
 
 
   // Parts of cooling
-  new object('cooling', 'air', 'PC Cooler', 'Cooling System', 'fan',
+  new object('cooling', 'exhaust ', 'Fan CPU Cooler', 'Air Cooling', 'fan',
   "",
   {
-    scale: 1,
+    scale: 100,
     speed: [0, 0, 0],
-    light: undefined,
-    pos: [0, 0, 0],
-    rot: [0, 0, 0],
-    src: 'pc_cooler_2'
+    light: ["direct", 5],
+    pos: [0, 3, 0],
+    rot: [1, 0, 0],
+    src: 'katana_r_1'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/pc-cooler-2-5cc52b3d32064c9ca6d476e1a90b634f"
+  ),
+  new object('cooling', 'liquid', 'Corsair H150i Elite', 'Liquid Cooling', 'fan',
+  "",
+  {
+    scale: 7,
+    speed: [0, 0, 0],
+    light: ["direct", 2],
+    pos: [0, 0, 3],
+    rot: [0, -1.57, 0],
+    src: 'corsair_h150i_elitie_cpu_liquid_cooler'
   },
   [
 
@@ -349,15 +493,15 @@ const list = [
 
   
   // Parts of speaker
-  new object('speaker', 'speaker', 'Speaker Vipe Nitro X7', 'Gaming Speaker', 'speaker-fill',
+  new object('speaker', 'passive', 'Passive Vipe Nitro', 'Passive Speaker', 'speaker-fill',
   "",
   {
-    scale: 1,
+    scale: 7,
     speed: [0, 0, 0],
-    light: undefined,
-    pos: [0, 0, 0],
+    light: ["direct", undefined],
+    pos: [-21.2, -15, 6],
     rot: [0, 0, 0],
-    src: 'speaker_vipe_nitro_x7'
+    src: 'loud__speaker-_passive'
   },
   [
 
@@ -366,6 +510,60 @@ const list = [
 
   ],
   "https://sketchfab.com/3d-models/speaker-vipe-nitro-x7-f8ad99da408f4211b224ef51f08cee06"
+  ),
+  new object('speaker', 'active', 'Jamo P404', 'Active Speaker', 'speaker-fill',
+  "",
+  {
+    scale: 8,
+    speed: [0, 0, 0],
+    light: ["direct", 2],
+    pos: [0, 0, 0],
+    rot: [0, 0, 0],
+    src: 'jamo_p404_active_speakers'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/speaker-vipe-nitro-x7-f8ad99da408f4211b224ef51f08cee06"
+  ),
+  new object('speaker', 'bluetooth', 'Speaker Vipe Nitro X7', 'Bluetooth Speaker', 'speaker-fill',
+  "",
+  {
+    scale: .35,
+    speed: [0, 0, 0],
+    light: ["direct", 1],
+    pos: [0, -9, 0],
+    rot: [0, -.7, 0],
+    src: 'bluetooth_speaker'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/speaker-vipe-nitro-x7-f8ad99da408f4211b224ef51f08cee06"
+  ),
+  new object('speaker', 'subwoofer', 'Subwoofer Studio', 'Studio Speaker', 'speaker-fill',
+  "",
+  {
+    scale: 15,
+    speed: [0, 0, 0],
+    light: ["direct", undefined],
+    pos: [5, 0, 0],
+    rot: [0, 0, 0],
+    src: 'subwoofer'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/asus-pc-gaming-monitor-941ce968c30a42d0a640a5c9d7f56128"
   ),
 ];
 
