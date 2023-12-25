@@ -109,6 +109,11 @@
   font-family: marsBold, sans-serif;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 600px) {
+  #App #jumbotron .head:nth-child(2) {
+    font-size: 1.4rem;
+  }
+}
 #App #jumbotron .tagline {
   animation: liftme 1s ease-out;
   font-family: sticknobill, sans-serif;
@@ -197,15 +202,22 @@
 }
 #App #about #intro {
   display: flex;
+  text-wrap: balance;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
+  #App #about #intro {
+    padding: 0 100px;
+  }
+}
+@media screen and (min-width: 1300px) {
   #App #about #intro {
     padding: 0 150px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   #App #about #intro {
     flex-direction: column-reverse;
+    padding: 0 20px;
   }
 }
 #App #about #intro div {
@@ -214,12 +226,17 @@
 #App #about #intro .text {
   text-align: left;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
   #App #about #intro .text {
     padding-right: 150px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
+  #App #about #intro .text {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
   #App #about #intro .text {
     margin-top: 30px;
   }
@@ -233,7 +250,7 @@
   cursor: pointer;
   margin: 20px 0;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #App #about #intro .context {
     scale: 0.7;
   }
@@ -249,9 +266,10 @@
   justify-content: center;
   margin-top: 20px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   #App #about #more .cards {
     flex-direction: column;
+    justify-content: center;
   }
 }
 #App #about #more .card {
@@ -260,13 +278,13 @@
   border-radius: 20px;
   color: white;
   margin: 20px;
-  text-wrap: balance;
   transition: 0.2s;
   box-shadow: 7px 7px rgba(37, 61, 65, 0.388);
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
   #App #about #more .card {
     width: 320px;
+    text-wrap: balance;
   }
 }
 #App #about #more .card:hover {
@@ -290,7 +308,7 @@
   color: #1F2041;
   background-color: #F79256;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   #App #three {
     max-height: 100vmin;
   }
@@ -298,7 +316,7 @@
     width: 50%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #App #three {
     flex-direction: column;
     padding: 50px 0;
@@ -317,12 +335,12 @@
 #App #three .h1 {
   text-align: left;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   #App #three .h1 {
     padding: 0 45px 20px 0;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #App #three .h1 {
     padding-bottom: 20px;
   }
@@ -336,12 +354,12 @@
   justify-content: center;
   text-align: left;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #App #three .info {
     padding: 0 30px;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   #App #three .info {
     padding: 0 90px;
   }
@@ -363,13 +381,13 @@
   height: 80vmin;
   background-color: #F79256;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   #App #three .box {
     -webkit-clip-path: polygon(89% 0, 100% 11%, 100% 89%, 89% 100%, 0 100%, 0 0);
             clip-path: polygon(89% 0, 100% 11%, 100% 89%, 89% 100%, 0 100%, 0 0);
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #App #three .box {
     -webkit-clip-path: polygon(100% 0, 100% 89%, 89% 100%, 11% 100%, 0 89%, 0 0);
             clip-path: polygon(100% 0, 100% 89%, 89% 100%, 11% 100%, 0 89%, 0 0);
@@ -414,7 +432,7 @@
   grid-auto-flow: row dense;
   grid-template-areas: ". . ." ". ." ". . .";
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #App #exp .block {
     min-height: 80vh;
     grid-template-columns: 1fr;
@@ -430,7 +448,7 @@
   border-radius: 10px 40px;
   display: flex;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #App #exp .item {
     flex-wrap: wrap;
   }
@@ -438,12 +456,12 @@
 #App #exp .item .thumbnail {
   text-align: center;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   #App #exp .item .thumbnail {
     width: 200px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #App #exp .item .thumbnail {
     width: 100%;
     padding-top: 20px;
@@ -486,7 +504,7 @@
   background-color: #db5626;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5647058824);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #App #exp .more button {
     margin-bottom: 50px;
   }
