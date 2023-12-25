@@ -305,6 +305,25 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/ssd-samsung-980-pro-1tb-208b846d5a5948368b4ad0676bf4ab97"
   ),
+  new object('storage', 'flashdrive', 'GOODRAM UTS2 FD', 'Flash Drive', 'hdd-fill',
+  "Rp 55.000",
+  {
+    scale: 5,
+    speed: [0, 0, 0],
+    light: ["batch", 2],
+    pos: [0, 0, 0],
+    rot: [0, .8, 0],
+    src: 'goodram_usb_flash_drive'
+  },
+  [
+    "SSD Non-volatile Memory Express (NVMe) menggunakan bus PCIe yang digunakan untuk menghubungkan SSD terhadap motherboard.",
+    "SSD NVMe memiliki kecepatan yang dapat mencapai 2 GB/s pada setiap jalur BUS nya. Dengan performa yang terbilang handal, tentu saja SSD NVMe jauh lebih baik dari SSD SATA yang hanya memiliki kecepatan transfer data maksimal 600 MB/s.",
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/ssd-samsung-980-pro-1tb-208b846d5a5948368b4ad0676bf4ab97"
+  ),
   new object('storage', 'floppy', 'Verbatim MS-DOS Dune 2', 'Floppy Disk', 'hdd-fill',
   "Rp 55.000",
   {
