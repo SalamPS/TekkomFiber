@@ -35,7 +35,7 @@
 }
 @media screen and (min-width: 780px) {
   #Viewer .pad {
-    padding: 20px 150px;
+    padding: 40px 150px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -47,11 +47,10 @@
   opacity: 1;
 }
 #Viewer .pad.dsp {
-  display: block;
+  display: flex;
 }
 #Viewer .pad .container {
   width: 100%;
-  height: 100%;
   border-radius: 20px;
   background-color: #1d5f8c;
 }

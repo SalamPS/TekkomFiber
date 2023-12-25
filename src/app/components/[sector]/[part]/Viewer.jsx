@@ -125,10 +125,12 @@ const Pad = ({togglePad, part}) => {
           {content.info.map((item,i) => (
             <p key={i}>{item}</p>
           ))}
-          <h3>{content.name} Specification: </h3>
-          {content.spec.map((item,i) => (
-            <li key={i}>{item}</li>
-          ))}
+          {!content.spec.length ? '' : <>
+            <h3>{content.name} Specification: </h3>
+            {content.spec.map((item,i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </>}
           {content.price != "" ? <p className="price">Harga Pasaran: ±{content.price}</p> : ''}
         </div>
         <div id="img" className="section">
