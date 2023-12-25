@@ -98,30 +98,12 @@ const list = [
   new object('cpu', 'amd', 'AMD Ryzen 6600H', 'CPU AMD', 'cpu-fill',
   "",
   {
-    scale: 1,
+    scale: 300,
     speed: [0, 0, 0],
-    light: ["direct", undefined],
+    light: ["direct", 2],
     pos: [0, 0, 0],
-    rot: [0, 0, 0],
-    src: 'amd_am5_socket_and_x3d__cpu_family'
-  },
-  [
-
-  ],
-  [
-
-  ],
-  "https://sketchfab.com/3d-models/dream-computer-setup-82f78bbaf2d34f01af854a52151dbf49"
-  ),
-  new object('cpu', 'arm', 'ARM SkyMiner', 'CPU SkyMiner', 'cpu-fill',
-  "",
-  {
-    scale: 1,
-    speed: [0, 0, 0],
-    light: ["direct", undefined],
-    pos: [0, 0, 0],
-    rot: [0, 0, 0],
-    src: 'amd_am5_socket_and_x3d__cpu_family'
+    rot: [0, .8, 0],
+    src: 'ryzen_5950x_v-cache_edition'
   },
   [
 

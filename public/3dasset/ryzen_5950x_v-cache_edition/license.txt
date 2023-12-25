@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ryzen 5950x V-Cache Edition
+* source:	https://sketchfab.com/3d-models/ryzen-5950x-v-cache-edition-2c3ca0d9fea043289798b40f0c98ee34
+* author:	seazerkei (https://sketchfab.com/seazerkei_cg)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ryzen 5950x V-Cache Edition" (https://sketchfab.com/3d-models/ryzen-5950x-v-cache-edition-2c3ca0d9fea043289798b40f0c98ee34) by seazerkei (https://sketchfab.com/seazerkei_cg) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
