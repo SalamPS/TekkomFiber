@@ -2,15 +2,69 @@ import object from './object'
 
 const list = [
   // Parts of motherboard
-  new object('motherboard', 'motherboard', 'Asus Strix B550-F', 'Gaming Motherboard', 'motherboard-fill',
+  new object('motherboard', 'lga-1151', 'ASUS ROG Strix X370', 'Motherboard LGA 1151 DDR4', 'motherboard-fill',
   "",
   {
-    scale: 0.8,
+    scale: 1,
     speed: [0, 0, 0],
-    light: ["direct", undefined],
-    pos: [0, -13, 0],
-    rot: [1, 0.6, -0.7],
+    light: ["direct", 2],
+    pos: [-203, 22, 0],
+    rot: [-1.575, 0, 0],
+    src: 'motherboard_x370'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/asus-strix-b-550-f-gaming-motherboard-realistic-3eba5f45bed74fbeb2647de38047000f"
+  ),
+  new object('motherboard', 'am4', 'ROG STRIX B550-F', 'Motherboard AM4 DDR4', 'motherboard-fill',
+  "",
+  {
+    scale: 1,
+    speed: [0, 0, 0],
+    light: ["direct", 2],
+    pos: [-2, -12, 11],
+    rot: [0, 0, 0],
     src: 'asus_strix_b_550_f_gaming_motherboard_realistic'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/asus-strix-b-550-f-gaming-motherboard-realistic-3eba5f45bed74fbeb2647de38047000f"
+  ),
+  new object('motherboard', 'amd-5k', 'ROG STRIX B450-F', 'Motherboard AMD 5K', 'motherboard-fill',
+  "",
+  {
+    scale: 2,
+    speed: [0, 0, 0],
+    light: ["direct", 2],
+    pos: [-1, .5, -2],
+    rot: [0, 1.6, 0],
+    src: 'motherboard_b450f'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/asus-strix-b-550-f-gaming-motherboard-realistic-3eba5f45bed74fbeb2647de38047000f"
+  ),
+  new object('motherboard', 'lga-1200', 'NZXT N7 Z490', 'Motherboard LGA 1200 DDR4', 'motherboard-fill',
+  "",
+  {
+    scale: .03,
+    speed: [0, 0, 0],
+    light: ["batch", 1],
+    pos: [0, -2, 0],
+    rot: [0, 0, 0],
+    src: 'motherboard_nzxt_n7_z490'
   },
   [
 
@@ -23,7 +77,7 @@ const list = [
 
   
   // Parts of cpu
-  new object('cpu', 'intel', 'Intel i9 12200H', 'CPU Intel', 'cpu-fill',
+  new object('cpu', 'intel', 'Intel CPU', 'CPU Intel', 'cpu-fill',
   "",
   {
     scale: 5,
@@ -31,7 +85,7 @@ const list = [
     light: ["direct", 4],
     pos: [0, .3, 0],
     rot: [0, 0, 0],
-    src: 'intel_cpu'
+    src: ''
   },
   [
 
@@ -59,14 +113,32 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/dream-computer-setup-82f78bbaf2d34f01af854a52151dbf49"
   ),
+  new object('cpu', 'arm', 'ARM SkyMiner', 'CPU SkyMiner', 'cpu-fill',
+  "",
+  {
+    scale: 1,
+    speed: [0, 0, 0],
+    light: ["direct", undefined],
+    pos: [0, 0, 0],
+    rot: [0, 0, 0],
+    src: 'amd_am5_socket_and_x3d__cpu_family'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/dream-computer-setup-82f78bbaf2d34f01af854a52151dbf49"
+  ),
   new object('cpu', 'transmeta', 'Transmeta Crusoe 5304', 'CPU Transmeta', 'cpu-fill',
   "",
   {
-    scale: 3,
+    scale: 2,
     speed: [0, 0, 0],
-    light: ["point", 2, "30"],
+    light: ["batch", 1.5],
     pos: [0, 0, 0],
-    rot: [0, 0, 0],
+    rot: [0, .8, 0],
     src: 'transmeta_crusoe_tm5800_cbga474'
   },
   [
@@ -80,7 +152,7 @@ const list = [
 
   
   // Parts of gpu
-  new object('gpu', 'discrete', 'Geforce-RTX Discrete', 'Virtual Graphic Array', 'gpu-card', 
+  new object('gpu', 'discrete', 'Videocard 3DFX Voodoo', 'Discrete GPU', 'gpu-card', 
   "gpu-discrete", {
     scale: 5,
     speed: [0.0005, 0, 0],
@@ -98,34 +170,15 @@ const list = [
   "https://sketchfab.com/3d-models/asus-rog-geforce-rtx-4090-v20-6f527569f14b4efc94c7072842bd41ac",
   ),
 
-  new object('gpu', 'mobile', 'Geforce-RTX Mobile', 'Virtual Graphic Array', 'gpu-card',
+  new object('gpu', 'integrated', 'AMD Ryzen Threadripper', 'Integrated GPU', 'gpu-card',
   "",
   {
-    scale: 1,
+    scale: .3,
     speed: [0.0005, 0, 0],
     light: ["direct", 2],
     pos: [0, 0, 0],
-    rot: [1.58, 1.58, 0],
-    src: 'free_realistic_intel_cpu_core_2_mobile_t6600'
-  },
-  [
-
-  ],
-  [
-
-  ],
-  "https://sketchfab.com/3d-models/asus-rog-geforce-rtx-4090-v20-6f527569f14b4efc94c7072842bd41ac",
-  ),
-
-  new object('gpu', 'miner', 'ARM SkyMiner 2.0', 'Miner GPU', 'gpu-card',
-  "",
-  {
-    scale: .5,
-    speed: [0.0005, 0, 0],
-    light: ["direct", undefined],
-    pos: [0, 3, 0],
-    rot: [0, 0, 0],
-    src: 'ARM_skyminer_2.0'
+    rot: [1.2, -1.9, 1],
+    src: 'amd_ryzen_threadripper'
   },
   [
 
@@ -159,11 +212,11 @@ const list = [
   new object('ram', 'ddr3', 'General DDR3 RAM', 'DDR3 Generation', 'memory',
   "",
   {
-    scale: 13,
+    scale: 18,
     speed: [0, 0, 0],
     light: ["direct", `1.5`],
-    pos: [0, 2.5, 0],
-    rot: [-.3, 1.58, 0],
+    pos: [0, 1, 0],
+    rot: [0, 2.36, -.6],
     src: 'ddr3'
   },
   [
@@ -177,11 +230,11 @@ const list = [
   new object('ram', 'ddr4', 'TridentZ GSkill RGB', 'DDR4 Generation', 'memory',
   "",
   {
-    scale: 2.5,
+    scale: 4,
     speed: [0, 0, 0],
     light: ["direct", 3],
-    pos: [0, -5, 0],
-    rot: [0, 0, 0],
+    pos: [0, -12, 0],
+    rot: [0, 0.8, -.005],
     src: 'ram_ddr4_g.skill_trident_z_rgb'
   },
   [
@@ -195,11 +248,11 @@ const list = [
   new object('ram', 'ddr5', 'Kingston FURY Beast', 'DDR5 Generation', 'memory',
   "",
   {
-    scale: 5,
+    scale: 7,
     speed: [0, 0, 0],
     light: ["direct", 3],
     pos: [0, 3, 0],
-    rot: [1.2, 0, 0],
+    rot: [1.36, 0.20, -0.80],
     src: 'kingston_fury_ddr5_low_poly'
   },
   [
@@ -216,9 +269,9 @@ const list = [
   new object('storage', 'hdd', 'HDD PC WD GREEN', 'SATA HDD', 'hdd-fill',
   "Rp 370.000",
   {
-    scale: 1,
+    scale: 5,
     speed: [0, 0, 0],
-    light: ["direct", undefined],
+    light: ["batch", 2],
     pos: [0, 0, 0],
     rot: [0, 0, 0],
     src: 'wd_green_1tb_hard_disk_hdd'
@@ -236,12 +289,12 @@ const list = [
   new object('storage', 'ssd-sata', 'SSD PLUS SanDisk', 'SATA SSD', 'hdd-fill',
   "Rp 570.000",
   {
-    scale: 1,
+    scale: .3,
     speed: [0, 0, 0],
-    light: ["direct", undefined],
-    pos: [0, 0, 0],
-    rot: [0, 0, 0],
-    src: 'ssd_samsung_980_pro_1tb'
+    light: ["direct", 1],
+    pos: [7, -5, 7],
+    rot: [0, 2.35, 0],
+    src: 'ssd_sata_2_5_7mm'
   },
   [
 
@@ -254,12 +307,31 @@ const list = [
   new object('storage', 'ssd-nvme', 'SSD Samsung 980 Pro', 'NVME SSD', 'hdd-fill',
   "1.780.000",
   {
-    scale: 1,
+    scale: 10,
     speed: [0, 0, 0],
     light: ["direct", undefined],
-    pos: [0, 0, 0],
-    rot: [0, 0, 0],
+    pos: [0, 3, 0],
+    rot: [.8, .6, 2.6],
     src: 'ssd_samsung_980_pro_1tb'
+  },
+  [
+    "SSD Non-volatile Memory Express (NVMe) menggunakan bus PCIe yang digunakan untuk menghubungkan SSD terhadap motherboard.",
+    "SSD NVMe memiliki kecepatan yang dapat mencapai 2 GB/s pada setiap jalur BUS nya. Dengan performa yang terbilang handal, tentu saja SSD NVMe jauh lebih baik dari SSD SATA yang hanya memiliki kecepatan transfer data maksimal 600 MB/s.",
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/ssd-samsung-980-pro-1tb-208b846d5a5948368b4ad0676bf4ab97"
+  ),
+  new object('storage', 'floppy', 'Verbatim MS-DOS Dune 2', 'Floppy Disk', 'hdd-fill',
+  "Rp 55.000",
+  {
+    scale: 10,
+    speed: [0, 0, 0],
+    light: ["direct", 1],
+    pos: [0, 0, 0],
+    rot: [0, .8, 0],
+    src: 'floppy_disk'
   },
   [
     "SSD Non-volatile Memory Express (NVMe) menggunakan bus PCIe yang digunakan untuk menghubungkan SSD terhadap motherboard.",
@@ -273,15 +345,15 @@ const list = [
 
   
   // Parts of keyboard
-  new object('keyboard', 'mechanical-rgb', 'Gaming Mechanical Keyboard', 'Mechanical RGB Keyboard', 'keyboard-fill',
+  new object('keyboard', 'wireless', 'Wireless Mechanical Keyboard', 'Wireless Keyboard', 'keyboard-fill',
   "",
   {
-    scale: 0.3,
+    scale: 10,
     speed: [0.0005, 0, 0],
-    light: ["direct", undefined],
-    pos: [0, 0, 0],
-    rot: [0, 0, 0],
-    src: 'mechanical_rgb_keyboard'
+    light: ["batch", 1],
+    pos: [17, 5, -5],
+    rot: [0, .79, 0],
+    src: 'mechanical_keyboard___aesthetic'
   },
   [
 
@@ -291,15 +363,15 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/mechanical-rgbeyboard-4650f5bafe934a90b9f09396b843a966"
   ),
-  new object('keyboard', 'mechanical', 'Mechanical RGB Keyboard', 'RGB Keyboard', 'keyboard-fill',
+  new object('keyboard', 'membrane', 'Membrane Keyboard', 'Membran Key', 'keyboard-fill',
   "",
   {
-    scale: 0.3,
+    scale: 1,
     speed: [0.0005, 0, 0],
-    light: ["direct", undefined],
+    light: ["batch", 1],
     pos: [0, 0, 0],
-    rot: [0, 0, 0],
-    src: 'mechanical_rgb_keyboard'
+    rot: [0, .8, 0],
+    src: 'wireless_keyboard'
   },
   [
 
@@ -309,14 +381,14 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/mechanical-rgbeyboard-4650f5bafe934a90b9f09396b843a966"
   ),
-  new object('keyboard', 'mechanical', 'Mechanical RGB Keyboard', 'RGB Keyboard', 'keyboard-fill',
+  new object('keyboard', 'mechanical', 'Mechanical Keyboard', 'Mechanical Key', 'keyboard-fill',
   "",
   {
     scale: 0.3,
     speed: [0.0005, 0, 0],
-    light: ["direct", undefined],
+    light: ["batch", 2],
     pos: [0, 0, 0],
-    rot: [0, 0, 0],
+    rot: [0, .8, 0],
     src: 'mechanical_rgb_keyboard'
   },
   [
@@ -338,7 +410,7 @@ const list = [
     light: ["direct", 1],
     pos: [0, 0, 0],
     rot: [0, 0, 0],
-    src: 'lowpoly_trackball_mouse'
+    src: ''
   },
   [
     "Trackball mouse adalah jenis mouse yang memiliki sebuah bola kecil yang memiliki sensor gerak untuk menggerakkan pointer.",
@@ -454,17 +526,35 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/asus-pc-gaming-monitor-941ce968c30a42d0a640a5c9d7f56128"
   ),
+  new object('display', 'crt', 'Unbranded CRT Monitor', 'CRT Monitor', 'tv-fill',
+  "",
+  {
+    scale: 23,
+    speed: [0, 0, 0],
+    light: ["direct", .5],
+    pos: [0,0,0],
+    rot: [0, 0, 0],
+    src: 'crt_monitor'
+  },
+  [
+
+  ],
+  [
+
+  ],
+  "https://sketchfab.com/3d-models/asus-pc-gaming-monitor-941ce968c30a42d0a640a5c9d7f56128"
+  ),
 
 
   // Parts of cooling
-  new object('cooling', 'exhaust ', 'Fan CPU Cooler', 'Air Cooling', 'fan',
+  new object('cooling', 'exhaust', 'Fan CPU Cooler', 'Air Cooling', 'fan',
   "",
   {
     scale: 100,
     speed: [0, 0, 0],
     light: ["direct", 5],
     pos: [0, 3, 0],
-    rot: [1, 0, 0],
+    rot: [1.1, 0.4, -0.7],
     src: 'katana_r_1'
   },
   [
@@ -499,11 +589,11 @@ const list = [
   new object('speaker', 'passive', 'Passive Vipe Nitro', 'Passive Speaker', 'speaker-fill',
   "",
   {
-    scale: 7,
+    scale: 10.0,
     speed: [0, 0, 0],
-    light: ["direct", undefined],
-    pos: [-21.2, -15, 6],
-    rot: [0, 0, 0],
+    light: ["direct", 2],
+    pos: [-26.6, -22.6, 15.0],
+    rot: [0, 0.20, 0],
     src: 'loud__speaker-_passive'
   },
   [
@@ -520,7 +610,7 @@ const list = [
     scale: 8,
     speed: [0, 0, 0],
     light: ["direct", 2],
-    pos: [0, 0, 0],
+    pos: [3.8, 0, -3.8],
     rot: [0, 0, 0],
     src: 'jamo_p404_active_speakers'
   },
@@ -535,10 +625,10 @@ const list = [
   new object('speaker', 'bluetooth', 'Speaker Vipe Nitro X7', 'Bluetooth Speaker', 'speaker-fill',
   "",
   {
-    scale: .35,
+    scale: .6,
     speed: [0, 0, 0],
     light: ["direct", 1],
-    pos: [0, -9, 0],
+    pos: [0, -17.8, 0],
     rot: [0, -.7, 0],
     src: 'bluetooth_speaker'
   },
@@ -553,11 +643,11 @@ const list = [
   new object('speaker', 'subwoofer', 'Subwoofer Studio', 'Studio Speaker', 'speaker-fill',
   "",
   {
-    scale: 15,
+    scale: 22.2,
     speed: [0, 0, 0],
     light: ["direct", undefined],
-    pos: [5, 0, 0],
-    rot: [0, 0, 0],
+    pos: [7, -2, 0],
+    rot: [0, 0.5, 0],
     src: 'subwoofer'
   },
   [
