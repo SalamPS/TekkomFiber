@@ -388,7 +388,7 @@ const list = [
     speed: [0.0005, 0, 0],
     light: ["batch", 2],
     pos: [0, 0, 0],
-    rot: [0, .79, 0],
+    rot: [0, .79, 0], 
     src: 'mechanical_rgb_keyboard'
   },
   [
@@ -402,7 +402,7 @@ const list = [
 
   
   // Parts of mouse
-  new object('mouse', 'track-ball', 'Logitech Trackman Marble', 'Track Ball Mouse', 'mouse3-fill',
+  new object('mouse', 'trackball', 'Logitech Trackman Marble', 'Track Ball Mouse', 'mouse3-fill',
   "Rp 305.000",
   {
     scale: .1,
