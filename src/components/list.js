@@ -176,11 +176,11 @@ const list = [
   new object('ram', 'ddr1', 'Plain DDR RAM', 'DDR1 Generation', 'memory',
   "",
   {
-    scale: 180,
+    scale: 220,
     speed: [0, 0, 0],
     light: ["direct", 2],
     pos: [0, 2.5, 0],
-    rot: [-.5, 0, 0],
+    rot: [-.9, .6, .6],
     src: 'ram_ddr1_micron'
   },
   [
@@ -391,7 +391,7 @@ const list = [
     speed: [0, 0, 0],
     light: ["direct", 1],
     pos: [0, 0, 0],
-    rot: [0, 0, 0],
+    rot: [0, -1.6, 0],
     src: 'trackball'
   },
   [
