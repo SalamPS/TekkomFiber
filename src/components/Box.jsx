@@ -66,18 +66,18 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
   const direct = light[0] == 'direct' || light[0] == 'batch'
   const extra = light[2];
 
-  const bottomLight = useRef();
-  useHelper(bottomLight, DirectionalLightHelper, 1, 'red');
-  const upperLight = useRef();
-  useHelper(upperLight, DirectionalLightHelper, 1, 'red');
-  const frontLight = useRef();
-  useHelper(frontLight, DirectionalLightHelper, 1, 'yellow');
-  const backLight = useRef();
-  useHelper(backLight, DirectionalLightHelper, 1, 'yellow');
-  const rightLight = useRef();
-  useHelper(rightLight, DirectionalLightHelper, 1, 'blue');
-  const leftLight = useRef();
-  useHelper(leftLight, DirectionalLightHelper, 1, 'blue');
+  // const bottomLight = useRef();
+  // useHelper(bottomLight, DirectionalLightHelper, 1, 'red');
+  // const upperLight = useRef();
+  // useHelper(upperLight, DirectionalLightHelper, 1, 'red');
+  // const frontLight = useRef();
+  // useHelper(frontLight, DirectionalLightHelper, 1, 'yellow');
+  // const backLight = useRef();
+  // useHelper(backLight, DirectionalLightHelper, 1, 'yellow');
+  // const rightLight = useRef();
+  // useHelper(rightLight, DirectionalLightHelper, 1, 'blue');
+  // const leftLight = useRef();
+  // useHelper(leftLight, DirectionalLightHelper, 1, 'blue');
   return (
     <>
       <pointLight intensity={point ? light[1]*100 : 0} position={[0,15,0]} ref={bottomLight}/>
