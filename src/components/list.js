@@ -85,9 +85,9 @@ const list = [
     scale: 5,
     speed: [0.0005, 0, 0],
     light: ["direct", 2],
-    pos: [-1, 0, 3],
-    rot: [0, 0, 0],
-    src: 'asus_rog_geforce_rtx_VGA_CARD'
+    pos: [-4, -4, -4],
+    rot: [.4, .78, -.3],
+    src: 'videocard_3dfx_voodoo_2'
   },
   [
 
@@ -106,7 +106,7 @@ const list = [
     light: ["direct", 2],
     pos: [0, 0, 0],
     rot: [1.58, 1.58, 0],
-    src: 'geforce_rtx_3080_graphics_card'
+    src: 'free_realistic_intel_cpu_core_2_mobile_t6600'
   },
   [
 

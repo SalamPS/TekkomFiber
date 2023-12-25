@@ -1,0 +1,11 @@
+Model Information:
+* title:	(FREE) Realistic intel cpu core 2 mobile T6600
+* source:	https://sketchfab.com/3d-models/free-realistic-intel-cpu-core-2-mobile-t6600-0aeab2fbb5a14f90ab8261bc85adfaf8
+* author:	Moonway 3D (https://sketchfab.com/moonway3d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "(FREE) Realistic intel cpu core 2 mobile T6600" (https://sketchfab.com/3d-models/free-realistic-intel-cpu-core-2-mobile-t6600-0aeab2fbb5a14f90ab8261bc85adfaf8) by Moonway 3D (https://sketchfab.com/moonway3d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
