@@ -6,7 +6,7 @@ const list = [
   "",
   {
     scale: 1,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 2],
     pos: [-203, 22, 0],
     rot: [-1.575, 0, 0],
@@ -24,7 +24,7 @@ const list = [
   "",
   {
     scale: 1,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 2],
     pos: [-2, -12, 11],
     rot: [0, 0, 0],
@@ -42,7 +42,7 @@ const list = [
   "",
   {
     scale: 2,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 2],
     pos: [-1, .5, -2],
     rot: [0, 1.6, 0],
@@ -60,7 +60,7 @@ const list = [
   "",
   {
     scale: .03,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["batch", 1],
     pos: [0, -2, 0],
     rot: [0, 0, 0],
@@ -81,7 +81,7 @@ const list = [
   "",
   {
     scale: 40,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 4],
     pos: [0.6, -1.2, -4.4],
     rot: [0.5, -2.4, 0.37],
@@ -99,7 +99,7 @@ const list = [
   "",
   {
     scale: 300,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 2],
     pos: [0, 0, 0],
     rot: [0, .8, 0],
@@ -117,7 +117,7 @@ const list = [
   "",
   {
     scale: 2,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["batch", 1.5],
     pos: [0, 0, 0],
     rot: [0, .8, 0],
@@ -177,7 +177,7 @@ const list = [
   "",
   {
     scale: 220,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 2],
     pos: [0, 2.5, 0],
     rot: [-.9, .6, .6],
@@ -195,7 +195,7 @@ const list = [
   "",
   {
     scale: 18,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", `1.5`],
     pos: [0, 1, 0],
     rot: [0, 2.36, -.6],
@@ -213,7 +213,7 @@ const list = [
   "",
   {
     scale: 4,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 3],
     pos: [0, -12, 0],
     rot: [0, 0.8, -.005],
@@ -231,7 +231,7 @@ const list = [
   "",
   {
     scale: 7,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 3],
     pos: [0, 3, 0],
     rot: [1.36, 0.20, -0.80],
@@ -252,7 +252,7 @@ const list = [
   "Rp 370.000",
   {
     scale: 5,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["batch", 2],
     pos: [0, 0, 0],
     rot: [0, .8, 0],
@@ -272,7 +272,7 @@ const list = [
   "Rp 570.000",
   {
     scale: .3,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 1],
     pos: [7, -5, 7],
     rot: [0, 2.35, 0],
@@ -290,7 +290,7 @@ const list = [
   "1.780.000",
   {
     scale: 10,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", undefined],
     pos: [0, 3, 0],
     rot: [.8, .62, 2.6],
@@ -309,7 +309,7 @@ const list = [
   "Rp 55.000",
   {
     scale: 5,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["batch", 2],
     pos: [0, 0, 0],
     rot: [0, .8, 0],
@@ -328,7 +328,7 @@ const list = [
   "Rp 55.000",
   {
     scale: 10,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 1],
     pos: [0, 0, 0],
     rot: [0, .8, 0],
@@ -407,7 +407,7 @@ const list = [
   "Rp 305.000",
   {
     scale: .1,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 1],
     pos: [0, 0, 0],
     rot: [0, -1.6, 0],
@@ -427,7 +427,7 @@ const list = [
   "Rp 629.000",
   {
     scale: 80,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 10],
     pos: [6, -10, 10.5],
     rot: [0, 4.68, 0],
@@ -451,7 +451,7 @@ const list = [
   "Rp 1.236.000",
   {
     scale: .15,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", undefined],
     pos: [0, -1, 0],
     rot: [0, .65, 0],
@@ -471,7 +471,7 @@ const list = [
   "Rp 287.999",
   {
     scale: 20,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["batch", 2],
     pos: [32, 0, 10],
     rot: [0, 0, 0],
@@ -495,7 +495,7 @@ const list = [
   "",
   {
     scale: 23,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 2],
     pos: [-2.5, -6, -2.5],
     rot: [-.5, .72, .35],
@@ -513,7 +513,7 @@ const list = [
   "",
   {
     scale: 30,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 2],
     pos: [-23, -5, 22],
     rot: [0, .8, 0],
@@ -531,7 +531,7 @@ const list = [
   "",
   {
     scale: 23,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", .5],
     pos: [0,0,0],
     rot: [0, 0, 0],
@@ -552,7 +552,7 @@ const list = [
   "",
   {
     scale: 100,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 5],
     pos: [0, 3, 0],
     rot: [1.1, 0.44, -0.7],
@@ -570,7 +570,7 @@ const list = [
   "",
   {
     scale: 7,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 2],
     pos: [3.8, 0, 3],
     rot: [0, -.78, 0.1],
@@ -591,7 +591,7 @@ const list = [
   "",
   {
     scale: 10.0,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 2],
     pos: [-26.6, -22.6, 15.0],
     rot: [0, 0.20, 0],
@@ -609,7 +609,7 @@ const list = [
   "",
   {
     scale: 8,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 2],
     pos: [3.8, 0, -3.8],
     rot: [0, 0, 0],
@@ -627,7 +627,7 @@ const list = [
   "",
   {
     scale: .6,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", 1],
     pos: [0, -20.2, 0],
     rot: [0, -0.9, 0.18],
@@ -645,7 +645,7 @@ const list = [
   "",
   {
     scale: 22.2,
-    speed: [0, 0, 0],
+    speed: [0.0005, 0, 0],
     light: ["direct", undefined],
     pos: [7, -2, 0],
     rot: [0, 0.5, 0],
