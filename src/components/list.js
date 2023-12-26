@@ -2,7 +2,7 @@ import object from './object'
 
 const list = [
   // Parts of motherboard
-  new object('motherboard', 'lga-1151', 'ASUS ROG Strix X370', 'Motherboard LGA 1151 DDR4', 'motherboard-fill',
+  new object('motherboard', 'x370f', 'ASUS ROG Strix X370', 'Motherboard LGA 1151 DDR4', 'motherboard-fill',
   "",
   {
     scale: 1,
@@ -20,7 +20,7 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/asus-strix-b-550-f-gaming-motherboard-realistic-3eba5f45bed74fbeb2647de38047000f"
   ),
-  new object('motherboard', 'am4', 'ROG STRIX B550-F', 'Motherboard AM4 DDR4', 'motherboard-fill',
+  new object('motherboard', 'b550f', 'ROG STRIX B550-F', 'Motherboard AM4 DDR4', 'motherboard-fill',
   "",
   {
     scale: 1,
@@ -38,7 +38,7 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/asus-strix-b-550-f-gaming-motherboard-realistic-3eba5f45bed74fbeb2647de38047000f"
   ),
-  new object('motherboard', 'amd-5k', 'ROG STRIX B450-F', 'Motherboard AMD 5K', 'motherboard-fill',
+  new object('motherboard', 'b450f', 'ROG STRIX B450-F', 'Motherboard AMD 5K', 'motherboard-fill',
   "",
   {
     scale: 2,
@@ -56,7 +56,7 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/asus-strix-b-550-f-gaming-motherboard-realistic-3eba5f45bed74fbeb2647de38047000f"
   ),
-  new object('motherboard', 'lga-1200', 'NZXT N7 Z490', 'Motherboard LGA 1200 DDR4', 'motherboard-fill',
+  new object('motherboard', 'n7-z490', 'NZXT N7 Z490', 'Motherboard LGA 1200 DDR4', 'motherboard-fill',
   "",
   {
     scale: .03,
