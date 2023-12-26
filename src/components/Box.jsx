@@ -19,6 +19,12 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
     boxRef.current.rotation.y += (speed[0]);
     boxRef.current.rotation.x += (speed[1]);
     boxRef.current.rotation.z += (speed[2]);
+    
+    // boxRef.current.children.forEach((child) => {
+    //   if (child !== scene) {
+    //     boxRef.current.remove(child);
+    //   }
+    // });
   });
 
 
@@ -74,7 +80,7 @@ const Computers = ({ scale, speed, src, light, pos, rot }) => {
 export default function Box ({scale, speed, src, light, pos, rot}) {
   return (
     <Canvas
-      frameloop="demand"
+      frameloop="always"
       dpr={[1, 2]}
       shadows
       camera={{ position: [20,20,20], fov: 50, }}
