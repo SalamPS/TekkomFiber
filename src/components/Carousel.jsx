@@ -2,12 +2,25 @@
 
 import Slider from 'react-slick';
 import Image from 'next/image';
+import Link from 'next/link';
+
+import { useState, useEffect } from 'react';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Link from 'next/link';
+
+const checkImageExistence = async (src) => {
+  try {
+    const response = await fetch(src);
+    return response.ok;
+  } catch (error) {
+    return false;
+  }
+};
 
 const Carousel = ({ items }) => {
+  const [valid, setValid] = useState([])
+
   const settings = {
     dots: true,
     infinite: true,
@@ -18,26 +31,34 @@ const Carousel = ({ items }) => {
 
   return (
     <Slider {...settings}>
-      {items.map((item, index) => (
-        <Link key={index} href={`/components/${item.sector}/${item.type}`}>
-          <div className='carous'>
-            <div className="item">
-              <Image
-                src={`/preview/${item.sector}-${item.type}.png`}
-                alt={`${item.sector} ${item.type}`}
-                className='img'
-                width={266}
-                height={150}
-                priority
-              />
-              <div className="desc">
-                <h3>{item.name}</h3>
-                <p>{item.desc}</p>
+      {items.map((item, index) => {
+        (async () => {
+          const src = await checkImageExistence(`/preview/${item.sector}-${item.type}-1.png`)
+          setValid(last => [...last, src]);
+        })();
+
+        return (
+          <Link key={index} href={`/components/${item.sector}/${item.type}`}>
+            <div className='carous'>
+              <div className="item">
+                <Image
+                  src={`/preview/${item.sector}-${item.type}-1.${valid[index] ? 'png' : 'jpg'}`}
+                  alt={`${item.sector} ${item.type}`}
+                  className='img'
+                  width={266}
+                  height={150}
+                  priority
+                  onError={() => {console.log('Erro')}}
+                />
+                <div className="desc">
+                  <h3>{item.name}</h3>
+                  <p>{item.desc}</p>
+                </div>
               </div>
             </div>
-          </div>
-        </Link>
-      ))}
+          </Link>
+        )
+      })}
     </Slider>
   );
 };
