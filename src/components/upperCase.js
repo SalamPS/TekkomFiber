@@ -3,7 +3,7 @@ export default function upperCase (text) {
     text = text.split("-");
     let out = ""
     text.forEach(word => {
-      if (text.length < 5) word = word.toUpperCase()
+      if (word.length < 5) word = word.toUpperCase()
       else word = word.charAt(0).toUpperCase() + word.slice(1)
 
       out += word.charAt(0).toUpperCase() + word.slice(1) + " ";

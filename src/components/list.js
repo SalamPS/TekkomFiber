@@ -346,7 +346,7 @@ const list = [
 
   
   // Parts of keyboard
-  new object('keyboard', 'wireless-kb', 'Wireless Keyboard', 'Wireless Era', 'keyboard-fill',
+  new object('keyboard', 'wireles', 'Wireless Keyboard', 'Wireless Era', 'keyboard-fill',
   "",
   {
     scale: 10,
