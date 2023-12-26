@@ -77,7 +77,7 @@ const list = [
 
   
   // Parts of cpu
-  new object('cpu', 'intel-661', 'Intel i5 661', 'CPU Intel', 'cpu-fill',
+  new object('cpu', 'intel', 'Intel i5 661', 'CPU Intel', 'cpu-fill',
   "",
   {
     scale: 40,
@@ -95,7 +95,7 @@ const list = [
   ],
   "https://sketchfab.com/3d-models/dream-computer-setup-82f78bbaf2d34f01af854a52151dbf49"
   ),
-  new object('cpu', 'amd-5950', 'AMD Ryzen 5950X', 'CPU AMD', 'cpu-fill',
+  new object('cpu', 'amd', 'AMD Ryzen 5950X', 'CPU AMD', 'cpu-fill',
   "",
   {
     scale: 300,
