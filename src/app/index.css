@@ -482,6 +482,7 @@
   margin-bottom: 10px;
 }
 #App #exp .item .preview .prev {
+  text-wrap: balance;
   color: #e8f1f2;
 }
 #App #exp .item:hover {
