@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import styles from './part.css'
 
@@ -87,6 +87,18 @@ const Bar = ({part, view, togglePad}) => {
     setHide(!hide);
   }
 
+  const [desc, setDesc] = useState("");
+  useEffect(() => {
+    let text = ""
+    for (let i = 0; i < show.info[0].length; i ++) {
+      if (show.info[0][i] == ".") break
+      text += show.info[0][i]
+    }
+    text += "."
+    setDesc(text)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [show, desc])
+
   return (
     <>
       <div className={`explainer view ${view ? "" : "-hide"}`}>
@@ -98,7 +110,7 @@ const Bar = ({part, view, togglePad}) => {
             <h1>{show ? show.name : ''}</h1>
             <button title="show" onClick={togglePad}>Show more</button>
           </div>
-          <p>{show ? show.desc : ''}</p>
+          <p>{show ? desc : ''}</p>
         </div>
       </div>
     </>
