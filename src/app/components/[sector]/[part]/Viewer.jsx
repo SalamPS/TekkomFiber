@@ -147,7 +147,21 @@ const Pad = ({togglePad, part}) => {
         </div>
         <div id="img" className="section">
           <Image
-            src={`/preview/${content.sector}-${content.type}.png`}
+            src={`/preview/${content.sector}-${content.type}-1.png`}
+            alt="Tekkom"
+            width={300}
+            height={300/16*9}
+            priority
+          />
+          <Image
+            src={`/preview/${content.sector}-${content.type}-2.png`}
+            alt="Tekkom"
+            width={300}
+            height={300/16*9}
+            priority
+          />
+          <Image
+            src={`/preview/${content.sector}-${content.type}-3.png`}
             alt="Tekkom"
             width={300}
             height={300/16*9}
