@@ -113,7 +113,7 @@ function App() {
             <div className="cards">
               <div className="card">
                 <div className="icon">
-                <i class="bi bi-robot"></i>
+                <i className="bi bi-robot"></i>
                 </div>
                 <h3>Intelligent Device</h3>
                 <p>
@@ -122,7 +122,7 @@ function App() {
               </div>
               <div className="card">
                 <div className="icon">
-                  <i class="bi bi-cpu"></i>
+                  <i className="bi bi-cpu"></i>
                 </div>
                 <h3>Embedded System</h3>
                 <p>
@@ -131,7 +131,7 @@ function App() {
               </div>
               <div className="card">
                 <div className="icon">
-                  <i class="bi bi-hdd-network"></i>
+                  <i className="bi bi-hdd-network"></i>
                 </div>
                 <h3>Network and Security</h3>
                 <p>
@@ -145,9 +145,9 @@ function App() {
       <div id="three">
         <div className="part info">
           <div className="visit">
-            <span class="bi bi-caret-right-fill"></span>
-            <span class="bi bi-caret-right-fill"></span>
-            <span class="bi bi-caret-right-fill"></span>
+            <span className="bi bi-caret-right-fill"></span>
+            <span className="bi bi-caret-right-fill"></span>
+            <span className="bi bi-caret-right-fill"></span>
           </div>
           <h1 className="h1">Three Fiber</h1>
           <div className="content">
@@ -166,9 +166,9 @@ function App() {
             </p>
           </div>
           <div className="visit">
-            <span class="bi bi-caret-right-fill"></span>
-            <span class="bi bi-caret-right-fill"></span>
-            <span class="bi bi-caret-right-fill"></span>
+            <span className="bi bi-caret-right-fill"></span>
+            <span className="bi bi-caret-right-fill"></span>
+            <span className="bi bi-caret-right-fill"></span>
           </div>
         </div>
         <div className="part demo">
