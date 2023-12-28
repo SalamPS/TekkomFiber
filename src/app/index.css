@@ -324,7 +324,7 @@
   color: #1F2041;
   background-color: #F79256;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   #App #three {
     max-height: 100vmin;
   }
@@ -332,7 +332,7 @@
     width: 50%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   #App #three {
     flex-direction: column;
     padding: 50px 0;
@@ -397,13 +397,13 @@
   height: 80vmin;
   background-color: #F79256;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   #App #three .box {
     -webkit-clip-path: polygon(89% 0, 100% 11%, 100% 89%, 89% 100%, 0 100%, 0 0);
             clip-path: polygon(89% 0, 100% 11%, 100% 89%, 89% 100%, 0 100%, 0 0);
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   #App #three .box {
     -webkit-clip-path: polygon(100% 0, 100% 89%, 89% 100%, 11% 100%, 0 89%, 0 0);
             clip-path: polygon(100% 0, 100% 89%, 89% 100%, 11% 100%, 0 89%, 0 0);
@@ -429,12 +429,12 @@
   position: relative;
   z-index: 10;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1500px) {
   #App #exp {
     padding: 0 70px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1500px) {
   #App #exp {
     padding: 0 20px;
   }
@@ -442,7 +442,7 @@
 #App #exp .h1 {
   padding: 50px 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   #App #exp .h1 {
     text-align: center;
     font-size: 1.4rem;
@@ -456,7 +456,7 @@
   grid-auto-flow: row dense;
   grid-template-areas: ". . ." ". ." ". . .";
 }
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
   #App #exp .block {
     min-height: 80vh;
     grid-template-columns: 1fr;
@@ -472,7 +472,7 @@
   border-radius: 10px 40px;
   display: flex;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   #App #exp .item {
     flex-wrap: wrap;
   }
@@ -480,12 +480,12 @@
 #App #exp .item .thumbnail {
   text-align: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   #App #exp .item .thumbnail {
     width: 200px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   #App #exp .item .thumbnail {
     width: 100%;
     padding-top: 20px;
@@ -506,8 +506,19 @@
   margin-bottom: 10px;
 }
 #App #exp .item .preview .prev {
-  text-align: justify;
   color: #e8f1f2;
+}
+@media screen and (min-width: 600px) {
+  #App #exp .item .preview .prev {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #App #exp .item .preview .prev {
+    width: 100%;
+    padding-top: 20px;
+  }
 }
 #App #exp .item:hover {
   background-color: #222447;
