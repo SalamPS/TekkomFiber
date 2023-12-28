@@ -177,7 +177,7 @@ function App() {
                   </div>
                   <div className="preview">
                     <div className="title">{item.name}</div>
-                    <div className="prev">{item.desc}</div>
+                    <div className="prev">{item.desc[0]}</div>
                   </div>
                 </Link>)
               ))
