@@ -47,7 +47,9 @@ const Sector = ({sector}) => {
       <div id="desc">
         <div className="text">
           <h1>{active.name}</h1>
-          <p>{active.desc}</p>
+          {active.desc.map((content,i) => (
+            <p key={i}>{content}</p>
+          ))}
         </div>
         <div className="dive">
           <Link href={`/components/${sector}/${visit[0].type}`}>
