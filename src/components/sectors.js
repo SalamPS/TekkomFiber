@@ -10,26 +10,26 @@ class buildSector {
 const sector = [
   new buildSector('motherboard', 'Motherboard', 'motherboard-fill',
   [
-    "Motherboard memiliki fungsi utama untuk menghubungkan semua komponen komputer, seperti CPU, RAM, GPU, dan perangkat penyimpanan, misalnya HDD dan SSD. Motherboard juga menjadi komponen penting untuk membantu komputer memasukkan CPU sebagai otak pada komputer dan juga memasang OS ke dalamnya.",
+    "Motherboard menghubungkan semua komponen komputer seperti CPU, RAM, GPU, HDD, dan SSD. Fungsinya mencakup penempatan CPU sebagai otak komputer dan instalasi sistem operasi (OS). Sebagai komponen sentral, motherboard krusial dalam mengkoordinasikan fungsi seluruh sistem.",
     "Sebelum ditemukannya microprocessor, komputer terdiri dari sejumlah papan sirkuit yang terhubung dengan backplane, sebuah papan penghubung perangkat komputer – bisa dibilang nenek moyangnya motherboard. Dahulu setiap perangkat keras komputer ditempatkan pada papan sirkuit yang berbeda. Baru masing-masing papan sirkuit itu dihubungkan ke backplane.",
     "Memasuki era millenium para produsen komputer ternama berlomba-lomba mendesain motherboard sekecil dan seekonomis mungkin, dengan performa yang tidak kalah dengan desain biasa. VIA, sekali lagi dari Taiwan, mengawali dengan membuat terobosan baru: Mini ITX. Meski ditujukan untuk casing kecil, performa motherboard ini sebanding dengan tipe ATX dan Micro ATX."    
   ]),
 
   new buildSector('cpu', 'Central Processing Unit', 'cpu-fill',
   [
-    "CPU adalah singkatan dari Central Processing Unit, berfungsi sebagai otak dari komputer yang menjalankan instruksi-instruksi dan mengkoordinasikan operasi seluruh sistem komputer. Dengan kemampuannya dalam operasi aritmatika, logika, dan kontrol data, CPU memastikan tugas-tugas komputasi berjalan dengan efisien.",
+    "CPU, singkatan dari Central Processing Unit, berperan sebagai otak komputer yang menjalankan instruksi-instruksi dan mengkoordinasikan operasi seluruh sistem. Kemampuannya dalam operasi aritmatika, logika, dan kontrol data memastikan efisiensi pelaksanaan tugas-tugas komputasi.",
     "Sebagai pusat kontrol, CPU mengontrol dan mengarahkan aliran informasi serta tugas-tugas yang diberikan kepada komputer. Fungsi utama GPU (Graphics Processing Unit) adalah memproses dan mengoptimalkan tampilan grafis yang ditampilkan pada layar komputer atau perangkat lainnya.",
   ]),
 
   new buildSector('gpu', 'Graphic Processing Unit', 'gpu-card',
   [
-    "GPU adalah singkatan dari ‘Graphics Processing Unit’, yang merupakan komponen khusus dalam komputer yang dirancang khusus untuk memproses dan menghasilkan grafik untuk tampilan visual pada layar. GPU bertanggung jawab untuk menangani tugas-tugas pemrosesan grafis seperti rendering 2D dan 3D, pemutar video, dan tugas-tugas visual lainnya.",
+    "GPU yang merupakan singkatan dari ‘Graphics Processing Unit’, adalah komponen khusus dalam komputer yang didesain untuk memproses dan menghasilkan grafik pada layar. Tugas-tugasnya meliputi rendering 2D dan 3D, pemutaran video, dan pemrosesan visual lainnya.",
     "Dengan kemampuan pemrosesan paralel yang tinggi, GPU mampu menangani beban kerja grafis yang kompleks dengan efisien, memastikan tampilan visual yang halus dan responsif pada layar komputer, perangkat mobile, dan berbagai platform lainnya.",
   ]),
 
   new buildSector('ram', 'Random Access Memory', 'memory',
   [
-    "RAM berfungsi sebagai tempat atau wadah untuk menyimpan data sementara ketika komputer sedang dijalankan dan dapat diakses secara acak. Salah satu jenis RAM adalah DDR SDRAM (Double Date Rate SDRAM) menjadi salah satu yang memiliki kecepatan sangat tinggi diantara jenis-jenis RAM. Tak heran, RAM ini digunakan di berbagai perangkat saat ini.",
+    "RAM berfungsi sebagai tempat atau wadah untuk menyimpan data sementara ketika komputer sedang dijalankan dan dapat diakses secara acak. Salah satu jenis RAM adalah DDR SDRAM (Double Date Rate SDRAM) menjadi salah satu yang memiliki kecepatan sangat tinggi diantara jenis-jenis RAM.",
     "RAM ini mampu menjalankan dua instruksi sekaligus dalam satuan waktu yang sama. Memori ini memiliki 184 pin. RAM jenis ini juga mengkonsumsi daya listrik yang lebih rendah.",
     "Karena lebih menghemat daya dan lebih optimal dengan kecepatan tinggi. Untuk kapasitas memori jenis ini pun cukup besar hingga 4 GB per chipnya. Jenis-jenis RAM seperti DDR2, DDR3, DDR4 hingga DDR5 merupakan pengembangan dari DDR SDRAM.",
   ]),
