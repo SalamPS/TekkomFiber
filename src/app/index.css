@@ -278,6 +278,7 @@
   }
 }
 #App #about #more .card {
+  cursor: default;
   padding: 40px 30px 75px 30px;
   background-color: #222447;
   border-radius: 20px;
@@ -293,14 +294,21 @@
   }
 }
 #App #about #more .card:hover {
-  scale: 1.02;
+  scale: 1.05;
   box-shadow: 9px 9px rgba(37, 61, 65, 0.188);
+}
+#App #about #more .card:hover .icon, #App #about #more .card:hover h3 {
+  color: #f79256;
 }
 #App #about #more .card .sec {
   margin-bottom: 10px !important;
 }
 #App #about #more .card .icon {
+  transition: 0.3s;
   margin-bottom: 5px;
+}
+#App #about #more .card h3 {
+  transition: 0.3s;
 }
 #App #about #more .card p {
   font-size: 13px;
