@@ -278,7 +278,7 @@
   }
 }
 #App #about #more .card {
-  padding: 40px 30px 80px 30px;
+  padding: 40px 30px 75px 30px;
   background-color: #222447;
   border-radius: 20px;
   color: white;
@@ -298,6 +298,9 @@
 }
 #App #about #more .card .sec {
   margin-bottom: 10px !important;
+}
+#App #about #more .card .icon {
+  margin-bottom: 5px;
 }
 #App #about #more .card p {
   font-size: 13px;

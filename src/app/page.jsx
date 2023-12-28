@@ -29,7 +29,7 @@ function App() {
   let stop = 2;
   return (
     <div id='App'>
-      <Parallax speed={0.5} id={"closeup"}>
+      <Parallax speed={0.4} id={"closeup"}>
         <Image
         src="/common/closeup.jpg"
         alt="closeup"
@@ -112,18 +112,27 @@ function App() {
             <h2>Area of Expertise</h2>
             <div className="cards">
               <div className="card">
+                <div className="icon">
+                <i class="bi bi-robot"></i>
+                </div>
                 <h3>Intelligent Device</h3>
                 <p>
                   Studying the development of Device Design and Construction including Hardware & Software that applies the principles of Automation, Configuration as well as applications in fields such as industry, biomedicine, agriculture, electronics, mechatronics & robotics.
                 </p>
               </div>
               <div className="card">
+                <div className="icon">
+                  <i class="bi bi-cpu"></i>
+                </div>
                 <h3>Embedded System</h3>
                 <p>
                   Studying Computer Architecture & Organization, implementing Embedded Systems & developing High Performance Computing technology prototypes, as well as reviewing Real Time System, Computer Graphic Image Processing, AR & VR technology.
                 </p>
               </div>
               <div className="card">
+                <div className="icon">
+                  <i class="bi bi-hdd-network"></i>
+                </div>
                 <h3>Network and Security</h3>
                 <p>
                   Study the structure & application of Computer Networks, Computer Network analysis, types of Network Protocols & Interfaces. Implement Network Security and understand the concepts of Vulnerability, Cyber Attacks, Cryptography, & Ethical Hacking.
