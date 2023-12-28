@@ -26,6 +26,7 @@ function App() {
   const scroll = id => { 
     document.querySelector(`#${id}`).scrollIntoView()
   }
+  let stop = 2;
   return (
     <div id='App'>
       <Parallax speed={0.5} id={"closeup"}>
@@ -180,23 +181,32 @@ function App() {
           <h1 className="h1">Explore Components</h1>
           <div className="block">
             {
-              sector.map((item,i) => (
-                (i >= 4 ? '' : 
-                <Link key={item.sector} href={`/components/${item.sector}`} className="item">
-                  <div className="thumbnail">
-                    <Image
-                      src={`/preview/${item.sector}.png`}
-                      alt={item.name}
-                      width={200}
-                      height={200}
-                    />
-                  </div>
-                  <div className="preview">
-                    <div className="title">{item.name}</div>
-                    <div className="prev">{item.desc[0]}</div>
-                  </div>
-                </Link>)
-              ))
+              sector.map((item,i) => {
+                let text = "", found = 0;
+                const word = item.desc[0];
+                if(i == 1) stop = 1;
+                for (let k = 0; k < word.length; k++) {
+                  if (word[k] == ".") found+=1;
+                  if (found < stop) text += word[k];
+                } 
+                return (
+                  (i >= 4 ? '' : 
+                  <Link key={item.sector} href={`/components/${item.sector}`} className="item">
+                    <div className="thumbnail">
+                      <Image
+                        src={`/preview/${item.sector}.png`}
+                        alt={item.name}
+                        width={200}
+                        height={200}
+                      />
+                    </div>
+                    <div className="preview">
+                      <div className="title">{item.name}</div>
+                      <div className="prev">{text}</div>
+                    </div>
+                  </Link>)
+                )
+              })
             }
           </div>
           <div className="more">
