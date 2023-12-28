@@ -19,8 +19,6 @@ const checkImageExistence = async (src) => {
 };
 
 const Carousel = ({ items }) => {
-  const [valid, setValid] = useState([])
-
   const settings = {
     dots: true,
     infinite: true,
