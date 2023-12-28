@@ -88,6 +88,12 @@ function App() {
               Computer Engineering is a scientific discipline that includes computer science, computer design, construction technology, implementation and maintenance of modern computer software and hardware and computer-controlled equipment.
               </p>
               <button className="visit">Learn More</button>
+              <p>
+                <Link href={"https://www.facebook.com/TekomUPI/"} target="_blank"><i className="bi bi-facebook"></i></Link>
+                <Link href={"https://www.instagram.com/teknikkomputer.upi/"} target="_blank"><i className="bi bi-instagram"></i></Link>
+                <Link href={"https://www.youtube.com/channel/UCB7cJpgISgx-81d_PyV6DGQ"} target="_blank"><i className="bi bi-youtube"></i></Link>
+                <Link href={"https://www.twitter.com/tekomupicibiru"} target="_blank"><i className="bi bi-twitter"></i></Link>
+              </p>
             </div>
             <div className="context">
               <Image
@@ -128,6 +134,11 @@ function App() {
       </div>
       <div id="three">
         <div className="part info">
+          <div className="visit">
+            <span class="bi bi-caret-right-fill"></span>
+            <span class="bi bi-caret-right-fill"></span>
+            <span class="bi bi-caret-right-fill"></span>
+          </div>
           <h1 className="h1">Three Fiber</h1>
           <div className="content">
             <p>
@@ -143,6 +154,11 @@ function App() {
             <p>
             Dive into a dynamic visual experience, interact with intricate details, and gain insights into the inner workings of Computer components.
             </p>
+          </div>
+          <div className="visit">
+            <span class="bi bi-caret-right-fill"></span>
+            <span class="bi bi-caret-right-fill"></span>
+            <span class="bi bi-caret-right-fill"></span>
           </div>
         </div>
         <div className="part demo">
