@@ -25,6 +25,7 @@ const sector = [
   [
     "GPU yang merupakan singkatan dari ‘Graphics Processing Unit’, adalah komponen khusus dalam komputer yang didesain untuk memproses dan menghasilkan grafik pada layar. Tugas-tugasnya meliputi rendering 2D dan 3D, pemutaran video, dan pemrosesan visual lainnya.",
     "Dengan kemampuan pemrosesan paralel yang tinggi, GPU mampu menangani beban kerja grafis yang kompleks dengan efisien, memastikan tampilan visual yang halus dan responsif pada layar komputer, perangkat mobile, dan berbagai platform lainnya.",
+    "Selain peran utamanya dalam pemrosesan grafis, GPU juga telah menjadi inti dari perkembangan dalam dunia komputasi paralel dan kecerdasan buatan. Kemampuannya untuk melakukan sejumlah besar perhitungan secara bersamaan membuat GPU digunakan dalam berbagai aplikasi, termasuk pemodelan cuaca, penelitian ilmiah, dan kecerdasan buatan. "
   ]),
 
   new buildSector('ram', 'Random Access Memory', 'memory',
@@ -36,16 +37,18 @@ const sector = [
 
   new buildSector('storage', 'Storage', 'hdd-fill',
   [
-    "Secara umum, Storage Device berfungsi untuk menyimpan data-data di sebuah laptop maupun komputer.", 
-    "Data-data tersebut berupa OS, software, dan semua file yang ada di komputer atau laptop.",
+    "Storage atau penyimpanan merujuk pada media atau perangkat keras yang digunakan untuk menyimpan dan mendukung akses data pada komputer atau perangkat lainnya. Storage dapat berupa hard drive (HDD), solid-state drive (SSD), USB drive, kartu memori, dan media penyimpanan lainnya.", 
+    "Fungsinya adalah menyimpan data secara permanen atau sementara, yang dapat diakses oleh komputer atau perangkat ketika diperlukan. Storage memiliki kapasitas yang bervariasi dan memainkan peran penting dalam menyimpan file, aplikasi, sistem operasi, dan data lainnya untuk penggunaan jangka panjang atau jangka pendek.",
+    "Storage menjadi komponen integral dalam ekosistem teknologi informasi, memberikan kemampuan untuk menyimpan, mengakses, dan mengelola data secara efisien. Jenis-jenis storage seperti HDD menawarkan kapasitas besar dengan harga terjangkau, sementara SSD menyediakan kecepatan transfer yang lebih tinggi. "
   ]),
 
   new buildSector('keyboard', 'Keyboard', 'keyboard-fill',
   [
-    "Secara umum, keyboard adalah perangkat input yang digunakan untuk mengetik teks dan melakukan perintah pada komputer. Keyboard terdiri dari rangkaian tombol yang mewakili huruf, angka, dan simbol, serta tombol fungsi khusus."
+    "Keyboard adalah perangkat input pada komputer dan perangkat elektronik lainnya yang terdiri dari sekelompok tombol atau kunci yang berfungsi untuk memasukkan data, perintah, atau karakter ke dalam sistem. Setiap tombol pada keyboard mewakili karakter tertentu, angka, atau fungsi khusus, dan ketika ditekan, sinyal elektrik dikirimkan ke perangkat pengolahan data untuk diinterpretasikan. Keyboard umumnya digunakan untuk mengetik teks, menjalankan perintah, dan berinteraksi dengan aplikasi. Sebagai salah satu perangkat input utama, keyboard memainkan peran kunci dalam memfasilitasi interaksi antara pengguna dan sistem komputer.",
+    "Beberapa keyboard juga dilengkapi dengan tombol fungsi tambahan, kontrol multimedia, atau pencahayaan latar belakang untuk meningkatkan fungsionalitas dan estetika. Penggunaan keyboard tidak terbatas pada komputer desktop, tetapi juga digunakan pada laptop, tablet, dan perangkat mobile lainnya."
   ]),
 
-  new buildSector('mouse', 'Mouse the Pointer', 'mouse3-fill',
+  new buildSector('mouse', 'Mouse', 'mouse3-fill',
   [
     "Mouse adalah sebuah perangkat keras input yang digunakan untuk mengontrol dan berinteraksi dengan komputer. Umumnya berbentuk kecil dan ergonomis, mouse dilengkapi dengan dua tombol utama, yaitu tombol kiri dan tombol kanan, serta sebuah roda gulir di antara kedua tombol tersebut. Mouse juga bisa dilengkapi dengan tombol tambahan dan sensor gerak.",
     "Cara kerja mouse melibatkan pergerakan fisik pada permukaan datar, seperti meja, dan sensor di bagian bawah mouse mendeteksi pergerakan tersebut, mengubahnya menjadi gerakan kursor di layar komputer. Tombol pada mouse digunakan untuk melakukan berbagai fungsi, seperti memilih, mengklik, menggeser, dan menggulir, menjadikannya perangkat penting dalam penggunaan komputer sehari-hari. Mouse telah menjadi salah satu perangkat input standar dalam komputasi modern dan digunakan secara luas untuk menjalankan berbagai tugas "
@@ -53,7 +56,8 @@ const sector = [
 
   new buildSector('display', 'Display Monitor', 'tv-fill',
   [
-    "Secara umum, perangkat display berfungsi untuk menampilkan keluaran dari komputer. Monitor bervariasi dalam ukuran, resolusi, dan teknologi yang digunakan. Termasuk penting dalam pengaturan komputer, monitor memungkinkan pengguna untuk berinteraksi dengan antarmuka grafis dan melihat informasi secara visual."
+    "Display, atau tampilan, merujuk pada perangkat keras atau antarmuka visual pada komputer atau perangkat elektronik lainnya yang menampilkan informasi atau grafik kepada pengguna. Display dapat mengacu pada layar komputer, monitor, televisi, atau layar perangkat seluler. Fungsinya adalah untuk menampilkan output visual dari perangkat, termasuk teks, gambar, video, atau antarmuka pengguna grafis.",
+    "Jenis display meliputi teknologi seperti LCD (Liquid Crystal Display), LED (Light Emitting Diode), OLED (Organic Light Emitting Diode), dan lainnya. Ukuran dan resolusi display bervariasi, memberikan pengguna pengalaman visual yang berbeda tergantung pada tujuan penggunaan dan jenis perangkatnya. Display menjadi elemen kunci dalam menyediakan antarmuka yang informatif dan menarik dalam berbagai konteks, dari penggunaan sehari-hari hingga pemutaran konten multimedia dan aplikasi profesional."
   ]),
 
   new buildSector('cooling', 'Cooling System', 'fan',
