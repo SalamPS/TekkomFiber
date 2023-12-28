@@ -32,17 +32,12 @@ const Carousel = ({ items }) => {
   return (
     <Slider {...settings}>
       {items.map((item, index) => {
-        (async () => {
-          const src = await checkImageExistence(`/preview/${item.sector}-${item.type}-1.png`)
-          setValid(last => [...last, src]);
-        })();
-
         return (
           <Link key={index} href={`/components/${item.sector}/${item.type}`}>
             <div className='carous'>
               <div className="item">
                 <Image
-                  src={`/preview/${item.sector}-${item.type}-1.${valid[index] ? 'png' : 'jpg'}`}
+                  src={`/preview/${item.sector}-${item.type}-1.png`}
                   alt={`${item.sector} ${item.type}`}
                   className='img'
                   width={266}
