@@ -354,12 +354,16 @@ const list = [
     src: 'goodram_usb_flash_drive'
   },
   [
-    "SSD Non-volatile Memory Express (NVMe) menggunakan bus PCIe yang digunakan untuk menghubungkan SSD terhadap motherboard.",
-    "SSD NVMe memiliki kecepatan yang dapat mencapai 2 GB/s pada setiap jalur BUS nya. Dengan performa yang terbilang handal, tentu saja SSD NVMe jauh lebih baik dari SSD SATA yang hanya memiliki kecepatan transfer data maksimal 600 MB/s.",
+    "Flashdrive merupakan media penyimpanan yang sangat portable untuk digunakan dan dibawa kemana saja. Flashdisk dapat digunakan hanya dengan menghubungkannya langsung ke port USB dari PC ataupun laptop.",
+    "Media penyimpnana portbale ini dapat menyimpan berbagai jenis tipe file, baik audio maupun video. Sehingga saat ini flashdisk tidak hanya bisa digunakan pada komputer atau laptop. Tapi dapat juga digunakan pada DVD player atau audio player yang menyediakan port usb flashdisk.",
   ],
   [
-    "Tipe: 3,5in, 2HD, 135TPI/80Tracks",
-    "Kapasitas: 1.44MB",
+    "Capacities: 16 GB",
+    "Interface: USB 2.0 type A backwards compatible with USB 1.1",
+    "Speed of operation: read: up to 20 MB/s , write: up to 5 MB/s",
+    "Dimension: 57,1 x 19,3 x 10,7 mm",
+    "Weight: 15 g",
+    "Blister dimensions:103 x 123mm",
   ],
   "https://sketchfab.com/3d-models/ssd-samsung-980-pro-1tb-208b846d5a5948368b4ad0676bf4ab97"
   ),
@@ -374,8 +378,9 @@ const list = [
     src: 'floppy_disk'
   },
   [
-    "SSD Non-volatile Memory Express (NVMe) menggunakan bus PCIe yang digunakan untuk menghubungkan SSD terhadap motherboard.",
-    "SSD NVMe memiliki kecepatan yang dapat mencapai 2 GB/s pada setiap jalur BUS nya. Dengan performa yang terbilang handal, tentu saja SSD NVMe jauh lebih baik dari SSD SATA yang hanya memiliki kecepatan transfer data maksimal 600 MB/s.",
+    "Floppy disk adalah sebuah perangkat penyimpanan data magnetik yang biasanya terbuat dari bahan fleksibel dan dilapisi dengan bahan magnetik, seperti oksida besi.",
+    "Floppy disk digunakan sebagai media penyimpanan portabel pada masa awal perkembangan komputer dan terutama pada tahun 1970-an hingga pertengahan 1990-an sebelum digantikan oleh media penyimpanan yang lebih canggih seperti CD, DVD, dan USB flash drive.",
+    "Floppy disk memiliki ukuran fisik yang kecil dan tipis, dan dapat dengan mudah dilepas dan dipasang pada drive floppy disk yang terhubung ke komputer. Ukuran yang paling umum adalah 3.5 inci dan 5.25 inci. Kapasitas penyimpanan floppy disk berkisar dari beberapa puluh kilobit hingga beberapa megabit, tergantung pada tipe dan generasinya."
   ],
   [
     "Capacities: 16 GB",
