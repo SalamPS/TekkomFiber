@@ -266,6 +266,19 @@
     animation: sectorbot 1s ease-out;
   }
 }
+@media screen and (max-width: 750px) {
+  #Components #sector #desc .longdesc {
+    height: calc(100vh - 540px);
+    overflow-y: scroll;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #Components #sector #desc .longdesc {
+    height: calc(100vh - 500px);
+    overflow-y: scroll;
+  }
+}
 @media screen and (max-width: 1000px) {
   #Components #sector #desc {
     flex-direction: column;

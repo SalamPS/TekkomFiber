@@ -33,12 +33,12 @@
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1200px) {
   #Viewer .pad {
     padding: 40px 150px;
   }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1200px) {
   #Viewer .pad {
     padding: 20px 0;
   }
@@ -53,6 +53,7 @@
   width: 100%;
   border-radius: 20px;
   background-color: #1d5f8c;
+  overflow: hidden;
 }
 #Viewer .pad .head {
   text-align: right;
@@ -63,7 +64,7 @@
   border-radius: 50%;
   padding: 10px 12px;
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1200px) {
   #Viewer .pad .bi-x-lg {
     position: absolute;
     margin: 40px;
@@ -73,7 +74,7 @@
     background-color: rgba(177, 66, 66, 0.8980392157);
   }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1200px) {
   #Viewer .pad .bi-x-lg {
     display: inline-block;
     border: solid 1px rgba(199, 199, 199, 0.5254901961);
@@ -81,28 +82,51 @@
 }
 #Viewer .pad .quick {
   text-align: left;
-  padding: 40px 0 0 40px;
+  padding: 40px 0 10px 40px;
   font-size: 1.5rem;
 }
 #Viewer .pad .quick span {
   margin-right: 5px;
 }
+@media screen and (max-width: 1200px) {
+  #Viewer .pad .quick {
+    border-bottom: solid 2px white;
+    padding-top: 0;
+  }
+}
 #Viewer .pad .body {
   display: flex;
   padding: 0 40px;
+  height: calc(100vh - 40px);
+}
+@media screen and (max-width: 1200px) {
+  #Viewer .pad .body {
+    overflow-y: scroll;
+    height: calc(100vh - 40px);
+    padding: 20px 40px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #Viewer .pad .body {
+    flex-direction: column;
+  }
 }
 #Viewer .pad .body .section {
   width: 100%;
-  flex-grow: 1;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1200px) {
   #Viewer .pad .body .section {
-    width: 100%;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #Viewer .pad .body .section {
+    width: 60%;
   }
 }
 @media screen and (max-width: 750px) {
   #Viewer .pad .body .section {
-    width: 50%;
+    width: 100%;
   }
 }
 #Viewer .pad .body p {
@@ -118,15 +142,44 @@
 #Viewer .pad .body #name {
   margin-top: 10px;
   margin-bottom: 20px;
-  padding: 5px 10px 0 0;
+  padding: 5px 0 0 0;
+  padding-top: 0;
   display: inline-block;
-  border-top: solid 2px white;
 }
 #Viewer .pad .body #name h1 {
   font-size: 2.3rem;
 }
-#Viewer .pad .body #img {
-  text-align: right;
+@media screen and (min-width: 1200px) {
+  #Viewer .pad .body #name {
+    border-top: solid 2px white;
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 750px) {
+  #Viewer .pad .body #desc {
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #Viewer .pad .body #img {
+    width: 40%;
+    text-align: center;
+    padding-bottom: 150px;
+  }
+  #Viewer .pad .body #img img {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #Viewer .pad .body #img {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 750px) {
+  #Viewer .pad .body #img {
+    text-align: right;
+  }
 }
 #Viewer .pad .body #img img {
   margin-bottom: 10px;
@@ -230,6 +283,11 @@
     flex-direction: column;
   }
 }
+@media screen and (min-width: 1000px) {
+  #Viewer .explainer #text {
+    width: 80%;
+  }
+}
 #Viewer .explainer button {
   cursor: pointer;
   padding: 10px;
@@ -251,6 +309,7 @@
 @media screen and (max-width: 1000px) {
   #Viewer .explainer {
     min-height: 25%;
+    height: auto;
   }
   #Viewer #content {
     width: 60vw;

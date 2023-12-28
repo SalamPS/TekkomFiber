@@ -110,7 +110,9 @@ const Bar = ({part, view, togglePad}) => {
             <h1>{show ? show.name : ''}</h1>
             <button title="show" onClick={togglePad}>Show more</button>
           </div>
-          <p>{show ? desc : ''}</p>
+          <div id="text">
+            <p>{show ? desc : ''}</p>
+          </div>
         </div>
       </div>
     </>
