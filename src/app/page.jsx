@@ -64,7 +64,7 @@ function App() {
               <h1 className='head'>Three.Fiber</h1>
             </Parallax>
             <Parallax speed={0.42} id={"jb-tag"}>
-              <h3 className='tagline'>PMM - Kelompok 5</h3>
+              <h3 className='tagline'>PMM - Kelompok 2</h3>
             </Parallax>
           </div>
 
