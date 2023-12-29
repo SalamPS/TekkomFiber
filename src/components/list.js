@@ -138,7 +138,7 @@ const list = [
   
   // Parts of gpu
   new object('gpu', 'discrete', 'Videocard 3DFX Voodoo', 'Discrete GPU', 'gpu-card', 
-  "gpu-discrete", {
+  "", {
     scale: 5,
     speed: [0.0005, 0, 0],
     light: ["direct", 2],
