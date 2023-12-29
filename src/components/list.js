@@ -344,7 +344,7 @@ const list = [
   "https://sketchfab.com/3d-models/ssd-samsung-980-pro-1tb-208b846d5a5948368b4ad0676bf4ab97"
   ),
   new object('storage', 'flashdrive', 'GOODRAM UTS2 FD', 'Flash Drive', 'hdd-fill',
-  "Rp 55.000",
+  "Rp 201.582",
   {
     scale: 5,
     speed: [0.0005, 0, 0],
@@ -383,12 +383,8 @@ const list = [
     "Floppy disk memiliki ukuran fisik yang kecil dan tipis, dan dapat dengan mudah dilepas dan dipasang pada drive floppy disk yang terhubung ke komputer. Ukuran yang paling umum adalah 3.5 inci dan 5.25 inci. Kapasitas penyimpanan floppy disk berkisar dari beberapa puluh kilobit hingga beberapa megabit, tergantung pada tipe dan generasinya."
   ],
   [
-    "Capacities: 16 GB",
-    "Interface: USB 2.0 type A backwards compatible with USB 1.1",
-    "Speed of operation: read: up to 20 MB/s , write: up to 5 MB/s",
-    "Dimension: 57,1 x 19,3 x 10,7 mm",
-    "Weight: 15 g",
-    "Blister dimensions:103 x 123mm",
+    "Tipe: 3,5in, 2HD, 135TPI/80Tracks",
+    "Kapasitas: 1.44MB",
   ],
   "https://sketchfab.com/3d-models/ssd-samsung-980-pro-1tb-208b846d5a5948368b4ad0676bf4ab97"
   ),
